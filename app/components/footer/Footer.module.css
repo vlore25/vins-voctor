@@ -51,9 +51,7 @@
   display: block;
   color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-1));
   font-size: var(--mantine-font-size-sm);
-  padding-top: 3px;
-  padding-bottom: 3px;
-
+  text-decoration: none;
   &:hover {
     text-decoration: underline;
   }

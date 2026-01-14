@@ -1,25 +1,32 @@
 
-import { ActionIcon, Container, Group, Stack, Text } from '@mantine/core';
+import { ActionIcon, Container, Group, Stack, Text, Title } from '@mantine/core';
 import classes from './Footer.module.css';
 import Logo from '../Logo/Logo';
 import links from '../../const/links';
 import { IconBrandFacebook, IconBrandInstagram } from '@tabler/icons-react';
 import Link from 'next/link';
+import socialLinks from '../../const/socialLinks';
 
 const YearNow = new Date().getFullYear()
 
 export function Footer() {
     const siteMap = links.map((link) => {
         return (
-            <Link key={link.label} href={link.link}>
-                <Text
-                    className={classes.link}
-                >
-                    {link.label}
-                </Text>
+            <Link key={link.label} href={link.link} className={classes.link}>
+                {link.label}
             </Link>
         )
     });
+
+    const social = socialLinks.map((link) => {
+        return (
+            <ActionIcon key={link.label} size="lg" color="gray" variant="subtle">
+                <Link href={link.link} className={classes.link}  target="_blank">
+                    {link.icon}
+                </Link>
+            </ActionIcon>
+        )
+    })
 
     return (
         <footer className={classes.footer}>
@@ -39,6 +46,7 @@ export function Footer() {
                 </div>
                 <div className={classes.groups}>
                     <Stack>
+                        <Text>Map du site</Text>
                         {siteMap}
                     </Stack>
                 </div>
@@ -48,12 +56,7 @@ export function Footer() {
                     © {YearNow} vinsvoctor.com tous droits réservés.
                 </Text>
                 <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
-                    <ActionIcon size="lg" color="gray" variant="subtle">
-                        <IconBrandInstagram size={18} stroke={1.5} />
-                    </ActionIcon>
-                    <ActionIcon size="lg" color="gray" variant="subtle">
-                        <IconBrandFacebook size={18} stroke={1.5} />
-                    </ActionIcon>
+                    {social}
                 </Group>
             </Container>
         </footer>

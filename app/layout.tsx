@@ -7,7 +7,7 @@ import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'Vins Voctor',
-  description: 'Site vitrine pour Vins Voctor',
+  description: 'Vigneron de la vallée de la rhône',
 };
 
 // Your local font

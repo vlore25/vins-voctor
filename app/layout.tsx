@@ -3,6 +3,7 @@ import Provider from './components/provider/Provider';
 import localFont from 'next/font/local';
 import '@mantine/core/styles.css';
 import { Cinzel } from 'next/font/google'; // 1. IMPORT GEIST
+import { Analytics } from '@vercel/analytics/next';
 
 export const metadata = {
   title: 'Vins Voctor',
@@ -41,6 +42,7 @@ export default function RootLayout({
       </head>
       <body>
         <Provider>{children}</Provider>
+        <Analytics />
       </body>
     </html>
   );

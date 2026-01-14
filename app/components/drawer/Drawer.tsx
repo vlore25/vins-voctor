@@ -2,10 +2,11 @@ import { Center, Drawer, Stack } from '@mantine/core';
 import classes from './MobileDrawer.module.css'
 import links from '../../const/links';
 import Link from 'next/link';
+
 export default function MobileDrawer({ opened, onClose }) {
     const drawerLinks = links.map((link) => {
         return (
-            <Stack mt="xl">
+            <Stack key={link.label} mt="xl">
                 <Link
                     className={classes.link}
                     key={link.label}

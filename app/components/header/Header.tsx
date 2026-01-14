@@ -1,15 +1,12 @@
-"use client"; 
-
-import { Burger, Button, Container, Drawer, Flex } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
+import {Button, Container, Flex } from '@mantine/core';
 import Link from 'next/link';
 import Logo from '../Logo/Logo';
 import links from '../../const/links';
 import classes from './Header.module.css'
+import BurgerMenu from './components/BurgerMenu';
 
 
 export default function Header() {
-  const [opened, { toggle, close }] = useDisclosure(false);
 
   const items = links.map((link) => {
     if (link.label === 'Contact') {
@@ -39,7 +36,7 @@ export default function Header() {
   });
 
   return (
-    <Container size={'full'}>
+    <Container size={'xl'}>
       <Flex align='center' justify="space-between" className={classes.container}>
         <Logo 
           titleProps={{
@@ -52,11 +49,13 @@ export default function Header() {
         <div>
           <Flex gap={'lg'} visibleFrom="sm" align='center'>
             {items}
+            
           </Flex>
-          <Burger opened={opened} onClick={toggle} hiddenFrom="sm" size="sm" />
+          <BurgerMenu links={links} />
         </div>
+        
       </Flex>
-      <Drawer opened={opened} onClose={close} />
+      
     </Container>
   );
 }

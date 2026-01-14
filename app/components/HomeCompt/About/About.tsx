@@ -8,7 +8,7 @@ export default function About() {
             <Grid>
                 <GridCol span={{ base: 12, lg: 7 }}>
                     <Stack style={{ position: 'relative', overflow: 'hidden' }}>
-                        <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>L'Homme derrière <Text c="brandBordeux" span inherit>Vins Voctor</Text></Title>
+                        <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>L&apos;Homme derrière <Text c="brandBordeux" span inherit>Vins Voctor</Text></Title>
                         <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
                     </Stack>
                 </GridCol>

@@ -49,9 +49,9 @@ export default function WinesCards() {
         <>
                 <Stack>
                     <Stack mb="lg">
-                        <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>L'Artisanat au Cœur de la Bouteille.</Title>
-                        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>Les <Text c="brandBordeux" span inherit>Vins Voctor</Text> sont de vins d'identité qui vont toujours vous raconter une histoire. Avec ces vins on a une démostration de forme et de contenu. L'une ne peut pas exister sans l'autre et le deux deoivent être qualitatifs.</Text>
-                        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>Le liquide vous raconte le terroir et l'etiquette vous raconte l'histoire du vinificateur. Ensemble, le deux forment une identité.</Text>
+                        <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>L&apos;Artisanat au Cœur de la Bouteille.</Title>
+                        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>Les <Text c="brandBordeux" span inherit>Vins Voctor</Text> sont de vins d&apos;identité qui vont toujours vous raconter une histoire. Avec ces vins on a une démostration de forme et de contenu. L&apos;une ne peut pas exister sans l&apos;autre et le deux deoivent être qualitatifs.</Text>
+                        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>Le liquide vous raconte le terroir et l&apos;etiquette vous raconte l&apos;histoire du vinificateur. Ensemble, le deux forment une identité.</Text>
                     </Stack>
                     <Carousel
                         slideSize={{ base: "90%", lg: "30%" }}

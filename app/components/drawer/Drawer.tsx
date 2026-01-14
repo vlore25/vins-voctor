@@ -3,7 +3,7 @@ import classes from './MobileDrawer.module.css'
 import links from '../../const/links';
 import Link from 'next/link';
 
-export default function MobileDrawer({ opened, onClose }) {
+export default function MobileDrawer({ opened, onClose }: any) {
     const drawerLinks = links.map((link) => {
         return (
             <Stack key={link.label} mt="xl">

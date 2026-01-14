@@ -1,5 +1,5 @@
-# Mantine Next Template
+# Mantine Next Project
 
-Get started with the template by clicking `Use this template` button on the top of the page.
+Showcase website for a Rhône Valley winemaker.
 
-[Documentation](https://mantine.dev/guides/next/)
+To see visit: 

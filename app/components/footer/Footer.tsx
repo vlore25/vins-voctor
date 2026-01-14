@@ -3,7 +3,6 @@ import { ActionIcon, Container, Group, Stack, Text, Title } from '@mantine/core'
 import classes from './Footer.module.css';
 import Logo from '../Logo/Logo';
 import links from '../../const/links';
-import { IconBrandFacebook, IconBrandInstagram } from '@tabler/icons-react';
 import Link from 'next/link';
 import socialLinks from '../../const/socialLinks';
 
@@ -21,7 +20,7 @@ export function Footer() {
     const social = socialLinks.map((link) => {
         return (
             <ActionIcon key={link.label} size="lg" color="gray" variant="subtle">
-                <Link href={link.link} className={classes.link}  target="_blank">
+                <Link href={link.link} className={classes.link} target="_blank">
                     {link.icon}
                 </Link>
             </ActionIcon>
@@ -52,9 +51,14 @@ export function Footer() {
                 </div>
             </Container>
             <Container className={classes.afterFooter}>
-                <Text c="dimmed" size="sm" >
-                    © {YearNow} vinsvoctor.com tous droits réservés.
-                </Text>
+                <div>
+                    <Text c="dimmed" size="sm" >
+                        © {YearNow} vinsvoctor.com tous droits réservés.
+                    </Text>
+                    <div>
+                        <Link href="https://www.victorlore.fr/" className={classes.link} target="_blank">Realisation du site par <span>Victor loré.</span></Link>
+                    </div>
+                </div>
                 <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
                     {social}
                 </Group>

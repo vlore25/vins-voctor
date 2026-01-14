@@ -1,0 +1,8 @@
+.brandName {
+  font-family: var(--font-reman) !important;
+  font-weight: 400;
+}
+.link{
+  text-decoration: none;
+  color: black;
+}

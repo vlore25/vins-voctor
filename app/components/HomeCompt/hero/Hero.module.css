@@ -1,0 +1,23 @@
+.wrapper {
+  position: relative;
+  background-image: url("/hero.jpg");
+  background-size: cover;
+  background-position: 99% 80%;
+  height: 100%;
+}
+
+.title{
+  font-family: var(--font-reman) !important; 
+  font-weight: 500;
+  text-shadow:
+  1px 1px 2px black,
+  0 0 1em black,
+  0 0 0.2em black;
+}
+.description{
+  text-shadow:
+  1px 1px 2px black,
+  0 0 1em black,
+  0 0 0.2em black;
+}
+

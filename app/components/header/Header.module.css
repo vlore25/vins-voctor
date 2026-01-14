@@ -1,0 +1,19 @@
+.container{
+  justify-content: center;
+  height: 80px;
+}
+.link {
+  padding: 8px 12px;
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: var(--mantine-color-brandBordeux-5,);
+  font-size: var(--mantine-font-size-lg);
+  font-weight: 600;
+  @mixin hover {
+    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+  }
+}
+
+.link:hover{
+  color: var(--mantine-color-brandBordeux-9,)
+}

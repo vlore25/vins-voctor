@@ -1,25 +1,18 @@
 "use client";
 
 import { Badge, Button, Card, SimpleGrid, Group, Image, Stack, Title, Container, Text, Anchor, Breadcrumbs } from "@mantine/core";
-import winesData from "../const/wines";
+import winesData from "../../const/wines";
 import { MdLocationOn } from "react-icons/md";
 import { LuGrape } from "react-icons/lu";
 import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi";
 
 export default function WinesPage() {
-    const items = [
-        { title: ' Accueil', href: '/' },
-        { title: 'Les cuvées', href: '' },
-    ].map((item, index) => (
-        <Anchor href={item.href} key={index}>
-            {item.title}
-        </Anchor>
-    ));
+
 
     const cards = winesData.map((wine) => {
         return (
-            <Card shadow='sm' withBorder key={wine.id}>
+            <Card withBorder key={wine.id} shadow='sm' bg="#F8F8F8">
                 <Card.Section >
                     <Image
                         src={wine.img}
@@ -46,12 +39,16 @@ export default function WinesPage() {
     });
 
     return (
-        <Container my="xl">
-            <Breadcrumbs separator={<HiChevronRight />} separatorMargin="md" mb="md">
-                {items}
-            </Breadcrumbs>
+        <>
             <Stack style={{ position: 'relative', overflow: 'hidden' }}>
                 <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>Les cuvées chez <Text c="brandBordeux" span inherit>Vins Voctor</Text></Title>
+                <Text>
+                    Inspiré par la personnalité et l’identité émanant des produits artisanaux, Josimar s’est proposé de
+                    produire des vins qui allient terroir et personnalité. Les caractéristiques principales qu’il recherche
+                    dans ses vins sont l’énergie, la buvabilité, la finesse, la complexité et la longueur en bouche. En cave,
+                    il travaille avec diverses méthodes de vinification traditionnelle et simple, avec des petits contenants,
+                    peu de SO2 et aucun autre intrant-œnologique.
+                </Text>
             </Stack>
             <SimpleGrid
                 cols={{ base: 1, sm: 2, lg: 3 }}
@@ -60,6 +57,6 @@ export default function WinesPage() {
             >
                 {cards}
             </SimpleGrid>
-        </Container>
+        </>
     );
 }

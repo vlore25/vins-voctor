@@ -1,13 +1,12 @@
-import { Anchor, Button, Center, Container, Divider, Grid, GridCol, Group, Image, Stack, Text, ThemeIcon, Title } from "@mantine/core";
+import { Anchor,  Center,  Grid, GridCol, Group, Image, Stack, Text, ThemeIcon, Title } from "@mantine/core";
 import { FaArrowRight } from "react-icons/fa";
 
 export default function Vigne() {
     return (
-        <>
             <Grid>
                 <GridCol span={{ base: 12, lg: 7 }}>
                     <Stack style={{ position: 'relative', overflow: 'hidden' }}>
-                        <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>La region</Title>
+                        <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>La région</Title>
                         <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
                     </Stack>
                 </GridCol>
@@ -28,6 +27,5 @@ export default function Vigne() {
                     </Group>
                 </GridCol>
             </Grid>
-        </>
     );
 }

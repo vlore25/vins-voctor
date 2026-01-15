@@ -1,94 +1,96 @@
-//Bottle images import
-
 interface wineInterface {
     id: string;
-    name: string,
-    description: string,
-    type: string,
-    img: string,
-    badgeColor: string,
-    variety: string,
-    location: string,
-    tags: string[],
-    accords: string[]
+    name: string;
+    description: string;
+    type: string;
+    mention: string; // Nouvelle propriété pour la dénomination (AOC, VDF)
+    img: string;
+    badgeColor: string;
+    variety: string;
+    location: string;
+    tags: string[];
+    accords: string[];
 }
 
 const winesData: wineInterface[] = [
     {
+        id: 'ma-carriere',
+        name: 'Ma carrière',
+        description: 'Un Saint-Joseph de caractère, expression pure de la Syrah sur son terroir d\'origine.',
+        type: 'Rouge',
+        mention: 'AOC Saint-Joseph',
+        img: '/bottles/products/saint-joseph.png',
+        badgeColor: '#8B0000',
+        variety: '100% Syrah',
+        location: 'Châteaubourg',
+        tags: ['Violette', 'Poivré', 'Complexe'],
+        accords: ['Côte de bœuf grillée', 'Agneau rôti', 'Civet de lièvre']
+    },
+    {
         id: 'anne-marie',
         name: 'Anne-Marie',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        description: 'Un vin solaire et généreux, reflet fidèle du Grenache Noir de la Drôme.',
         type: 'Rouge',
+        mention: 'Vin de France (VDF)',
         img: '/bottles/products/anne-marie.png',
         badgeColor: '#8B0000',
-        variety: 'Grenache noir',
-        location: 'Drôme',
+        variety: '100% Grenache Noir',
+        location: 'Roussas',
         tags: ['Juteux', 'Réglisé', 'Solaire'],
-        accords: ['Magret de cannard, pommes de terres sautées', 'Steak de thon grillé, salade de fenuoil àa l\u2019orange', 'Daube provençal aux olives noires']
-
-    },
-    {
-        id: 'blanca',
-        name: 'Blanca',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        type: 'Blanc',
-        img: '/bottles/products/blanca.png',
-        badgeColor: '#F8E5AB',
-        variety: 'Grenache blanc',
-        location: 'Drôme',
-        tags: ['frais', 'floral', 'subtil'],
-        accords: ['Ceviche de dorade au citron vert', 'Risotto aux asperges vertes', 'Poulet fermier rôti aux herbes']
-    },
-    {
-        id: 'saint-joseph',
-        name: 'Saint-Joseph',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        type: 'Blanc',
-        img: '/bottles/products/saint-joseph.png',
-        badgeColor: '#F8E5AB',
-        variety: 'Saint-Joseph',
-        location: 'Syrah',
-        tags: ['Violette/Myrtille', 'Poivré', 'Minéral', 'Complexe'],
-        accords: ['Côte de bœf grillé', 'Agneau rôti', 'Civet de lièvre', 'Chocolat noir']
-
+        accords: ['Magret de canard', 'Steak de thon grillé', 'Daube provençale']
     },
     {
         id: 'doucement-cowboy',
         name: 'Doucement cowboy',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+        description: 'Une Syrah ardéchoise tout en finesse, privilégiant le fruit et la fluidité.',
         type: 'Rouge',
+        mention: 'Vin de France (VDF)',
         img: '/bottles/products/doucement-cowboy.png',
         badgeColor: '#8B0000',
-        variety: 'Syrah',
+        variety: '100% Syrah',
         location: 'Ardèche',
         tags: ['Fruité', 'Soyeux', 'Frais'],
-        accords: ['Bavette à l\u2019echalote', 'Couscous aux légumes et pois chiches', 'Terrine de campagne & cornichons']
-
+        accords: ['Bavette à l’échalote', 'Couscous aux légumes', 'Terrine de campagne']
     },
     {
         id: 'one-night',
         name: 'One night',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        type: 'Rosé',
+        description: 'Le compagnon idéal des moments improvisés, un vin de soif léger et croquant.',
+        type: 'Rouge léger',
+        mention: 'Vin de France (VDF)',
         img: '/bottles/products/one-night.png',
-        badgeColor: '#faaca4ff',
-        variety: 'Rosé de Syrah',
-        location: 'Drôme',
-        tags: ['Fruité (Groseille)', 'Léger', 'Convivial'],
-        accords: ['Planche de charcuterie', 'Salade de tomates & mozarella', 'Crevettes sautés à l\u2019ail']
+        badgeColor: '#D05353',
+        variety: '50% Grenache Noir / 50% Rosé de Syrah',
+        location: 'Roussas',
+        tags: ['Groseille', 'Léger', 'Convivial'],
+        accords: ['Planche de charcuterie', 'Salade tomate-mozza', 'Crevettes à l’ail']
+    },
+    {
+        id: 'blanca',
+        name: 'Blanca',
+        description: 'Un blanc tout en dentelle, porté par des notes florales et une grande fraîcheur.',
+        type: 'Blanc',
+        mention: 'Vin de France (VDF)',
+        img: '/bottles/products/blanca.png',
+        badgeColor: '#FAFAD2',
+        variety: '100% Grenache blanc',
+        location: 'Allan',
+        tags: ['Frais', 'Floral', 'Subtil'],
+        accords: ['Ceviche de dorade', 'Risotto aux asperges', 'Poulet aux herbes']
     },
     {
         id: 'simulacre',
         name: 'Simulacre',
-        description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-        type: 'Maceration',
+        description: 'Un vin de macération (orange) surprenant, aux notes de fruits exotiques et d\'abricot.',
+        type: 'Orange',
+        mention: 'Vin de France (VDF)',
         img: '/bottles/products/simulacre.png',
         badgeColor: '#E67E22',
-        variety: 'Bouroulenc de maceration',
-        location: 'Drôme',
-        tags: ['Abricot/Nectarine', 'Acidulé', 'Exotique'],
-        accords: ['Gratin de courge butternut', 'Curry vert thaï au poulet', 'Fromages: Langres']
-    },
+        variety: '100% Bourboulenc',
+        location: 'Allan',
+        tags: ['Abricot', 'Acidulé', 'Exotique'],
+        accords: ['Gratin de courge butternut', 'Curry vert thaï', 'Fromage de Langres']
+    }
 ];
 
 export default winesData;

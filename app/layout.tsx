@@ -40,8 +40,8 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <ColorSchemeScript />
       </head>
-      <body>
-        <Provider>{children}</Provider>
+      <body >
+        <Provider >{children}</Provider>
         <Analytics />
       </body>
     </html>

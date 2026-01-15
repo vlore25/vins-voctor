@@ -1,4 +1,4 @@
-import { Anchor, Button, Center, Container, Divider, Grid, GridCol, Group, Image, Stack, Text, ThemeIcon, Title } from "@mantine/core";
+import { Anchor,  Center, Grid, GridCol, Group, Image, Stack, Text, ThemeIcon, Title } from "@mantine/core";
 import classes from './About.module.css';
 import { FaArrowRight } from "react-icons/fa";
 
@@ -9,7 +9,7 @@ export default function About() {
                 <GridCol span={{ base: 12, lg: 7 }}>
                     <Stack style={{ position: 'relative', overflow: 'hidden' }}>
                         <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>L&apos;Homme derrière <Text c="brandBordeux" span inherit>Vins Voctor</Text></Title>
-                        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+                        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>Josimar Yacuta, vigneron de vins artisanaux de la vallée du Rhône.</Text>
                     </Stack>
                 </GridCol>
                 <GridCol span={{ base: 12, lg: 5 }}>

@@ -5,6 +5,7 @@ import Logo from '../Logo/Logo';
 import links from '../../const/links';
 import Link from 'next/link';
 import socialLinks from '../../const/socialLinks';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 const YearNow = new Date().getFullYear()
 
@@ -52,11 +53,12 @@ export function Footer() {
             </Container>
             <Container className={classes.afterFooter}>
                 <div>
-                    <Text c="dimmed" size="sm" >
-                        © {YearNow} vinsvoctor.com tous droits réservés.
-                    </Text>
+                    <Link href="https://www.victorlore.fr/" className={classes.link} target="_blank">Realisation du site par <span>Victor loré. <FaExternalLinkAlt /> </span></Link>
+
                     <div>
-                        <Link href="https://www.victorlore.fr/" className={classes.link} target="_blank">Realisation du site par <span>Victor loré.</span></Link>
+                        <Text c="dimmed" size="sm" >
+                            © {YearNow} vinsvoctor.com tous droits réservés.
+                        </Text>
                     </div>
                 </div>
                 <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">

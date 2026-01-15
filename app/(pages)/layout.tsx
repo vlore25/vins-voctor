@@ -1,30 +1,23 @@
-"use client"
-import { Anchor, Breadcrumbs, Container } from "@mantine/core";
-import { useSelectedLayoutSegments } from "next/navigation";
-import { HiChevronRight } from "react-icons/hi";
+// app/(pages)/layout.tsx
+import { Container } from "@mantine/core";
+import { Metadata } from "next";
+import DynamicBreadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
 
+// C'est ici que vous gérez le SEO pour toutes les pages enfants
+export const metadata: Metadata = {
+    title: {
+        default: 'Vins Voctor | Vigneron de la vallée du Rhône',
+        template: '%s | Vins Voctor'
+    },
+    description: 'Vins artisanaux produits par Josimar Verduzco.',
+};
 
-export default function Layout({
-    children,
-}: {
-    children: React.ReactNode
-}) {
-
-    const params = useSelectedLayoutSegments()
-     console.log(params)
-
-    const breadItems = params.map((item, index) => (
-        <Anchor href={item} key={index}>
-            {item}
-        </Anchor>
-    ));
-
+export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <Container my="xl">
-            <Breadcrumbs separator={<HiChevronRight />} separatorMargin="md" mb="md">
-                {breadItems}
-            </Breadcrumbs>
+            {/* Le composant client est importé ici */}
+            <DynamicBreadcrumbs />
             <main>{children}</main>
         </Container>
-    )
+    );
 }

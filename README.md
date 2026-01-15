@@ -1,5 +1,8 @@
 # Mantine Next Project
 
-Showcase website for a Rhône Valley winemaker.
+Showcase website for a Rhône Valley winemaker 🍷.
 
-To see visit: 
+This was my first approach to Next JS. 
+Mantine has Ui library
+
+To see visit: https://www.vinsvoctor.com/

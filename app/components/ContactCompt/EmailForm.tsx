@@ -52,7 +52,7 @@ export default function EmailForm() {
             >
                 <Text size="sm" mb="lg">{modalConfig.message}</Text>
                 <Button color={modalConfig.color} onClick={close} fullWidth>
-                    D'accord
+                    D&apos;accord
                 </Button>
             </Modal>
 

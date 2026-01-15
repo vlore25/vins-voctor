@@ -1,25 +1,18 @@
 "use client"
 
-import { Container, Title, Loader, Flex, Stack, Text, Badge, Box, Group, Accordion, Anchor, Breadcrumbs, Skeleton, Table } from "@mantine/core";
+import { Title,  Flex, Stack, Text, Badge, Group, Accordion, Skeleton, Table } from "@mantine/core";
 import { useParams } from 'next/navigation'
-import winesData from "../../../const/wines";
+import winesData, { wineInterface } from "../../../const/wines";
 import Image from "next/image";
-import { HiChevronRight } from "react-icons/hi";
 import { Suspense } from "react";
-import Link from "next/link";
 
 export default function WinePage() {
     const params = useParams<{ id: string }>()
-    const wine = winesData.find((w) => w.id === params.id);
 
-    if (!params.id) {
-        return <Container my="xl"><Loader /></Container>;
-    }
-
+    const wine: wineInterface | undefined = winesData.find((w) => w.id === params.id);
+    
     if (!wine) {
-        return <Container my="xl"><Title>Vin non trouvé</Title>
-        <Link href='/vins}'>Retour aux cuvées</Link>
-        </Container>;
+        return <Text>Vin non trouvé</Text>;
     }
 
     return (

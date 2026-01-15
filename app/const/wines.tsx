@@ -1,9 +1,9 @@
-interface wineInterface {
+export interface wineInterface {
     id: string;
     name: string;
     description: string;
     type: string;
-    mention: string; // Nouvelle propriété pour la dénomination (AOC, VDF)
+    mention: string; 
     img: string;
     badgeColor: string;
     variety: string;
@@ -82,7 +82,7 @@ const winesData: wineInterface[] = [
         id: 'simulacre',
         name: 'Simulacre',
         description: 'Un vin de macération (orange) surprenant, aux notes de fruits exotiques et d\'abricot.',
-        type: 'Orange',
+        type: 'Maceration',
         mention: 'Vin de France (VDF)',
         img: '/bottles/products/simulacre.png',
         badgeColor: '#E67E22',

@@ -1,30 +1,43 @@
-import { Container, Stack, Text, Title, } from "@mantine/core";
-
+import { ActionIcon, Container, Flex, Grid, GridCol, Stack, Text, Title } from "@mantine/core";
+import EmailForm from "../../components/ContactCompt/EmailForm";
+import Link from "next/link";
+import { IconBrandFacebook, IconBrandInstagram, IconBrandWhatsapp } from "@tabler/icons-react";
+import classes from './page.module.css';
 
 export default function Contactpage() {
+    const socialLinks = [
+        { link: 'https://www.instagram.com/vins_voctor/?hl=en', label: 'Instagram', icon: <IconBrandInstagram /> },
+        { link: 'https://www.facebook.com/VinsVoctor/', label: 'Facebook', icon: <IconBrandFacebook /> },
+        { link: 'https://wa.me/33658971418', label: 'Whatsapp', icon: <IconBrandWhatsapp /> }
+    ];
+
+    const social = socialLinks.map((item) => (
+    
+            <Link key={item.label} href={item.link} className={classes.link} target="_blank">
+                <Flex  align="center" gap="sm">
+                <ActionIcon size="lg" variant="subtle">
+                    {item.icon}
+                </ActionIcon>
+                <Text size="lg">{item.label}</Text>
+                </Flex>
+            </Link>
+    ));
+
     return (
-        <Container my="xl">
-            <Stack style={{ position: 'relative', overflow: 'hidden' }}>
-                <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>Connaître <Text c="brandBordeux" span inherit>Vins Voctor</Text></Title>
-                <Text>
-                    A 38 ans, Josimar Yacuta Verduzco a déjà vécu mille vies. Né au Mexique, il a grandi en Californie,
-                    enseigné l’espagnol à l’uni avant d’embrasser une carrière militaire dans la Légion étrangère. Cinq
-                    années passées dans l’infanterie, durant lesquelles il s’éprend de la campagne française. 
-                </Text>
-                <Text>
-                    En 2019, il
-                    lâche le béret vert pour les jus rouges et blancs. Il se dégotte un maître d’apprentissage de compète
-                    sur une appellation prestigieuse de la vallée du Rhône- Matthieu Barret à Cornas, s’cusez du peu – et
-                    embraye sur un BTS viti-œno mention bio dans le Jura. 
-                </Text>
-                <Text>
-                    En parallèle, ses économies et des vendanges
-                    sur quelques parcelles d’un copain viticulteur lui permettent d’amorcer une activité de négoce.
-                    Depuis trois ans, celui qu’on appelle aussi Voctor tient garnison bachique dans un petit garage
-                    converti en cave, où il entraîne une menue troupe de pinards artisanaux, droits dans leur bottes et
-                    troussés d’une jolie énergie.
-                </Text>
-            </Stack>
-        </Container>
-    )
+        <Grid>
+            <GridCol span={{ base: 12, lg: 6 }}>
+                <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>
+                    Mes liens sociaux
+                </Title>
+                {social}
+            </GridCol>
+
+            <GridCol span={{ base: 12, lg: 6 }}>
+                <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>
+                    Me contacter
+                </Title>
+                <EmailForm />
+            </GridCol>
+        </Grid >
+    );
 }

@@ -9,7 +9,7 @@ export default function About() {
                 <GridCol span={{ base: 12, lg: 7 }}>
                     <Stack style={{ position: 'relative', overflow: 'hidden' }}>
                         <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>L&apos;Homme derrière <Text c="brandBordeux" span inherit>Vins Voctor</Text></Title>
-                        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>Josimar Yacuta, vigneron de vins artisanaux de la vallée du Rhône.</Text>
+                        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>Josimar Verduzco, vigneron de vins artisanaux de la vallée du Rhône.</Text>
                     </Stack>
                 </GridCol>
                 <GridCol span={{ base: 12, lg: 5 }}>

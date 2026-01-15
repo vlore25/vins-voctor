@@ -5,10 +5,9 @@ import winesData from "../../const/wines";
 import { MdLocationOn } from "react-icons/md";
 import { LuGrape } from "react-icons/lu";
 import Link from "next/link";
-import { HiChevronRight } from "react-icons/hi";
+import { useParams } from "next/navigation";
 
 export default function WinesPage() {
-
 
     const cards = winesData.map((wine) => {
         return (

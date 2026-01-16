@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@coreui/icons": "^3.0.1",
+    "@coreui/icons-react": "^2.3.0",
     "@emailjs/nodejs": "^5.0.2",
     "@fontsource-variable/montserrat": "^5.2.8",
     "@fontsource/aref-ruqaa-ink": "^5.2.9",

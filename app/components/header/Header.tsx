@@ -4,6 +4,7 @@ import Logo from '../Logo/Logo';
 import classes from './Header.module.css'
 import BurgerMenu from './components/BurgerMenu';
 import headerlinks from '../../const/headerLinks';
+import LanguageButton from '../LanguageButton/LanguageButton';
 
 
 export default function Header() {
@@ -48,8 +49,9 @@ export default function Header() {
         <div>
           <Flex gap={'lg'} visibleFrom="sm" align='center'>
             {items}
-            
+            <LanguageButton />
           </Flex>
+          
           <BurgerMenu links={headerlinks} />
         </div>
         

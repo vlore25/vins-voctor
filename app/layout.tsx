@@ -5,6 +5,7 @@ import '@mantine/core/styles.css';
 import { Cinzel } from 'next/font/google'; // 1. IMPORT GEIST
 import { Analytics } from '@vercel/analytics/next';
 import AlcoolBanner from './components/AlcoolBanner/AlcoolBanner';
+import { NextIntlClientProvider } from 'next-intl';
 
 export const metadata = {
   title: 'Vins Voctor',
@@ -44,9 +45,9 @@ export default function RootLayout({
       </head>
       <body >
         <Provider >
-          <AlcoolBanner/>
-          {children}
-          </Provider>
+          <AlcoolBanner />
+          <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        </Provider>
         <Analytics />
       </body>
     </html>

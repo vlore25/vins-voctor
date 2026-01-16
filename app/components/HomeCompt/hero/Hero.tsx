@@ -1,11 +1,14 @@
 "use client";
-import cx from 'clsx';
+
+import {getTranslations} from 'next-intl/server';
+
 import { Button, Center, Container, Flex, Group, Overlay, SimpleGrid, Text, Title } from '@mantine/core';
 import classes from './Hero.module.css';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function Hero() {
-
+  const t = useTranslations('HomePage.Hero');
   return (
     <div className={classes.wrapper}>
       <Overlay color="#000" opacity={0.20} zIndex={-1} />
@@ -21,7 +24,7 @@ export default function Hero() {
             fz={{ base: "md", lg: "xl" }}
             ta="center"
           >
-            UN MONDE ATYPIQUE
+            {t('subtitle')}
           </Text>
           <Center>
             <SimpleGrid
@@ -32,11 +35,11 @@ export default function Hero() {
             >
               <Button size="sm" radius={0} component={Link}
                 href="/vins">
-                DÉCOUVRIR LES CUVÉES
+                {t('buttons.discover')}
               </Button>
               <Button size="sm" radius={0} color='#ffffff66' autoContrast component={Link}
                 href="/about">
-                MON HISTOIRE
+                {t('buttons.history')}
               </Button>
             </SimpleGrid>
           </Center>

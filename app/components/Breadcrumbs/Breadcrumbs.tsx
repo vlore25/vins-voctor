@@ -26,7 +26,7 @@ export default function DynamicBreadcrumbs() {
         const isLast = index === segments.length - 1;
         breadItems.push(
             isLast ? (
-                <Text key={currentPath} size="sm" fw={500}>{label}</Text>
+                <Text key={currentPath} size="md" fw={500}>{label}</Text>
             ) : (
                 <Anchor component={Link} href={currentPath} key={currentPath}>{label}</Anchor>
             )

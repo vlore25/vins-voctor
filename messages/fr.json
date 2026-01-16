@@ -1,0 +1,116 @@
+{
+  "HomePage": {
+    "Hero": {
+      "title": "Vins Voctor",
+      "subtitle": "UN MONDE ATYPIQUE",
+      "buttons": {
+        "discover": "DÉCOUVRIR LES CUVÉES",
+        "history": "MON HISTOIRE"
+      }
+    },
+    "About": {
+      "title": "L'Homme derrière",
+      "titleSpan": "Vins Voctor",
+      "description": "Josimar (ou Voctor) est un jeune artisan vigneron localisé dans la Vallée du Rhône nord. Il a débuté dans ce métier en réalisant un BTSA : Viticulture-Œnologie dans le Jura et en Ardèche. A la suite de ses études, il accède à un poste à responsabilités chez son maitre d’apprentissage, un grand vigneron de Cornas.",
+      "jobTitle": "Négociant vinificateur en vins artisanaux de la Vallée du Rhône nord.",
+      "cta": "CONNAÎTRE VOCTOR"
+    },
+    "WineCards": {
+      "title": "L'Artisanat au Cœur de la Bouteille.",
+      "description1": "Les Vins Voctor sont de vins d'identité qui vont toujours vous raconter une histoire. Avec ces vins on a une démonstration de forme et de contenu. L'une ne peut pas exister sans l'autre et les deux doivent être qualitatifs.",
+      "description2": "Le liquide vous raconte le terroir et l'étiquette vous raconte l'histoire du vinificateur. Ensemble, les deux forment une identité.",
+      "cardBtn": "SAVOIR PLUS",
+      "footerLink": "CONNAÎTRE LES CUVÉES"
+    },
+    "Vigne": {
+      "title": "La région",
+      "subtitle": "L'identité de Vins Voctor se cultive à travers trois terroirs d'exception.",
+      "points": {
+        "chateaubourg": "À Châteaubourg, la Syrah trouve sa pleine expression pour donner naissance au Saint-Joseph.",
+        "roussas": "Plus au sud, les terres de Roussas offrent un écrin idéal au Grenache noir.",
+        "allan": "Allan accueille nos cépages blancs, Grenache blanc et Bourboulenc, pour des vins d'une grande finesse."
+      },
+      "mapLabel": "Cornas, Vallée du Rhône nord."
+    }
+  },
+  "AboutPage": {
+    "title": "Connaître",
+    "titleSpan": "Voctor",
+    "mention": "Dans les mots de l'écrivain Iréne Languin dans le Glou Guide 8",
+    "story": [
+      {
+        "content": "A 38 ans, Josimar Yacuta Verduzco a déjà vécu mille vies. Né au Mexique, il a grandi en Californie, enseigné l’espagnol à l’uni avant d’embrasser une carrière militaire dans la Légion étrangère. Cinq années passées dans l’infanterie, durant lesquelles il s’éprend de la campagne française."
+      },
+      {
+        "content": "En 2019, il lâche le béret vert pour les jus rouges et blancs. Il se dégotte un maître d’apprentissage de compète sur une appellation prestigieuse de la vallée du Rhône – Matthieu Barret à Cornas – et embraye sur un BTS viti-œno mention bio dans le Jura."
+      },
+      {
+        "content": "En parallèle, ses économies et des vendanges sur quelques parcelles d’un copain viticulteur lui permettent d’amorcer une activité de négoce. Depuis trois ans, celui qu’on appelle aussi Voctor tient garnison bachique dans un petit garage converti en cave."
+      }
+    ]
+  },
+  
+  "Wines": {
+    "ma-carriere": {
+      "name": "Ma carrière",
+      "description": "A Saint-Joseph of character, pure expression of Syrah on its original terroir.",
+      "mention": "AOC Saint-Joseph",
+      "variety": "100% Syrah",
+      "location": "Châteaubourg",
+      "type": "Red",
+      "tags": ["Violet", "Peppery", "Complex"],
+      "accords": ["Grilled rib of beef", "Roast lamb", "Hare stew"]
+    },
+    "anne-marie": {
+      "name": "Anne-Marie",
+      "description": "A solar and generous wine, faithful reflection of the Grenache Noir from Drôme.",
+      "mention": "IGP - Drôme County of Grignan",
+      "variety": "100% Grenache Noir",
+      "location": "Roussas",
+      "type": "Red",
+      "tags": ["Juicy", "Liquorice", "Solar"],
+      "accords": ["Duck breast", "Grilled tuna steak", "Provençal stew"]
+    },
+    "doucement-cowboy": {
+      "name": "Doucement cowboy",
+      "description": "A Syrah from Ardèche full of finesse, prioritizing fruit and fluidity.",
+      "mention": "Vin de France (VDF)",
+      "variety": "100% Syrah",
+      "location": "Ardèche",
+      "type": "Red",
+      "tags": ["Fruity", "Silky", "Fresh"],
+      "accords": ["Shallot flank steak", "Vegetable couscous", "Country terrine"]
+    },
+    "one-night": {
+      "name": "One night",
+      "description": "The ideal companion for improvised moments, a light and crisp thirst-quenching wine.",
+      "mention": "Vin de France (VDF)",
+      "variety": "50% Grenache Noir / 50% Syrah Rosé",
+      "location": "Roussas",
+      "type": "Light Red",
+      "tags": ["Redcurrant", "Light", "Convivial"],
+      "accords": ["Charcuterie board", "Tomato-mozzarella salad", "Garlic prawns"]
+    },
+    "blanca": {
+      "name": "Blanca",
+      "description": "A white wine all in lace, carried by floral notes and great freshness.",
+      "mention": "Vin de France (VDF)",
+      "variety": "100% Grenache Blanc",
+      "location": "Allan",
+      "type": "White",
+      "tags": ["Fresh", "Floral", "Subtle"],
+      "accords": ["Sea bream ceviche", "Asparagus risotto", "Herb chicken"]
+    },
+    "simulacre": {
+      "name": "Simulacre",
+      "description": "A surprising maceration (orange) wine, with notes of exotic fruits and apricot.",
+      "mention": "Vin de France (VDF)",
+      "variety": "100% Bourboulenc",
+      "location": "Allan",
+      "type": "Maceration",
+      "tags": ["Apricot", "Tangy", "Exotic"],
+      "accords": ["Butternut squash gratin", "Thai green curry", "Langres cheese"]
+    }
+  }
+
+}

@@ -23,7 +23,7 @@ export default function AlcoolBanner() {
                 <Text ta="center">Interdiction de vente de boissons alcooliques aux mineurs de moins de 18 ans.</Text>
                 <Text fs="italic" ta="center">L&apos;abus d&apos;alcool est dangereux pour la santé. À consommer avec modération</Text>
                 <Center>
-                    <Button onClick={close}>Entendu</Button>
+                    <Button onClick={close} data-autofocus>Entendu</Button>
                 </Center>
             </Stack>
         </Modal>

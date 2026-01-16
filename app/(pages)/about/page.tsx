@@ -1,28 +1,35 @@
 import { Container, Stack, Text, Title, Grid, Image, GridCol } from "@mantine/core";
+import { useTranslations } from "next-intl";
 
-const STORY_DATA = [
-  {
-    content: "A 38 ans, Josimar Yacuta Verduzco a déjà vécu mille vies. Né au Mexique, il a grandi en Californie, enseigné l’espagnol à l’uni avant d’embrasser une carrière militaire dans la Légion étrangère. Cinq années passées dans l’infanterie, durant lesquelles il s’éprend de la campagne française.",
-    image: "/hero3.webp"
-  },
-  {
-    content: "En 2019, il lâche le béret vert pour les jus rouges et blancs. Il se dégotte un maître d’apprentissage de compète sur une appellation prestigieuse de la vallée du Rhône – Matthieu Barret à Cornas – et embraye sur un BTS viti-œno mention bio dans le Jura.",
-    image: "/hero2.webp"
-  },
-  {
-    content: "En parallèle, ses économies et des vendanges sur quelques parcelles d’un copain viticulteur lui permettent d’amorcer une activité de négoce. Depuis trois ans, celui qu’on appelle aussi Voctor tient garnison bachique dans un petit garage converti en cave.",
-    image: "/hero4.webp"
-  }
-];
 
 export default function Aboutpage() {
+  const t = useTranslations('AboutPage');
+
+  const STORY_DATA = [
+    {
+
+      content: t('story.0.content'),
+      image: "/hero3.webp"
+    },
+    {
+      content: t('story.1.content'),
+      image: "/hero2.webp"
+    },
+    {
+      content: t('story.2.content'),
+      image: "/hero4.webp"
+    }
+  ];
+
   return (
     <>
-      <Title fz={{ base: "2em", lg: "2.5em" }} fw={400} mb="xl" >
-        Connaître <Text c="brandBordeux" span inherit> Voctor</Text>
-      </Title>
+      <Stack mb="xl" gap="xs">
+        <Title fz={{ base: "2em", lg: "2.5em" }} fw={400}>{t('title')} <Text c="brandBordeux" span inherit>{t('titleSpan')}</Text>
+        </Title>
+        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500} fs="italic">{t('mention')}</Text>
+      </Stack>
 
-      <Stack gap={80}> {/* Grand espace entre les sections */}
+      <Stack gap={80}>
         {STORY_DATA.map((item, index) => {
           const isEven = index % 2 === 0;
           return (

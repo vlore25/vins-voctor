@@ -1,0 +1,21 @@
+"use client"
+
+import { useDisclosure } from '@mantine/hooks';
+import { Modal, Button, Text, Center, Stack } from '@mantine/core';
+
+export default function AlcoolBanner() {
+    const [opened, { open, close }] = useDisclosure(true);
+
+    return (
+
+        <Modal opened={opened} onClose={close} withCloseButton={false} centered>
+            <Stack gap="md">
+                <Text ta="center">interdiction de vente de boissons alcooliques aux mineurs de moins de 18 ans.</Text>
+                <Text fs="italic" ta="center">L&apos;abus d&apos;alcool est dangereux pour la santé. À consommer avec modération</Text>
+                <Center>
+                    <Button onClick={close}>Entendu</Button>
+                </Center>
+            </Stack>
+        </Modal>
+    );
+}

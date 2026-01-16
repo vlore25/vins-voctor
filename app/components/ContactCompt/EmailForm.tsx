@@ -83,7 +83,9 @@ export default function EmailForm() {
                     <Textarea
                         label="Message"
                         placeholder="Votre message"
-                        minRows={3}
+                        autosize
+                        minRows={2}
+                        maxRows={6}
                         {...register('message', { required: "Le message est vide" })}
                         error={errors.message?.message}
                     />
@@ -94,7 +96,7 @@ export default function EmailForm() {
                     />
 
                     <Text size="xs" mt="sm" c="dimmed">
-                        Conformément au RGPD, vous disposez d'un droit d'accès et de suppression de vos données en nous contactant.
+                        Conformément au RGPD, vous disposez d&lsquo;un droit d&lsquo;accès et de suppression de vos données en nous contactant.
                     </Text>
                     <Group justify="flex-end" mt="md">
                         <Button type='submit' loading={isSubmitting}>

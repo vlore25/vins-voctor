@@ -1,4 +1,3 @@
-
 import { 
     Title, 
     Stack, 
@@ -45,7 +44,8 @@ export default function TermsPage() {
                         </Text>
                         <ul style={{ paddingLeft: '20px', fontSize: '14px', lineHeight: '1.6' }}>
                             <li>La création de votre compte (Nom, email, mot de passe).</li>
-                            <li>L'utilisation de nos services de contact.</li>
+                            {/* Escaped apostrophe here */}
+                            <li>L&apos;utilisation de nos services de contact.</li>
                             <li>La navigation sur le site via des cookies techniques.</li>
                         </ul>
                     </AccordionPanel>
@@ -63,7 +63,8 @@ export default function TermsPage() {
                             1. Fournir et maintenir nos services.<br />
                             2. Vous informer des changements de service.<br />
                             3. Assurer un support client de qualité.<br />
-                            4. Analyser l'utilisation du site pour améliorer l'expérience utilisateur.
+                            {/* Escaped apostrophe here */}
+                            4. Analyser l&apos;utilisation du site pour améliorer l&apos;expérience utilisateur.
                         </Text>
                     </AccordionPanel>
                 </AccordionItem>
@@ -92,10 +93,11 @@ export default function TermsPage() {
                             Vous disposez des droits suivants concernant vos données personnelles :
                         </Text>
                         <ul style={{ paddingLeft: '20px', fontSize: '14px', lineHeight: '1.6' }}>
-                            <li><strong>Droit d'accès :</strong> Obtenir une copie de vos données.</li>
+                            {/* Escaped apostrophes here */}
+                            <li><strong>Droit d&apos;accès :</strong> Obtenir une copie de vos données.</li>
                             <li><strong>Droit de rectification :</strong> Corriger des informations inexactes.</li>
-                            <li><strong>Droit à l'effacement :</strong> Demander la suppression de vos données.</li>
-                            <li><strong>Droit d'opposition :</strong> Refuser l'usage de vos données.</li>
+                            <li><strong>Droit à l&apos;effacement :</strong> Demander la suppression de vos données.</li>
+                            <li><strong>Droit d&apos;opposition :</strong> Refuser l&apos;usage de vos données.</li>
                         </ul>
                     </AccordionPanel>
                 </AccordionItem>
@@ -107,7 +109,7 @@ export default function TermsPage() {
                     </AccordionControl>
                     <AccordionPanel>
                         <Text size="sm">
-                            Pour toute question concernant cette politique, vous pouvez nous contacter à l'adresse dédiée aux données personnelles indiquée dans nos mentions légales.
+                            Pour toute question concernant cette politique, vous pouvez nous contacter à l&apos;adresse dédiée aux données personnelles indiquée dans nos mentions légales.
                         </Text>
                     </AccordionPanel>
                 </AccordionItem>

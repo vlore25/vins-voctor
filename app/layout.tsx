@@ -44,7 +44,9 @@ export default function RootLayout({
       </head>
       <body >
         <Provider >
-          {children}</Provider>
+          <CookieBanner/>
+          {children}
+          </Provider>
         <Analytics />
       </body>
     </html>

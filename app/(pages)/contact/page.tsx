@@ -6,7 +6,7 @@ import Link from "next/link";
 import { IconBrandFacebook, IconBrandInstagram, IconBrandWhatsapp } from "@tabler/icons-react";
 import classes from './page.module.css';
 import dynamic from "next/dynamic";
-const MyAwesomeMap = dynamic(() => import("../../components/Map/Map"), { ssr:false, loading: () => <div style={{ height: '400px', background: '#e0e0e0' }} />}
+const MyAwesomeMap = dynamic(() => import("../../components/Map/Map"), { ssr: false, loading: () => <div style={{ height: '400px', background: '#e0e0e0' }} /> }
 )
 
 
@@ -31,13 +31,35 @@ export default function Contactpage() {
 
     return (
         <>
-            <Grid mb="xl">
+            <Grid mb="xl" gutter='xl'>
                 <GridCol span={{ base: 12, lg: 6 }}>
                     <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400} mb="md">
                         Mes liens sociaux
                     </Title>
-                    <Stack gap="sm">
-                        {social}
+                    <Stack gap="lg">
+                        <Stack>
+                            {social}
+                        </Stack>
+                        <div>
+                            <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>
+                                Me trouver
+                            </Title>
+                            <Link href={"https://www.google.com/maps/place/Vins+Voctor/@44.9635465,4.8486378,17z/data=!3m1!4b1!4m6!3m5!1s0x47f5599630691f45:0x718f09f48203c92f!8m2!3d44.9635465!4d4.8486378!16s%2Fg%2F11y1y_bzc8?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"}
+                                target="_blank"
+                                className={classes.link}
+                            >
+                                <Text>149 Av. du Colonel Rousset, 07130 Cornas</Text>
+                            </Link>
+                            <div style={{
+                                height: '250px',
+                                width: '100%',
+                                borderRadius: '7px',
+                                overflow: 'hidden',
+                                border: '1px solid #eee'
+                            }}>
+                                <MyAwesomeMap />
+                            </div>
+                        </div>
                     </Stack>
                 </GridCol>
 
@@ -48,20 +70,6 @@ export default function Contactpage() {
                     <EmailForm />
                 </GridCol>
             </Grid >
-            <Stack mt="xl">
-                <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>
-                    Me trouver
-                </Title>
-                <div style={{ 
-                    height: '250px',
-                    width: '100%', 
-                    borderRadius: '16px', 
-                    overflow: 'hidden',
-                    border: '1px solid #eee' 
-                }}>
-                    <MyAwesomeMap />
-                </div>
-            </Stack>
         </>
     );
 }

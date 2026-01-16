@@ -18,14 +18,6 @@ export default function Vigne() {
                         </Stack>
                     </Center>
                 </GridCol>
-                <GridCol span={{ base: 12, lg: 4 }}>
-                    <Group gap="xs">
-                        <Anchor href="#" fz={{ base: "md", lg: "lg" }} fw={700}>CONNAÎTRE LA VIGNE</Anchor>
-                        <ThemeIcon variant="transparent">
-                            <FaArrowRight />
-                        </ThemeIcon>
-                    </Group>
-                </GridCol>
             </Grid>
     );
 }

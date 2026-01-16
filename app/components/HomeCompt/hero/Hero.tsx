@@ -1,7 +1,8 @@
-"use client"; 
+"use client";
 import cx from 'clsx';
 import { Button, Center, Container, Flex, Group, Overlay, SimpleGrid, Text, Title } from '@mantine/core';
 import classes from './Hero.module.css';
+import Link from 'next/link';
 
 export default function Hero() {
 
@@ -23,19 +24,21 @@ export default function Hero() {
             UN MONDE ATYPIQUE
           </Text>
           <Center>
-          <SimpleGrid
-            cols={{ base: 1, sm: 2 }}
-            spacing="lg"
-            mt={{base: "md", lg: "lg"}}
-            w="50%"
-          >
-            <Button  size="sm" radius={0} >
-              DÉCOUVRIR LES CUVÉES
-            </Button>
-            <Button size="sm" radius={0} color='#ffffff66' autoContrast>
-              MON HISTOIRE
-            </Button>
-          </SimpleGrid>
+            <SimpleGrid
+              cols={{ base: 1, sm: 2 }}
+              spacing="lg"
+              mt={{ base: "md", lg: "lg" }}
+              w={{ base: "90%", lg: "50%" }}
+            >
+              <Button size="sm" radius={0} component={Link}
+                href="/vins">
+                DÉCOUVRIR LES CUVÉES
+              </Button>
+              <Button size="sm" radius={0} color='#ffffff66' autoContrast component={Link}
+                href="/about">
+                MON HISTOIRE
+              </Button>
+            </SimpleGrid>
           </Center>
         </Flex>
       </Container>

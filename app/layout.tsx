@@ -4,6 +4,7 @@ import localFont from 'next/font/local';
 import '@mantine/core/styles.css';
 import { Cinzel } from 'next/font/google'; // 1. IMPORT GEIST
 import { Analytics } from '@vercel/analytics/next';
+import { CookieBanner } from './components/CookieBanner/CookieBanner';
 
 export const metadata = {
   title: 'Vins Voctor',
@@ -42,7 +43,8 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body >
-        <Provider >{children}</Provider>
+        <Provider >
+          {children}</Provider>
         <Analytics />
       </body>
     </html>

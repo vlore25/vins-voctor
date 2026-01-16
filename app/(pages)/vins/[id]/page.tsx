@@ -6,6 +6,7 @@ import winesData, { wineInterface } from "../../../const/wines";
 import Image from "next/image";
 import { Suspense } from "react";
 
+
 export default function WinePage() {
     const params = useParams<{ id: string }>()
 

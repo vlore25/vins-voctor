@@ -5,13 +5,12 @@ import winesData from "../../const/wines";
 import { MdLocationOn } from "react-icons/md";
 import { LuGrape } from "react-icons/lu";
 import Link from "next/link";
-import { useParams } from "next/navigation";
-
+import classes from "./page.module.css"
 export default function WinesPage() {
 
     const cards = winesData.map((wine) => {
         return (
-            <Card withBorder key={wine.id} shadow='sm' bg="#F8F8F8">
+            <Card withBorder key={wine.id} shadow='sm' bg="#F8F8F8" className={classes.wineCard}>
                 <Card.Section >
                     <Image
                         src={wine.img}

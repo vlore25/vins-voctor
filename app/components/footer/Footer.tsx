@@ -1,8 +1,8 @@
 
-import { ActionIcon, Container, Group, Stack, Text, Title } from '@mantine/core';
+import { ActionIcon, Center, Container, Group, Stack, Text, Title } from '@mantine/core';
 import classes from './Footer.module.css';
 import Logo from '../Logo/Logo';
-import links from '../../const/links';
+import links from '../../const/headerLinks';
 import Link from 'next/link';
 import socialLinks from '../../const/socialLinks';
 import { FaExternalLinkAlt } from 'react-icons/fa';
@@ -52,15 +52,13 @@ export function Footer() {
                 </div>
             </Container>
             <Container className={classes.afterFooter}>
-                <div>
-                    <Link href="https://www.victorlore.fr/" className={classes.link} target="_blank">Realisation du site par <span>Victor loré. <FaExternalLinkAlt /> </span></Link>
-
-                    <div>
-                        <Text c="dimmed" size="sm" >
-                            © {YearNow} vinsvoctor.com tous droits réservés.
-                        </Text>
-                    </div>
-                </div>
+                <Link href="/politique-de-confidentialite" className={classes.link}>
+                    Politiques de confidentialité
+                </Link>
+                <Link href="https://www.victorlore.fr/" className={classes.link} target="_blank">Realisation du site par <span>Victor Loré. <FaExternalLinkAlt /> </span></Link>
+                <Text c="dimmed" size="sm" >
+                    © {YearNow} vinsvoctor.com tous droits réservés.
+                </Text>
                 <Group gap={0} className={classes.social} justify="flex-end" wrap="nowrap">
                     {social}
                 </Group>

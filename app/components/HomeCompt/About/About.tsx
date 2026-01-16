@@ -1,6 +1,7 @@
 import { Anchor,  Center, Grid, GridCol, Group, Image, Stack, Text, ThemeIcon, Title } from "@mantine/core";
 import classes from './About.module.css';
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 export default function About() {
     return (
@@ -24,7 +25,8 @@ export default function About() {
                 </GridCol>
                 <GridCol span={{ base: 12, lg: 4 }}>
                     <Group gap="xs">
-                        <Anchor href="#" fz={{ base: "md", lg: "lg" }} fw={700}>CONNAÎTRE VOCTOR</Anchor>
+                        <Anchor fz={{ base: "md", lg: "lg" }} fw={700}component={Link}
+                href="/about">CONNAÎTRE VOCTOR</Anchor>
                         <ThemeIcon variant="transparent">
                             <FaArrowRight />
                         </ThemeIcon>

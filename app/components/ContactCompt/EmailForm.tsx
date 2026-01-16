@@ -1,6 +1,6 @@
 "use client"
 
-import { Button, Group, Stack, Textarea, TextInput, Modal, Text } from '@mantine/core';
+import { Button, Group, Stack, Textarea, TextInput, Modal, Text, Checkbox } from '@mantine/core';
 import { useForm } from 'react-hook-form';
 import { useDisclosure } from '@mantine/hooks'; // Pour gérer l'ouverture du modal
 import { useState } from 'react';
@@ -11,6 +11,7 @@ export interface ContactInputs {
     email: string;
     subject: string;
     message: string;
+    terms: string;
 }
 
 export default function EmailForm() {
@@ -22,14 +23,14 @@ export default function EmailForm() {
 
     const onSubmit = async (data: ContactInputs) => {
         const result = await sendEmail(data);
-        
+
         if (result.success) {
             setModalConfig({
                 title: "Envoi réussi",
                 message: "Votre message a bien été transmis à Vins Victor.",
                 color: ""
             });
-            reset(); 
+            reset();
         } else {
             setModalConfig({
                 title: "Échec de l'envoi",
@@ -37,16 +38,16 @@ export default function EmailForm() {
                 color: "red"
             });
         }
-        open(); 
+        open();
     };
 
     return (
         <>
             {/* 2. Composant Modal de Mantine */}
-            <Modal 
-                opened={opened} 
-                onClose={close} 
-                title={modalConfig.title} 
+            <Modal
+                opened={opened}
+                onClose={close}
+                title={modalConfig.title}
                 centered
                 overlayProps={{ backgroundOpacity: 0.55, blur: 3 }}
             >
@@ -67,7 +68,7 @@ export default function EmailForm() {
                     <TextInput
                         label="Courriel"
                         placeholder="votre@email.fr"
-                        {...register('email', { 
+                        {...register('email', {
                             required: "L'email est requis",
                             pattern: { value: /^\S+@\S+$/, message: "Email invalide" }
                         })}
@@ -86,7 +87,15 @@ export default function EmailForm() {
                         {...register('message', { required: "Le message est vide" })}
                         error={errors.message?.message}
                     />
+                    <Checkbox
+                        label="J'accepte la politique de confidentialité et l'utilisation de mes données pour le suivi de ma demande."
+                        required
+                        {...register('terms', { required: "Veuillez accepter pour pouvoir continuer." })}
+                    />
 
+                    <Text size="xs" mt="sm" c="dimmed">
+                        Conformément au RGPD, vous disposez d'un droit d'accès et de suppression de vos données en nous contactant.
+                    </Text>
                     <Group justify="flex-end" mt="md">
                         <Button type='submit' loading={isSubmitting}>
                             Envoyer

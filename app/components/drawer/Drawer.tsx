@@ -1,6 +1,6 @@
 import { Center, Drawer, Stack } from '@mantine/core';
 import classes from './MobileDrawer.module.css'
-import links from '../../const/links';
+import links from '../../const/headerLinks';
 import Link from 'next/link';
 
 export default function MobileDrawer({ opened, onClose }: any) {

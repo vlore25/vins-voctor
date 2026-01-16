@@ -1,17 +1,16 @@
 //const/links.ts
 
-export interface NavLink {
+export interface headerlinks{
   link: string;
   label: string;
 }
 
-const links: NavLink[] = [
+const headerlinks: headerlinks[] = [
   { link: '/', label: 'Accueil' },
   { link: '/vins', label: 'Les Cuvées' },
   { link: '/about', label: 'Connaître Voctor' },
   { link: '/contact', label: 'Contact' },
-  { link: '/politique-de-confidentialite', label: 'Politiques de confidentialité' },
 ];
 
-export default links;
+export default headerlinks;
 

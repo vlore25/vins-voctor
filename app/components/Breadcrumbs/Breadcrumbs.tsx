@@ -3,7 +3,7 @@ import { Anchor, Breadcrumbs, Text } from "@mantine/core";
 import { useSelectedLayoutSegments } from "next/navigation";
 import { HiChevronRight } from "react-icons/hi";
 import Link from "next/link";
-import links from "../../const/links"; // Vérifiez le chemin
+import links from "../../const/headerLinks"; // Vérifiez le chemin
 import winesData from "../../const/wines"; // Vérifiez le chemin
 
 export default function DynamicBreadcrumbs() {

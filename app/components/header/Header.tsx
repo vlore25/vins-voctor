@@ -1,14 +1,14 @@
 import {Button, Container, Flex } from '@mantine/core';
 import Link from 'next/link';
 import Logo from '../Logo/Logo';
-import links from '../../const/links';
 import classes from './Header.module.css'
 import BurgerMenu from './components/BurgerMenu';
+import headerlinks from '../../const/headerLinks';
 
 
 export default function Header() {
 
-  const items = links.map((link) => {
+  const items = headerlinks.map((link) => {
     if (link.label === 'Contact') {
       return (
         <Button
@@ -16,7 +16,6 @@ export default function Header() {
           component={Link}   
           href={link.link}  
           variant="light"
-          radius={0}
           size="md"
         >
           {link.label}
@@ -51,7 +50,7 @@ export default function Header() {
             {items}
             
           </Flex>
-          <BurgerMenu links={links} />
+          <BurgerMenu links={headerlinks} />
         </div>
         
       </Flex>

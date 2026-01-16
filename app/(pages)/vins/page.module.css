@@ -1,0 +1,13 @@
+.wineCard {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.wineCard:hover {
+  /* Soulève la carte de 5px */
+  transform: translateY(-5px);
+  /* Accentue l'ombre pour simuler la hauteur */
+  box-shadow: var(--mantine-shadow-md) !important;
+  /* Optionnel : change légèrement la couleur de la bordure */
+  border-color: var(--mantine-color-brandBordeux-light);
+}

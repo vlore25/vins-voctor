@@ -31,7 +31,7 @@ const winesData: wineInterface[] = [
         name: 'Anne-Marie',
         description: 'Un vin solaire et généreux, reflet fidèle du Grenache Noir de la Drôme.',
         type: 'Rouge',
-        mention: 'Vin de France (VDF)',
+        mention: 'IGP - Drôme Compté de Grignan',
         img: '/bottles/products/anne-marie.png',
         badgeColor: '#8B0000',
         variety: '100% Grenache Noir',

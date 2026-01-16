@@ -23,7 +23,7 @@ export async function sendEmail(data: ContactInputs) {
         await transporter.sendMail({
             from: process.env.EMAIL,
             to: process.env.EMAIL,
-            subject: `[Contact Site] ${data.subject}`,
+            subject: ` ${data.subject}`,
             html: `
         <div style="font-family: sans-serif; line-height: 1.6; color: #333;">
             <p>Message via le site web <strong>Vins Voctor</strong> par <strong>${data.email}</strong> :</p>

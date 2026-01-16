@@ -43,13 +43,13 @@ export default function EmailForm() {
 
     return (
         <>
-            {/* 2. Composant Modal de Mantine */}
             <Modal
                 opened={opened}
                 onClose={close}
                 title={modalConfig.title}
                 centered
                 overlayProps={{ backgroundOpacity: 0.55, blur: 3 }}
+                zIndex={9999}
             >
                 <Text size="sm" mb="lg">{modalConfig.message}</Text>
                 <Button color={modalConfig.color} onClick={close} fullWidth>
@@ -75,9 +75,9 @@ export default function EmailForm() {
                         error={errors.email?.message}
                     />
                     <TextInput
-                        label="Sujet"
-                        placeholder="Sujet"
-                        {...register('subject', { required: "Le sujet est requis" })}
+                        label="Objet"
+                        placeholder="Objet"
+                        {...register('subject', { required: "Le Objet est requis" })}
                         error={errors.subject?.message}
                     />
                     <Textarea

@@ -1,5 +1,5 @@
 import { Anchor,  Center,  Grid, GridCol, Group, Image, Stack, Text, ThemeIcon, Title } from "@mantine/core";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Vigne() {
     return (
@@ -7,7 +7,40 @@ export default function Vigne() {
                 <GridCol span={{ base: 12, lg: 7 }}>
                     <Stack style={{ position: 'relative', overflow: 'hidden' }}>
                         <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>La région</Title>
-                        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</Text>
+                        <Stack gap="md">
+                        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>
+                            L&apos;identité de <Text c="brandBordeux" span inherit>Vins Voctor</Text> se cultive à travers trois terroirs d&apos;exception.
+                        </Text>
+
+                        <Stack gap="xs">
+                            <Group align="flex-start" wrap="nowrap">
+                                <ThemeIcon variant="transparent" c="dark" mt={3} size="sm">
+                                    <FaMapMarkerAlt size={18} />
+                                </ThemeIcon>
+                                <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>
+                                    À Châteaubourg, la Syrah trouve sa pleine expression pour donner naissance au Saint-Joseph.
+                                </Text>
+                            </Group>
+
+                            <Group align="flex-start" wrap="nowrap">
+                                <ThemeIcon variant="transparent" c="dark" mt={3} size="sm">
+                                    <FaMapMarkerAlt size={18} />
+                                </ThemeIcon>
+                                <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>
+                                    Plus au sud, les terres de Roussas offrent un écrin idéal au Grenache noir.
+                                </Text>
+                            </Group>
+
+                            <Group align="flex-start" wrap="nowrap">
+                                <ThemeIcon variant="transparent" c="dark" mt={3} size="sm">
+                                    <FaMapMarkerAlt size={18} />
+                                </ThemeIcon>
+                                <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>
+                                    Allan accueille nos cépages blancs, Grenache blanc et Bourboulenc, pour des vins d&apos;une grande finesse.
+                                </Text>
+                            </Group>
+                        </Stack>
+                    </Stack>
                     </Stack>
                 </GridCol>
                 <GridCol span={{ base: 12, lg: 5 }}>

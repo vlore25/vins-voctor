@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Burger, Drawer, Stack, Text } from '@mantine/core';
 import Link from 'next/link';
+import classes from './BurgerMenu.module.css'
 
 export default function MobileMenu({ links }: { links: any[] }) {
   const [opened, setOpened] = useState(false);
@@ -13,22 +14,19 @@ export default function MobileMenu({ links }: { links: any[] }) {
       <Drawer
         opened={opened}
         onClose={() => setOpened(false)}
-        title="Menu"
+        title="Navigation"
         padding="md"
+        zIndex={9999}
       >
-        <Stack
-          gap="md"
-          align="center"
-          justify="center">
+        <Stack gap="md" align="center" justify="center">
           {links.map((link) => (
             <Link
+              className={classes.link} 
               key={link.label}
               href={link.link}
               onClick={() => setOpened(false)}
             >
-              <Text>
                 {link.label}
-              </Text>
             </Link>
           ))}
         </Stack>

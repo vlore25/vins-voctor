@@ -57,7 +57,7 @@ export default function WinePage() {
                         <Title fz={{ base: "1.4em", lg: "1.8em" }}>Informations du vin</Title>
                     </Accordion.Control>
                     <Accordion.Panel px="inherit">
-                        <Table verticalSpacing="xs" withColumnBorders={false}>
+                        <Table verticalSpacing="xs" withColumnBorders={false} withRowBorders={false}>
                             <Table.Tbody>
                                 <Table.Tr>
                                     <Table.Td><Text fw={600}>Lieu:</Text></Table.Td>

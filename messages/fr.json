@@ -177,6 +177,7 @@
     }
   },
   "Navigation": {
+    "menuTitle": "Navigation",
     "home": "Accueil",
     "wines": "Les Cuvées",
     "about": "Connaître Voctor",
@@ -224,5 +225,46 @@
         "content": "Pour exercer vos droits ou pour toute question concernant cette politique, vous pouvez nous contacter directement via notre formulaire de contact ou à l'adresse email indiquée dans nos mentions légales."
       }
     }
+  },
+  "ContactPage": {
+    "socialTitle": "Mes liens sociaux",
+    "findMeTitle": "Me trouver",
+    "contactMeTitle": "Me contacter",
+    "address": "149 Av. du Colonel Rousset, 07130 Cornas"
+  },
+  "ContactForm": {
+    "labels": {
+      "name": "Nom",
+      "email": "Courriel",
+      "subject": "Objet",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "Votre nom",
+      "email": "votre@email.fr",
+      "subject": "Objet de la demande",
+      "message": "Votre message..."
+    },
+    "errors": {
+      "required": "Ce champ est requis",
+      "emailInvalid": "Email invalide",
+      "messageEmpty": "Le message est vide",
+      "terms": "Veuillez accepter pour pouvoir continuer."
+    },
+    "terms": "J'accepte la politique de confidentialité et l'utilisation de mes données pour le suivi de ma demande.",
+    "legal": "Conformément au RGPD, vous disposez d'un droit d'accès et de suppression de vos données en nous contactant.",
+    "submit": "Envoyer",
+    "modal": {
+      "successTitle": "Envoi réussi",
+      "successMsg": "Votre message a bien été transmis à Vins Voctor.",
+      "errorTitle": "Échec de l'envoi",
+      "errorMsg": "Une erreur est survenue :",
+      "btn": "D'accord"
+    }
+  },
+  "AlcoolBanner": {
+    "warning1": "Interdiction de vente de boissons alcooliques aux mineurs de moins de 18 ans.",
+    "warning2": "L'abus d'alcool est dangereux pour la santé. À consommer avec modération",
+    "btn": "Entendu"
   }
 }

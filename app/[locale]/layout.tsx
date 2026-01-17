@@ -7,14 +7,15 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import Provider from '../components/provider/Provider';
 import AlcoolBanner from '../components/AlcoolBanner/AlcoolBanner';
+
 export const metadata = {
   title: 'Vins Voctor',
   description: 'Vigneron de la vallée de la rhône',
 };
 
-// ... vos fonts (RemanFont, CinzelFont) restent ici ...
+// Configuration des polices
 const remanFont = localFont({
-  src: '../fonts/Reman.ttf', 
+  src: '../fonts/Reman.ttf', // Attention au chemin ici aussi
   weight: '300',
   style: 'normal',
   display: 'swap',
@@ -27,16 +28,17 @@ const CinzelFont = Cinzel({
   variable: '--font-cinzel',
 });
 
-export default async function RootLayout({
-  children,
-  params // 1. On ne déstructure plus ici directement
-}: {
+type Props = {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>; // 2. Le type est maintenant une Promise
-}) {
-  // 3. On attend la résolution des paramètres ici
+  params: Promise<{ locale: string }>;
+};
+
+// 2. Le layout est async
+export default async function RootLayout({ children, params }: Props) {
+  // 3. On attend (await) les paramètres avant de les utiliser
   const { locale } = await params;
 
+  // Récupération des messages de traduction
   const messages = await getMessages();
 
   return (
@@ -50,12 +52,19 @@ export default async function RootLayout({
         <ColorSchemeScript />
       </head>
       <body>
+        {/* HIERARCHIE IMPORTANTE POUR EVITER LES ERREURS :
+            1. NextIntlClientProvider (pour les traductions)
+            2. Provider (votre composant qui contient MantineProvider)
+            3. Les composants enfants (AlcoolBanner, children...)
+        */}
         <NextIntlClientProvider messages={messages}>
           <Provider>
+            {/* AlcoolBanner est ICI, DANS le Provider, donc il a accès à Mantine */}
             <AlcoolBanner />
             {children}
           </Provider>
         </NextIntlClientProvider>
+        
         <Analytics />
       </body>
     </html>

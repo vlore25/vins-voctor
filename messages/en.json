@@ -177,6 +177,7 @@
     }
   },
   "Navigation": {
+    "menuTitle": "Menu",
     "home": "Home",
     "wines": "Our Wines",
     "about": "About Voctor",
@@ -224,5 +225,46 @@
         "content": "To exercise your rights or for any questions regarding this policy, you can contact us directly via our contact form or at the email address indicated in our legal notices."
       }
     }
+  },
+  "ContactPage": {
+    "socialTitle": "My Social Links",
+    "findMeTitle": "Find Me",
+    "contactMeTitle": "Contact Me",
+    "address": "149 Av. du Colonel Rousset, 07130 Cornas, France"
+  },
+  "ContactForm": {
+    "labels": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message"
+    },
+    "placeholders": {
+      "name": "Your name",
+      "email": "your@email.com",
+      "subject": "Request subject",
+      "message": "Your message..."
+    },
+    "errors": {
+      "required": "This field is required",
+      "emailInvalid": "Invalid email",
+      "messageEmpty": "The message is empty",
+      "terms": "Please accept to continue."
+    },
+    "terms": "I accept the privacy policy and the use of my data for tracking my request.",
+    "legal": "In accordance with GDPR, you have the right to access and delete your data by contacting us.",
+    "submit": "Send",
+    "modal": {
+      "successTitle": "Sent Successfully",
+      "successMsg": "Your message has been successfully transmitted to Vins Voctor.",
+      "errorTitle": "Sending Failed",
+      "errorMsg": "An error occurred:",
+      "btn": "Okay"
+    }
+  },
+  "AlcoolBanner": {
+    "warning1": "This website is intended for people of legal drinking age.",
+    "warning2": "Alcohol abuse is dangerous for your health. Please drink responsibly.",
+    "btn": "Understood"
   }
 }

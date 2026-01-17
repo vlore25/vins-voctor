@@ -11,7 +11,7 @@ import winesData from "../../../../const/wines";
 export default function WinePage() {
     const params = useParams<{ id: string }>()
     const tWines = useTranslations('Wines');     
-    const tPage = useTranslations('WinePage');   
+    const tPage = useTranslations('WinesPage');   
 
     const wine = winesData.find((w) => w.id === params.id);
     

@@ -1,16 +1,13 @@
-//const/links.ts
-
-export interface headerlinks{
+export interface HeaderLink {
   link: string;
   label: string;
 }
 
-const headerlinks: headerlinks[] = [
-  { link: '/', label: 'Accueil' },
-  { link: '/vins', label: 'Les Cuvées' },
-  { link: '/about', label: 'Connaître Voctor' },
-  { link: '/contact', label: 'Contact' },
+const headerLinks: HeaderLink[] = [
+  { link: '/', label: 'home' },
+  { link: '/vins', label: 'wines' },
+  { link: '/about', label: 'about' },
+  { link: '/contact', label: 'contact' },
 ];
 
-export default headerlinks;
-
+export default headerLinks;

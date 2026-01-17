@@ -1,4 +1,4 @@
-import { Container, Stack, Text, Title, Grid, Image, GridCol } from "@mantine/core";
+import { Stack, Text, Title, Grid, Image, GridCol } from "@mantine/core";
 import { useTranslations } from "next-intl";
 
 

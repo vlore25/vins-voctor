@@ -1,17 +1,14 @@
-//const/links.ts
-
 export interface NavLink {
   link: string;
   label: string;
 }
 
 const links: NavLink[] = [
-  { link: '/', label: 'Accueil' },
-  { link: '/vins', label: 'Les Cuvées' },
-  { link: '/about', label: 'Connaître Voctor' },
-  { link: '/contact', label: 'Contact' },
-  { link: '/politique-de-confidentialite', label: 'Politiques de confidentialité' },
+  { link: '/', label: 'home' },
+  { link: '/vins', label: 'wines' },
+  { link: '/about', label: 'about' },
+  { link: '/contact', label: 'contact' },
+  { link: '/politique-de-confidentialite', label: 'privacy' },
 ];
 
 export default links;
-

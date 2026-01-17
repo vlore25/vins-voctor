@@ -1,4 +1,10 @@
 {
+  "Footer": {
+    "subtitle": "Un monde atypique",
+    "siteMap": "Plan du site",
+    "credits": "Réalisation du site par",
+    "rights": "tous droits réservés."
+  },
   "HomePage": {
     "Hero": {
       "title": "Vins Voctor",
@@ -49,7 +55,17 @@
       }
     ]
   },
-  
+  "WinesPage": {
+    "notFound": "Vin non trouvé",
+    "profile": "Profil du vin",
+    "infos": "Informations du vin",
+    "location": "Lieu :",
+    "variety": "Cépage :",
+    "pairings": "Accords mets-vins",
+    "title": "Les cuvées chez <brand>Vins Voctor</brand>",
+    "description": "Inspiré par la personnalité et l’identité émanant des produits artisanaux, Josimar s’est proposé de produire des vins qui allient terroir et personnalité. Les caractéristiques principales qu’il recherche dans ses vins sont l’énergie, la buvabilité, la finesse, la complexité et la longueur en bouche. En cave, il travaille avec diverses méthodes de vinification traditionnelle et simple, avec des petits contenants, peu de SO2 et aucun autre intrant-œnologique.",
+    "btn": "SAVOIR PLUS"
+  },
   "Wines": {
     "ma-carriere": {
       "name": "Ma carrière",
@@ -58,8 +74,16 @@
       "variety": "100% Syrah",
       "location": "Châteaubourg",
       "type": "Red",
-      "tags": ["Violet", "Peppery", "Complex"],
-      "accords": ["Grilled rib of beef", "Roast lamb", "Hare stew"]
+      "tags": [
+        "Violet",
+        "Peppery",
+        "Complex"
+      ],
+      "accords": [
+        "Grilled rib of beef",
+        "Roast lamb",
+        "Hare stew"
+      ]
     },
     "anne-marie": {
       "name": "Anne-Marie",
@@ -68,8 +92,16 @@
       "variety": "100% Grenache Noir",
       "location": "Roussas",
       "type": "Red",
-      "tags": ["Juicy", "Liquorice", "Solar"],
-      "accords": ["Duck breast", "Grilled tuna steak", "Provençal stew"]
+      "tags": [
+        "Juicy",
+        "Liquorice",
+        "Solar"
+      ],
+      "accords": [
+        "Duck breast",
+        "Grilled tuna steak",
+        "Provençal stew"
+      ]
     },
     "doucement-cowboy": {
       "name": "Doucement cowboy",
@@ -78,8 +110,16 @@
       "variety": "100% Syrah",
       "location": "Ardèche",
       "type": "Red",
-      "tags": ["Fruity", "Silky", "Fresh"],
-      "accords": ["Shallot flank steak", "Vegetable couscous", "Country terrine"]
+      "tags": [
+        "Fruity",
+        "Silky",
+        "Fresh"
+      ],
+      "accords": [
+        "Shallot flank steak",
+        "Vegetable couscous",
+        "Country terrine"
+      ]
     },
     "one-night": {
       "name": "One night",
@@ -88,8 +128,16 @@
       "variety": "50% Grenache Noir / 50% Syrah Rosé",
       "location": "Roussas",
       "type": "Light Red",
-      "tags": ["Redcurrant", "Light", "Convivial"],
-      "accords": ["Charcuterie board", "Tomato-mozzarella salad", "Garlic prawns"]
+      "tags": [
+        "Redcurrant",
+        "Light",
+        "Convivial"
+      ],
+      "accords": [
+        "Charcuterie board",
+        "Tomato-mozzarella salad",
+        "Garlic prawns"
+      ]
     },
     "blanca": {
       "name": "Blanca",
@@ -98,8 +146,16 @@
       "variety": "100% Grenache Blanc",
       "location": "Allan",
       "type": "White",
-      "tags": ["Fresh", "Floral", "Subtle"],
-      "accords": ["Sea bream ceviche", "Asparagus risotto", "Herb chicken"]
+      "tags": [
+        "Fresh",
+        "Floral",
+        "Subtle"
+      ],
+      "accords": [
+        "Sea bream ceviche",
+        "Asparagus risotto",
+        "Herb chicken"
+      ]
     },
     "simulacre": {
       "name": "Simulacre",
@@ -108,9 +164,65 @@
       "variety": "100% Bourboulenc",
       "location": "Allan",
       "type": "Maceration",
-      "tags": ["Apricot", "Tangy", "Exotic"],
-      "accords": ["Butternut squash gratin", "Thai green curry", "Langres cheese"]
+      "tags": [
+        "Apricot",
+        "Tangy",
+        "Exotic"
+      ],
+      "accords": [
+        "Butternut squash gratin",
+        "Thai green curry",
+        "Langres cheese"
+      ]
+    }
+  },
+  "Navigation": {
+    "home": "Accueil",
+    "wines": "Les Cuvées",
+    "about": "Connaître Voctor",
+    "contact": "Contact",
+    "privacy": "Politique de confidentialité"
+  },
+  "PrivacyPolicy": {
+    "title": "Politique de confidentialité",
+    "lastUpdate": "Dernière mise à jour : {date}",
+    "intro": "Nous accordons une importance capitale à la protection de vos données personnelles. Cette politique détaille comment nous collectons, utilisons et protégeons vos informations.",
+    "articles": {
+      "1": {
+        "title": "Article 1 : Collecte des données",
+        "intro": "Nous collectons uniquement les informations nécessaires au bon fonctionnement du site et à nos échanges :",
+        "list": {
+          "contact": "Informations transmises via le formulaire de contact (Nom, email, message).",
+          "cookies": "Données de navigation via des cookies techniques (essentiels au fonctionnement)."
+        }
+      },
+      "2": {
+        "title": "Article 2 : Utilisation des données",
+        "intro": "Vos données sont utilisées exclusivement pour :",
+        "list": {
+          "respond": "Répondre à vos demandes de contact ou d'information.",
+          "improve": "Améliorer l'expérience utilisateur et la performance du site.",
+          "security": "Assurer la sécurité du site."
+        }
+      },
+      "3": {
+        "title": "Article 3 : Sécurité et Stockage",
+        "content": "La sécurité de vos données est notre priorité. Nous utilisons des protocoles de chiffrement standard pour protéger les transmissions de données. Vos informations sont stockées sur des serveurs sécurisés et ne sont jamais revendues à des tiers."
+      },
+      "4": {
+        "title": "Article 4 : Vos droits",
+        "intro": "Conformément au RGPD, vous disposez des droits suivants :",
+        "list": {
+          "access": "<strong>Droit d'accès :</strong> Obtenir une copie de vos données.",
+          "rectification": "<strong>Droit de rectification :</strong> Corriger des informations inexactes.",
+          "erasure": "<strong>Droit à l'effacement :</strong> Demander la suppression de vos données.",
+          "opposition": "<strong>Droit d'opposition :</strong> Refuser l'usage de vos données."
+        }
+      },
+      "5": {
+        "title": "Article 5 : Contact",
+        "content": "Pour exercer vos droits ou pour toute question concernant cette politique, vous pouvez nous contacter directement via notre formulaire de contact ou à l'adresse email indiquée dans nos mentions légales."
+      }
     }
   }
-
 }

@@ -1,12 +1,12 @@
 "use client"
 
 import { ActionIcon, Container, Flex, Grid, GridCol, Stack, Text, Title } from "@mantine/core";
-import EmailForm from "../../components/ContactCompt/EmailForm";
+import EmailForm from "../../../components/ContactCompt/EmailForm";
 import Link from "next/link";
 import { IconBrandFacebook, IconBrandInstagram, IconBrandWhatsapp } from "@tabler/icons-react";
 import classes from './page.module.css';
 import dynamic from "next/dynamic";
-const MyAwesomeMap = dynamic(() => import("../../components/Map/Map"), { ssr: false, loading: () => <div style={{ height: '400px', background: '#e0e0e0' }} /> }
+const MyAwesomeMap = dynamic(() => import("../../../components/Map/Map"), { ssr: false, loading: () => <div style={{ height: '400px', background: '#e0e0e0' }} /> }
 )
 
 

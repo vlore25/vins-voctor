@@ -9,8 +9,8 @@ import { LuGrape } from 'react-icons/lu';
 import { FaArrowRight } from 'react-icons/fa';
 import Autoplay from 'embla-carousel-autoplay';
 import { useRef } from 'react';
-import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { Link } from '../../../../i18n/routing';
 
 
 export default function WinesCards() {
@@ -20,10 +20,6 @@ export default function WinesCards() {
     const autoplay = useRef(Autoplay({ delay: 2000 }));
     
     const slides = wines.map((wine) => {
-        const name = tWines(`${wine.id}.name`);
-        const mention = tWines(`${wine.id}.mention`);
-        const type = tWines(`${wine.id}.type`);
-        const variety = tWines(`${wine.id}.variety`);
         return (
             <CarouselSlide key={wine.id}>
                 <Card shadow='sm' padding='xl' withBorder bg="#F8F8F8">
@@ -31,20 +27,38 @@ export default function WinesCards() {
                         <Image
                             src={wine.img}
                             height={250}
-                            alt={wine.name}
+                            // On récupère le nom traduit pour le ALT
+                            alt={tWines(`${wine.id}.name`)}
                             fit='contain'
                         />
                     </Card.Section>
                     <Stack px="md" pb="md">
                         <Card.Section className={classes.section} mt="md">
                             <Stack gap="xs">
-                                <Title c="brandBordeux" order={4} textWrap="nowrap" fw={300}> {wine.name}</Title>
-                                <Text>{wine.mention}</Text>
-                                <Badge color={wine.badgeColor} radius="sm" autoContrast size='lg' >{wine.type}</Badge>
-                                <Badge variant='transparent' leftSection={<LuGrape />} radius="sm" size='lg' p="0">{wine.variety}</Badge>
+                                {/* TRADUCTION DU NOM */}
+                                <Title c="brandBordeux" order={4} textWrap="nowrap" fw={300}> 
+                                    {tWines(`${wine.id}.name`)}
+                                </Title>
+                                
+                                {/* TRADUCTION DE LA MENTION */}
+                                <Text>
+                                    {tWines(`${wine.id}.mention`)}
+                                </Text>
+                                
+                                {/* TRADUCTION DU TYPE */}
+                                <Badge color={wine.badgeColor} radius="sm" autoContrast size='lg' >
+                                    {tWines(`${wine.id}.type`)}
+                                </Badge>
+                                
+                                {/* TRADUCTION DU CEPAGE (VARIETY) */}
+                                <Badge variant='transparent' leftSection={<LuGrape />} radius="sm" size='lg' p="0">
+                                    {tWines(`${wine.id}.variety`)}
+                                </Badge>
                             </Stack>
                             <Group mt="lg">
-                                <Button component={Link} href={`/vins/${wine.id}`} radius={0}>{t('cardBtn')}</Button>
+                                <Button component={Link} href={`/vins/${wine.id}`} radius={0}>
+                                    {t('cardBtn')}
+                                </Button>
                             </Group>
                         </Card.Section>
                     </Stack>
@@ -76,7 +90,15 @@ export default function WinesCards() {
                     {slides}
                 </Carousel>
                 <Group mt="10px" gap="xs">
-                    <Anchor href="/vins" fz={{ base: "md", lg: "lg" }} fw={700}>{t('footerLink')}</Anchor>
+                    <Anchor 
+                        component={Link} 
+                        href="/vins" 
+                        fz={{ base: "md", lg: "lg" }} 
+                        fw={700}
+                    >
+                        {t('footerLink')}
+                    </Anchor>
+                    
                     <ThemeIcon variant="transparent">
                         <FaArrowRight />
                     </ThemeIcon>

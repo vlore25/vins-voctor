@@ -1,16 +1,21 @@
-import {Button, Container, Flex } from '@mantine/core';
-import Link from 'next/link';
+import { Button, Container, Flex } from '@mantine/core';
+// 1. IMPORTANT : Changer l'import du Link !
 import Logo from '../Logo/Logo';
 import classes from './Header.module.css'
 import BurgerMenu from './components/BurgerMenu';
-import headerlinks from '../../const/headerLinks';
+import headerlinks from '../../const/headerLinks'; // Assurez-vous d'importer le bon fichier links
 import LanguageButton from '../LanguageButton/LanguageButton';
-
+// 2. Importer le hook de traduction
+import { useTranslations } from 'next-intl';
+import { Link } from '../../../i18n/routing';
 
 export default function Header() {
+  // 3. Initialiser les traductions pour la section 'Navigation'
+  const t = useTranslations('Navigation');
 
   const items = headerlinks.map((link) => {
-    if (link.label === 'Contact') {
+    // Si c'est le bouton contact
+    if (link.label === 'contact') { // Attention: on vérifie la CLÉ 'contact' maintenant
       return (
         <Button
           key={link.label}
@@ -19,18 +24,20 @@ export default function Header() {
           variant="light"
           size="md"
         >
-          {link.label}
+          {t(link.label)} 
         </Button>
       );
     }
     
+    // Pour les liens normaux
     return (
       <Link 
         key={link.label} 
         className={classes.link} 
         href={link.link} 
       >
-        {link.label}
+        {/* 4. On traduit le label ici */}
+        {t(link.label)}
       </Link>
     );
   });
@@ -38,25 +45,15 @@ export default function Header() {
   return (
     <Container size={'xl'}>
       <Flex align='center' justify="space-between" className={classes.container}>
-        <Logo 
-          titleProps={{
-              order: 3
-          }}
-          logoProps={{
-              w:'70px'
-          }}
-        />
+        <Logo titleProps={{ order: 3 }} logoProps={{ w:'70px' }} />
         <div>
           <Flex gap={'lg'} visibleFrom="sm" align='center'>
             {items}
             <LanguageButton />
           </Flex>
-          
           <BurgerMenu links={headerlinks} />
         </div>
-        
       </Flex>
-      
     </Container>
   );
 }

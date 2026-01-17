@@ -1,7 +1,7 @@
 // app/(pages)/layout.tsx
 import { Container } from "@mantine/core";
 import { Metadata } from "next";
-import DynamicBreadcrumbs from "../components/Breadcrumbs/Breadcrumbs";
+import DynamicBreadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
 
 export const metadata: Metadata = {
     title: {

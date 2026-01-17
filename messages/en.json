@@ -1,4 +1,10 @@
 {
+  "Footer": {
+    "subtitle": "An atypical world",
+    "siteMap": "Site Map",
+    "credits": "Website created by",
+    "rights": "all rights reserved."
+  },
   "HomePage": {
     "Hero": {
       "title": "Vins Voctor",
@@ -49,6 +55,17 @@
       }
     ]
   },
+  "WinesPage": {
+    "notFound": "Wine not found",
+    "profile": "Wine Profile",
+    "infos": "Wine Information",
+    "location": "Location:",
+    "variety": "Variety:",
+    "pairings": "Food Pairings",
+    "title": "The Cuvées at <brand>Vins Voctor</brand>",
+    "description": "Inspired by the personality and identity emanating from artisanal products, Josimar set out to produce wines that combine terroir and personality. The main characteristics he looks for in his wines are energy, drinkability, finesse, complexity, and length on the palate. In the cellar, he works with various traditional and simple winemaking methods, using small containers, little SO2, and no other oenological inputs.",
+    "btn": "LEARN MORE"
+  },
   "Wines": {
     "ma-carriere": {
       "name": "Ma carrière",
@@ -57,8 +74,16 @@
       "variety": "100% Syrah",
       "location": "Châteaubourg",
       "type": "Red",
-      "tags": ["Violet", "Peppery", "Complex"],
-      "accords": ["Grilled rib of beef", "Roast lamb", "Hare stew"]
+      "tags": [
+        "Violet",
+        "Peppery",
+        "Complex"
+      ],
+      "accords": [
+        "Grilled rib of beef",
+        "Roast lamb",
+        "Hare stew"
+      ]
     },
     "anne-marie": {
       "name": "Anne-Marie",
@@ -67,8 +92,16 @@
       "variety": "100% Grenache Noir",
       "location": "Roussas",
       "type": "Red",
-      "tags": ["Juicy", "Liquorice", "Solar"],
-      "accords": ["Duck breast", "Grilled tuna steak", "Provençal stew"]
+      "tags": [
+        "Juicy",
+        "Liquorice",
+        "Solar"
+      ],
+      "accords": [
+        "Duck breast",
+        "Grilled tuna steak",
+        "Provençal stew"
+      ]
     },
     "doucement-cowboy": {
       "name": "Doucement cowboy",
@@ -77,8 +110,16 @@
       "variety": "100% Syrah",
       "location": "Ardèche",
       "type": "Red",
-      "tags": ["Fruity", "Silky", "Fresh"],
-      "accords": ["Shallot flank steak", "Vegetable couscous", "Country terrine"]
+      "tags": [
+        "Fruity",
+        "Silky",
+        "Fresh"
+      ],
+      "accords": [
+        "Shallot flank steak",
+        "Vegetable couscous",
+        "Country terrine"
+      ]
     },
     "one-night": {
       "name": "One night",
@@ -87,8 +128,16 @@
       "variety": "50% Grenache Noir / 50% Syrah Rosé",
       "location": "Roussas",
       "type": "Light Red",
-      "tags": ["Redcurrant", "Light", "Convivial"],
-      "accords": ["Charcuterie board", "Tomato-mozzarella salad", "Garlic prawns"]
+      "tags": [
+        "Redcurrant",
+        "Light",
+        "Convivial"
+      ],
+      "accords": [
+        "Charcuterie board",
+        "Tomato-mozzarella salad",
+        "Garlic prawns"
+      ]
     },
     "blanca": {
       "name": "Blanca",
@@ -97,8 +146,16 @@
       "variety": "100% Grenache Blanc",
       "location": "Allan",
       "type": "White",
-      "tags": ["Fresh", "Floral", "Subtle"],
-      "accords": ["Sea bream ceviche", "Asparagus risotto", "Herb chicken"]
+      "tags": [
+        "Fresh",
+        "Floral",
+        "Subtle"
+      ],
+      "accords": [
+        "Sea bream ceviche",
+        "Asparagus risotto",
+        "Herb chicken"
+      ]
     },
     "simulacre": {
       "name": "Simulacre",
@@ -107,8 +164,65 @@
       "variety": "100% Bourboulenc",
       "location": "Allan",
       "type": "Maceration",
-      "tags": ["Apricot", "Tangy", "Exotic"],
-      "accords": ["Butternut squash gratin", "Thai green curry", "Langres cheese"]
+      "tags": [
+        "Apricot",
+        "Tangy",
+        "Exotic"
+      ],
+      "accords": [
+        "Butternut squash gratin",
+        "Thai green curry",
+        "Langres cheese"
+      ]
+    }
+  },
+  "Navigation": {
+    "home": "Home",
+    "wines": "Our Wines",
+    "about": "About Voctor",
+    "contact": "Contact",
+    "privacy": "Privacy Policy"
+  },
+  "PrivacyPolicy": {
+    "title": "Privacy Policy",
+    "lastUpdate": "Last updated: {date}",
+    "intro": "We place the utmost importance on protecting your personal data. This policy details how we collect, use, and protect your information.",
+    "articles": {
+      "1": {
+        "title": "Article 1: Data Collection",
+        "intro": "We only collect information necessary for the proper functioning of the site and our communications:",
+        "list": {
+          "contact": "Information sent via the contact form (Name, email, message).",
+          "cookies": "Navigation data via technical cookies (essential for operation)."
+        }
+      },
+      "2": {
+        "title": "Article 2: Data Usage",
+        "intro": "Your data is used exclusively to:",
+        "list": {
+          "respond": "Respond to your contact or information requests.",
+          "improve": "Improve user experience and site performance.",
+          "security": "Ensure site security."
+        }
+      },
+      "3": {
+        "title": "Article 3: Security and Storage",
+        "content": "Data security is our priority. We use standard encryption protocols to protect data transmissions. Your information is stored on secure servers and is never sold to third parties."
+      },
+      "4": {
+        "title": "Article 4: Your Rights",
+        "intro": "In accordance with GDPR, you have the following rights:",
+        "list": {
+          "access": "<strong>Right of access:</strong> Obtain a copy of your data.",
+          "rectification": "<strong>Right of rectification:</strong> Correct inaccurate information.",
+          "erasure": "<strong>Right to erasure:</strong> Request deletion of your data.",
+          "opposition": "<strong>Right to object:</strong> Refuse usage of your data."
+        }
+      },
+      "5": {
+        "title": "Article 5: Contact",
+        "content": "To exercise your rights or for any questions regarding this policy, you can contact us directly via our contact form or at the email address indicated in our legal notices."
+      }
     }
   }
 }

@@ -1,20 +1,20 @@
 import { ColorSchemeScript, mantineHtmlProps } from '@mantine/core';
-import Provider from './components/provider/Provider';
 import localFont from 'next/font/local';
 import '@mantine/core/styles.css';
-import { Cinzel } from 'next/font/google'; // 1. IMPORT GEIST
+import { Cinzel } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
-import AlcoolBanner from './components/AlcoolBanner/AlcoolBanner';
 import { NextIntlClientProvider } from 'next-intl';
-
+import { getMessages } from 'next-intl/server';
+import Provider from '../components/provider/Provider';
+import AlcoolBanner from '../components/AlcoolBanner/AlcoolBanner';
 export const metadata = {
   title: 'Vins Voctor',
   description: 'Vigneron de la vallée de la rhône',
 };
 
-// Your local font
+// ... vos fonts (RemanFont, CinzelFont) restent ici ...
 const remanFont = localFont({
-  src: './fonts/Reman.ttf',
+  src: '../fonts/Reman.ttf', 
   weight: '300',
   style: 'normal',
   display: 'swap',
@@ -27,27 +27,35 @@ const CinzelFont = Cinzel({
   variable: '--font-cinzel',
 });
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
+  params // 1. On ne déstructure plus ici directement
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>; // 2. Le type est maintenant une Promise
 }) {
+  // 3. On attend la résolution des paramètres ici
+  const { locale } = await params;
+
+  const messages = await getMessages();
+
   return (
     <html
-      lang="fr"
+      lang={locale}
       className={`${remanFont.variable} ${CinzelFont.variable}`}
       {...mantineHtmlProps}
     >
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <meta name="google-site-verification" content="WE1EoMwiyjxUA3n-oNKzUJKPvrGD25oRUBMKtJAtTJs" />
         <ColorSchemeScript />
       </head>
-      <body >
-        <Provider >
-          <AlcoolBanner />
-          <NextIntlClientProvider>{children}</NextIntlClientProvider>
-        </Provider>
+      <body>
+        <NextIntlClientProvider messages={messages}>
+          <Provider>
+            <AlcoolBanner />
+            {children}
+          </Provider>
+        </NextIntlClientProvider>
         <Analytics />
       </body>
     </html>

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { Burger, Drawer, Stack, Text } from '@mantine/core';
 import Link from 'next/link';
 import classes from './BurgerMenu.module.css'
+import LanguageButton from '../../LanguageButton/LanguageButton';
 
 export default function MobileMenu({ links }: { links: any[] }) {
   const [opened, setOpened] = useState(false);
@@ -29,6 +30,7 @@ export default function MobileMenu({ links }: { links: any[] }) {
                 {link.label}
             </Link>
           ))}
+          <LanguageButton />
         </Stack>
       </Drawer>
     </>

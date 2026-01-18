@@ -1,69 +1,41 @@
 .footer {
-  margin-top: 100px;
-  padding-top: var(--mantine-spacing-xl);
-  background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
+  margin-top: 120px;
   border-top: 1px solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-5));
-}
-
-.logo {
-  max-width: 200px;
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.description {
-  margin-top: 5px;
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    margin-top: var(--mantine-spacing-xs);
-    text-align: center;
-  }
+  padding-top: var(--mantine-spacing-xl);
+  padding-bottom: var(--mantine-spacing-xl);
+  background-color: var(--mantine-color-body);
 }
 
 .inner {
-  display: flex;
-  justify-content: space-between;
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    flex-direction: column;
-    align-items: center;
-  }
-}
-
-.groups {
-  display: flex;
-  flex-wrap: wrap;
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    display: none;
-  }
+  margin-bottom: var(--mantine-spacing-xl);
 }
 
 .wrapper {
-  width: 160px;
+  /* Sur mobile, on centre tout pour faire plus propre */
+  display: flex;
+  flex-direction: column;
 }
 
 .link {
   display: block;
-  color: light-dark(var(--mantine-color-gray-6), var(--mantine-color-dark-1));
+  color: var(--mantine-color-dimmed);
   font-size: var(--mantine-font-size-sm);
+  padding-top: 3px;
+  padding-bottom: 3px;
   text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-  }
 }
 
-.title {
-  font-size: var(--mantine-font-size-lg);
-  font-weight: 500;
-  font-family: Outfit, var(--mantine-font-family);
-  margin-bottom: calc(var(--mantine-spacing-xs) / 2);
-  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+.link:hover {
+  text-decoration: underline;
+  color: var(--mantine-color-black);
 }
+
+.description {
+  margin-top: var(--mantine-spacing-xs);
+  max-width: 300px;
+}
+
+/* --- PARTIE DU BAS RESPONSIVE --- */
 
 .afterFooter {
   display: flex;
@@ -71,16 +43,33 @@
   align-items: center;
   margin-top: var(--mantine-spacing-xl);
   padding-top: var(--mantine-spacing-xl);
-  padding-bottom: var(--mantine-spacing-xl);
   border-top: 1px solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-4));
-
-  @media (max-width: $mantine-breakpoint-sm) {
-    flex-direction: column;
-  }
 }
 
-.social {
-  @media (max-width: $mantine-breakpoint-sm) {
-    margin-top: var(--mantine-spacing-xs);
+/* --- MEDIA QUERIES --- */
+
+@media (max-width: 48em) { /* 48em = Tablette/Mobile (~768px) */
+  
+  /* On aligne tout au centre sur mobile */
+  .wrapper {
+    align-items: center;
+  }
+  
+  .stackLinks {
+    align-items: center !important; /* Force le centrage des liens */
+  }
+
+  .title {
+    margin-top: var(--mantine-spacing-md); /* Un peu d'espace entre les blocs empilés */
+  }
+
+  /* La barre du bas devient une colonne */
+  .afterFooter {
+    flex-direction: column;
+    gap: var(--mantine-spacing-md);
+  }
+  
+  .legalGroup {
+    order: 1; /* Mentions légales en premier ? ou change l'ordre si tu veux */
   }
 }

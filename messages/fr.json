@@ -3,7 +3,8 @@
     "subtitle": "Un monde atypique",
     "siteMap": "Plan du site",
     "credits": "Réalisation du site par",
-    "rights": "tous droits réservés."
+    "rights": "tous droits réservés.",
+    "socialTitle": "Nos réseaux"
   },
   "HomePage": {
     "Hero": {
@@ -69,120 +70,121 @@
   "Wines": {
     "ma-carriere": {
       "name": "Ma carrière",
-      "description": "A Saint-Joseph of character, pure expression of Syrah on its original terroir.",
+      "description": "Un Saint-Joseph de caractère, expression pure de la Syrah sur son terroir d'origine.",
       "mention": "AOC Saint-Joseph",
       "variety": "100% Syrah",
       "location": "Châteaubourg",
-      "type": "Red",
+      "type": "Rouge",
       "tags": [
-        "Violet",
-        "Peppery",
-        "Complex"
+        "Violette",
+        "Poivré",
+        "Complexe"
       ],
       "accords": [
-        "Grilled rib of beef",
-        "Roast lamb",
-        "Hare stew"
+        "Côte de bœuf grillée",
+        "Agneau rôti",
+        "Civet de lièvre"
       ]
     },
     "anne-marie": {
       "name": "Anne-Marie",
-      "description": "A solar and generous wine, faithful reflection of the Grenache Noir from Drôme.",
-      "mention": "IGP - Drôme County of Grignan",
+      "description": "Un vin solaire et généreux, reflet fidèle du Grenache Noir de la Drôme.",
+      "mention": "IGP - Drôme Comté de Grignan",
       "variety": "100% Grenache Noir",
       "location": "Roussas",
-      "type": "Red",
+      "type": "Rouge",
       "tags": [
-        "Juicy",
-        "Liquorice",
-        "Solar"
+        "Juteux",
+        "Réglisé",
+        "Solaire"
       ],
       "accords": [
-        "Duck breast",
-        "Grilled tuna steak",
-        "Provençal stew"
+        "Magret de canard",
+        "Steak de thon grillé",
+        "Daube provençale"
       ]
     },
     "doucement-cowboy": {
       "name": "Doucement cowboy",
-      "description": "A Syrah from Ardèche full of finesse, prioritizing fruit and fluidity.",
+      "description": "Une Syrah ardéchoise tout en finesse, privilégiant le fruit et la fluidité.",
       "mention": "Vin de France (VDF)",
       "variety": "100% Syrah",
       "location": "Ardèche",
-      "type": "Red",
+      "type": "Rouge",
       "tags": [
-        "Fruity",
-        "Silky",
-        "Fresh"
+        "Fruité",
+        "Soyeux",
+        "Frais"
       ],
       "accords": [
-        "Shallot flank steak",
-        "Vegetable couscous",
-        "Country terrine"
+        "Bavette à l’échalote",
+        "Couscous aux légumes",
+        "Terrine de campagne"
       ]
     },
     "one-night": {
       "name": "One night",
-      "description": "The ideal companion for improvised moments, a light and crisp thirst-quenching wine.",
+      "description": "Le compagnon idéal des moments improvisés, un vin de soif léger et croquant.",
       "mention": "Vin de France (VDF)",
-      "variety": "50% Grenache Noir / 50% Syrah Rosé",
+      "variety": "50% Grenache Noir / 50% Rosé de Syrah",
       "location": "Roussas",
-      "type": "Light Red",
+      "type": "Rouge léger",
       "tags": [
-        "Redcurrant",
-        "Light",
+        "Groseille",
+        "Léger",
         "Convivial"
       ],
       "accords": [
-        "Charcuterie board",
-        "Tomato-mozzarella salad",
-        "Garlic prawns"
+        "Planche de charcuterie",
+        "Salade tomate-mozza",
+        "Crevettes à l’ail"
       ]
     },
     "blanca": {
       "name": "Blanca",
-      "description": "A white wine all in lace, carried by floral notes and great freshness.",
+      "description": "Un blanc tout en dentelle, porté par des notes florales et une grande fraîcheur.",
       "mention": "Vin de France (VDF)",
-      "variety": "100% Grenache Blanc",
+      "variety": "100% Grenache blanc",
       "location": "Allan",
-      "type": "White",
+      "type": "Blanc",
       "tags": [
-        "Fresh",
+        "Frais",
         "Floral",
-        "Subtle"
+        "Subtil"
       ],
       "accords": [
-        "Sea bream ceviche",
-        "Asparagus risotto",
-        "Herb chicken"
+        "Ceviche de dorade",
+        "Risotto aux asperges",
+        "Poulet aux herbes"
       ]
     },
     "simulacre": {
       "name": "Simulacre",
-      "description": "A surprising maceration (orange) wine, with notes of exotic fruits and apricot.",
+      "description": "Un vin de macération (orange) surprenant, aux notes de fruits exotiques et d'abricot.",
       "mention": "Vin de France (VDF)",
       "variety": "100% Bourboulenc",
       "location": "Allan",
       "type": "Maceration",
       "tags": [
-        "Apricot",
-        "Tangy",
-        "Exotic"
+        "Abricot",
+        "Acidulé",
+        "Exotique"
       ],
       "accords": [
-        "Butternut squash gratin",
-        "Thai green curry",
-        "Langres cheese"
+        "Gratin de courge butternut",
+        "Curry vert thaï",
+        "Fromage de Langres"
       ]
     }
-  },
+},
   "Navigation": {
     "menuTitle": "Navigation",
     "home": "Accueil",
     "wines": "Les Cuvées",
     "about": "Connaître Voctor",
     "contact": "Contact",
-    "privacy": "Politique de confidentialité"
+    "privacy": "Politique de confidentialité",
+    "legal": "Mentions Légales"
   },
   "PrivacyPolicy": {
     "title": "Politique de confidentialité",
@@ -224,6 +226,39 @@
         "title": "Article 5 : Contact",
         "content": "Pour exercer vos droits ou pour toute question concernant cette politique, vous pouvez nous contacter directement via notre formulaire de contact ou à l'adresse email indiquée dans nos mentions légales."
       }
+    }
+  },
+  "LegalNotice": {
+    "title": "Mentions Légales",
+    "editor": {
+      "title": "1. Éditeur du site",
+      "text": "Le site Vins Voctor est édité par Josimar Yacuta Verduzco, artisan vigneron.",
+      "address": "Adresse : 149 Av. du Colonel Rousset, 07130 Cornas",
+      "siret": "SIRET : 91129290200010", 
+      "rcs": "RCS : Aubenas 911 292 902",
+      "tva": "Numéro de TVA Intracommunautaire : FR66911292902",
+      "contact": "Contact : Formulaire de contact du site"
+    },
+    "hosting": {
+      "title": "2. Hébergement",
+      "text": "Ce site est hébergé par Vercel Inc.",
+      "address": "Adresse : 340 S Lemon Ave #4133 Walnut, CA 91789, USA"
+    },
+    "ip": {
+      "title": "3. Propriété intellectuelle",
+      "text": "L’ensemble de ce site relève de la législation française et internationale sur le droit d’auteur et la propriété intellectuelle. Toute reproduction est interdite sans autorisation préalable."
+    },
+    "alcohol": {
+      "title": "4. Vente d'alcool et Mineurs",
+      "text": "Conformément à l'article L. 3342-1 du Code de la Santé Publique, la vente d'alcool à des mineurs de moins de 18 ans est interdite. L'abus d'alcool est dangereux pour la santé, à consommer avec modération."
+    },
+    "privacy": {
+      "title": "5. Données personnelles",
+      "text": "Le traitement de vos données est détaillé dans notre <link>Politique de Confidentialité</link>."
+    },
+    "liability": {
+      "title": "6. Limitation de responsabilité",
+      "text": "Vins Voctor ne pourra être tenu responsable des omissions ou inexactitudes dans la mise à jour des informations. Les photos des bouteilles ne sont pas contractuelles."
     }
   },
   "ContactPage": {

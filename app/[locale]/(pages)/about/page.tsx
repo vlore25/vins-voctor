@@ -40,7 +40,6 @@ export default function Aboutpage() {
                 </Text>
               </GridCol>
 
-              {/* Colonne Image */}
               <GridCol span={{ base: 12, md: 5 }} order={{ base: 1, md: isEven ? 2 : 1 }}>
                 <Image
                   src={item.image}

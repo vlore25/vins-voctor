@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 export default function Layout({ children }: { children: React.ReactNode }) {
     return (
-        <Container my="xl">
+        <Container my={{ base: "md", sm: "xl", lg: "xl" }}>
             <DynamicBreadcrumbs />
             <main>{children}</main>
         </Container>

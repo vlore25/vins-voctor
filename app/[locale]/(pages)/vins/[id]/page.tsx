@@ -28,7 +28,7 @@ export default function WinePage() {
             <Flex
                 direction={{ base: "column", sm: "row" }}
                 align="center"
-                gap={{ base: 'xl', sm: '5rem' }}
+                gap={{ base: 'xs', sm: 'md' }}
             >
                 <Suspense fallback={<Skeleton height={400} width={180} />}>
                     <Image
@@ -42,8 +42,8 @@ export default function WinePage() {
                 </Suspense>
                 
                 <Stack gap="xs">
-                    <Title order={1} c="brandBordeux">{tWines(`${wine.id}.name`)}</Title>
-                    <Text>{tWines(`${wine.id}.mention`)}</Text>
+                    <Title fz={{base: "h3", lg:"h2"}} c="brandBordeux">{tWines(`${wine.id}.name`)}</Title>
+                    <Text fz="h5">{tWines(`${wine.id}.mention`)}</Text>
                     
                     <Badge radius={0} color={wine.badgeColor} size="lg" autoContrast>
                         {tWines(`${wine.id}.type`)}
@@ -67,15 +67,15 @@ export default function WinePage() {
                 </Group>
             </Stack>
 
-            <Accordion px={0} defaultValue="Informations du vin">
+            <Accordion  defaultValue="Informations du vin">
                 {/* Section Informations */}
                 <Accordion.Item value="Informations du vin" px="inherit">
                     <Accordion.Control px="inherit">
                         <Title fz={{ base: "1.4em", lg: "1.8em" }}>{tPage('infos')}</Title>
                     </Accordion.Control>
-                    <Accordion.Panel px="inherit">
-                        <Table verticalSpacing="xs" withColumnBorders={false} withRowBorders={false}>
-                            <Table.Tbody>
+                    <Accordion.Panel px="inherit" >
+                        <Table verticalSpacing="xs" withColumnBorders={false} withRowBorders={false} >
+                            <Table.Tbody >
                                 <Table.Tr>
                                     <Table.Td><Text fw={600}>{tPage('location')}</Text></Table.Td>
                                     <Table.Td><Text>{tWines(`${wine.id}.location`)}</Text></Table.Td>

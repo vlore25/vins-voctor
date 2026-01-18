@@ -19,7 +19,9 @@ export default function About() {
                     <Center>
                         <Stack>
                             <div className={classes.border}>
-                                <Image src="./voctor-preview.jpg" w={{ base: "100%", lg: "100%" }} />
+                                <div style={{border: "md"}}>
+                                <Image src="./voctor-preview.jpg" w={{ base: "100%", lg: "100%" }} radius="md"/>
+                                </div>
                             </div>
                             <Text fz={{ base: "sm", lg: "lg" }} fw={500} ta="center">{t('jobTitle')}</Text>
                         </Stack>

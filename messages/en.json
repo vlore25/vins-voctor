@@ -3,7 +3,8 @@
     "subtitle": "An atypical world",
     "siteMap": "Site Map",
     "credits": "Website created by",
-    "rights": "all rights reserved."
+    "rights": "all rights reserved.",
+    "socialTitle": "Our Socials"
   },
   "HomePage": {
     "Hero": {
@@ -182,7 +183,8 @@
     "wines": "Our Wines",
     "about": "About Voctor",
     "contact": "Contact",
-    "privacy": "Privacy Policy"
+    "privacy": "Privacy Policy",
+    "legal": "Legal Notice"
   },
   "PrivacyPolicy": {
     "title": "Privacy Policy",
@@ -224,6 +226,39 @@
         "title": "Article 5: Contact",
         "content": "To exercise your rights or for any questions regarding this policy, you can contact us directly via our contact form or at the email address indicated in our legal notices."
       }
+    }
+  },
+  "LegalNotice": {
+    "title": "Legal Notice",
+    "editor": {
+      "title": "1. Website Editor",
+      "text": "The website Vins Voctor is edited by Josimar Yacuta Verduzco, artisan winemaker.",
+      "address": "Address: 149 Av. du Colonel Rousset, 07130 Cornas, France",
+      "siret": "SIRET: 91129290200010",
+      "rcs": "RCS: Aubenas 911 292 902",
+      "tva": "VAT Number: FR66911292902",
+      "contact": "Contact: Website contact form"
+    },
+    "hosting": {
+      "title": "2. Hosting",
+      "text": "This website is hosted by Vercel Inc.",
+      "address": "Address: 340 S Lemon Ave #4133 Walnut, CA 91789, USA"
+    },
+    "ip": {
+      "title": "3. Intellectual Property",
+      "text": "This entire site is subject to French and international legislation on copyright and intellectual property. Any reproduction is prohibited without prior authorization."
+    },
+    "alcohol": {
+      "title": "4. Alcohol Sales & Minors",
+      "text": "In accordance with Article L. 3342-1 of the Public Health Code, the sale of alcohol to minors under 18 is prohibited. Alcohol abuse is dangerous for health, please consume in moderation."
+    },
+    "privacy": {
+      "title": "5. Personal Data",
+      "text": "The processing of your data is detailed in our <link>Privacy Policy</link>."
+    },
+    "liability": {
+      "title": "6. Limitation of Liability",
+      "text": "Vins Voctor cannot be held responsible for omissions or inaccuracies in the update of information. Product photos are not contractual."
     }
   },
   "ContactPage": {

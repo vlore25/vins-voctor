@@ -1,4 +1,4 @@
-import { Button, Container, Flex } from '@mantine/core';
+import { Button, Container, Flex, Overlay } from '@mantine/core';
 // 1. IMPORTANT : Changer l'import du Link !
 import Logo from '../Logo/Logo';
 import classes from './Header.module.css'
@@ -14,8 +14,7 @@ export default function Header() {
   const t = useTranslations('Navigation');
 
   const items = headerlinks.map((link) => {
-    // Si c'est le bouton contact
-    if (link.label === 'contact') { // Attention: on vérifie la CLÉ 'contact' maintenant
+    if (link.label === 'contact') { 
       return (
         <Button
           key={link.label}

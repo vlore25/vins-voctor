@@ -17,7 +17,6 @@ export default function AlcoolBanner() {
             withCloseButton={false} 
             zIndex={9999} 
             centered
-            // On empêche la fermeture en cliquant à côté ou via Echap pour forcer la validation
             closeOnClickOutside={false}
             closeOnEscape={false}
         >

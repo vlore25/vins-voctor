@@ -35,10 +35,8 @@ type Props = {
 
 // 2. Le layout est async
 export default async function RootLayout({ children, params }: Props) {
-  // 3. On attend (await) les paramètres avant de les utiliser
+  
   const { locale } = await params;
-
-  // Récupération des messages de traduction
   const messages = await getMessages();
 
   return (
@@ -52,19 +50,12 @@ export default async function RootLayout({ children, params }: Props) {
         <ColorSchemeScript />
       </head>
       <body>
-        {/* HIERARCHIE IMPORTANTE POUR EVITER LES ERREURS :
-            1. NextIntlClientProvider (pour les traductions)
-            2. Provider (votre composant qui contient MantineProvider)
-            3. Les composants enfants (AlcoolBanner, children...)
-        */}
         <NextIntlClientProvider messages={messages}>
           <Provider>
-            {/* AlcoolBanner est ICI, DANS le Provider, donc il a accès à Mantine */}
             <AlcoolBanner />
             {children}
           </Provider>
-        </NextIntlClientProvider>
-        
+        </NextIntlClientProvider>     
         <Analytics />
       </body>
     </html>

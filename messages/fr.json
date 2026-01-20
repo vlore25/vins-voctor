@@ -1,6 +1,6 @@
 {
   "Footer": {
-    "subtitle": "Un monde atypique",
+    "subtitle": "Négociant-vinificateur en Vallée du Rhône Nord depuis 2022",
     "siteMap": "Plan du site",
     "credits": "Réalisation du site par",
     "rights": "tous droits réservés.",
@@ -9,7 +9,7 @@
   "HomePage": {
     "Hero": {
       "title": "Vins Voctor",
-      "subtitle": "UN MONDE ATYPIQUE",
+      "subtitle": "Négociant-vinificateur en Vallée du Rhône Nord depuis 2022",
       "buttons": {
         "discover": "DÉCOUVRIR LES CUVÉES",
         "history": "MON HISTOIRE"
@@ -18,8 +18,8 @@
     "About": {
       "title": "L'Homme derrière",
       "titleSpan": "Vins Voctor",
-      "description": "Josimar (ou Voctor) est un jeune artisan vigneron localisé dans la Vallée du Rhône nord. Il a débuté dans ce métier en réalisant un BTSA : Viticulture-Œnologie dans le Jura et en Ardèche. A la suite de ses études, il accède à un poste à responsabilités chez son maitre d’apprentissage, un grand vigneron de Cornas.",
-      "jobTitle": "Négociant vinificateur en vins artisanaux de la Vallée du Rhône nord.",
+      "question": "Voctor, quel est ton objectif en tant que négociant vinificateur ?",
+      "answer": "« Mettre en lumière la voix et la continuité des raisins issus de terres de mes partenaires vignerons. »",
       "cta": "CONNAÎTRE VOCTOR"
     },
     "WineCards": {
@@ -43,7 +43,7 @@
   "AboutPage": {
     "title": "Connaître",
     "titleSpan": "Voctor",
-    "mention": "Dans les mots de l'écrivain Iréne Languin dans le Glou Guide 8",
+    "mention": " Dans les mots de l’écrivaine Irène Languin dans le Glou Guide 8 :",
     "story": [
       {
         "content": "A 38 ans, Josimar Yacuta Verduzco a déjà vécu mille vies. Né au Mexique, il a grandi en Californie, enseigné l’espagnol à l’uni avant d’embrasser une carrière militaire dans la Légion étrangère. Cinq années passées dans l’infanterie, durant lesquelles il s’éprend de la campagne française."
@@ -52,7 +52,7 @@
         "content": "En 2019, il lâche le béret vert pour les jus rouges et blancs. Il se dégotte un maître d’apprentissage de compète sur une appellation prestigieuse de la vallée du Rhône – Matthieu Barret à Cornas – et embraye sur un BTS viti-œno mention bio dans le Jura."
       },
       {
-        "content": "En parallèle, ses économies et des vendanges sur quelques parcelles d’un copain viticulteur lui permettent d’amorcer une activité de négoce. Depuis trois ans, celui qu’on appelle aussi Voctor tient garnison bachique dans un petit garage converti en cave."
+        "content": "En parallèle, ses économies et des vendanges sur quelques parcelles d’un copain viticulteur lui permettent d’amorcer une activité de négoce. Depuis trois ans, celui qu’on appelle aussi Voctor tient garnison bachique dans un petit garage converti en cave où il entraîne une menue troupe de pinards artisanaux, droits dans leur bottes et troussés d’une jolie énergie."
       }
     ]
   },
@@ -65,7 +65,8 @@
     "bio": "Oui",
     "pairings": "Accords mets-vins",
     "title": "Les cuvées chez <brand>Vins Voctor</brand>",
-    "description": "Inspiré par la personnalité et l’identité émanant des produits artisanaux, Josimar s’est proposé de produire des vins qui allient terroir et personnalité. Les caractéristiques principales qu’il recherche dans ses vins sont l’énergie, la buvabilité, la finesse, la complexité et la longueur en bouche. En cave, il travaille avec diverses méthodes de vinification traditionnelle et simple, avec des petits contenants, peu de SO2 et aucun autre intrant-œnologique.",
+    "description1": "En cave, Josimar cherche avant tout à produire des vins propres, nets et fiables, avec une responsabilité assumée envers celui qui les ouvre et les partage. Un vin doit être vivant et expressif, mais aussi lisible, stable et cohérent d’une bouteille à l’autre. L’énergie, la buvabilité, la finesse, la complexité et la longueur en bouche guident l’élaboration des cuvées.",
+    "description2": "Les vinifications sont menées de manière simple et précise, sans collage ni filtration, sans intrants œnologiques, et avec des doses très limitées de SO₂ — généralement autour de 30 mg/L au total, selon les millésimes. Une attention rigoureuse est portée à l’hygiène du matériel et des contenants, condition indispensable à la stabilité et à la fiabilité des vins. Une partie importante des volumes est élevée en dame-jeannes en verre de 54 litres ou en cuves inox, afin de préserver la pureté du fruit, l’équilibre naturel et l’expression fidèle du vin.",
     "btn": "SAVOIR PLUS"
   },
   "Wines": {
@@ -266,6 +267,7 @@
     "socialTitle": "Mes liens sociaux",
     "findMeTitle": "Me trouver",
     "contactMeTitle": "Me contacter",
+    "message": "Dégustation sur rendez-vous.",
     "address": "149 Av. du Colonel Rousset, 07130 Cornas"
   },
   "ContactForm": {

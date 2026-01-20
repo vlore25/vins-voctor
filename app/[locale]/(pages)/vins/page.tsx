@@ -27,12 +27,11 @@ export default function WinesPage() {
                 <Stack px="md" pb="md">
                     <Card.Section mt="md">
                         <Stack gap="xs">
-                            {/* NOM TRADUIT */}
+
                             <Title c="brandBordeux" order={4} textWrap="nowrap" fw={300}>
                                 {tWines(`${wine.id}.name`)}
                             </Title>
 
-                            {/* TYPE TRADUIT */}
                             <Flex align="center" gap="sm">
                                 <Badge color={wine.badgeColor} radius="sm" autoContrast size='lg' >
                                     {tWines(`${wine.id}.type`)}
@@ -45,22 +44,21 @@ export default function WinesPage() {
                                         src="/logo/EU_Organic_Logo_Colour_54x36mm.svg" alt="Eurofeuille"></Image>}
                             </Flex>
 
-                            {/* LOCATION TRADUIT */}
                             <Badge variant='transparent' leftSection={<MdLocationOn />} radius="sm" size='lg' p="0">
                                 {tWines(`${wine.id}.location`)}
                             </Badge>
 
-                            {/* VARIETY (Cépage) TRADUIT */}
                             <Badge variant='transparent' leftSection={<LuGrape />} radius="sm" size='lg' p="0">
                                 {tWines(`${wine.id}.variety`)}
                             </Badge>
                         </Stack>
+                        
                         <Group mt="lg">
-                            {/* BOUTON TRADUIT + BON LIEN */}
                             <Button component={Link} href={`/vins/${wine.id}`} radius={0}>
                                 {t('btn')}
                             </Button>
                         </Group>
+
                     </Card.Section>
                 </Stack>
             </Card>
@@ -76,7 +74,10 @@ export default function WinesPage() {
                     })}
                 </Title>
                 <Text>
-                    {t('description')}
+                    {t('description1')}
+                </Text>
+                <Text>
+                    {t('description2')}
                 </Text>
             </Stack>
             <SimpleGrid

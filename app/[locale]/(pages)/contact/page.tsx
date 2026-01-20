@@ -65,11 +65,13 @@ export default function Contactpage() {
                         </div>
                     </Stack>
                 </GridCol>
-
                 <GridCol span={{ base: 12, lg: 6 }}>
-                    <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400} mb="md">
-                        {t('contactMeTitle')}
-                    </Title>
+                    <Stack mb="md">
+                        <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400} >
+                            {t('contactMeTitle')}
+                        </Title>
+                        <Text>{t('message')}</Text>
+                    </Stack>
                     <EmailForm />
                 </GridCol>
             </Grid >

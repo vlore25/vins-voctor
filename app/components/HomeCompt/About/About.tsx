@@ -1,4 +1,4 @@
-import { Anchor, Center, Grid, GridCol, Group, Image, Stack, Text, ThemeIcon, Title } from "@mantine/core";
+import { Anchor, Center, Container, Flex, Grid, GridCol, Group, Image, SimpleGrid, Stack, Text, ThemeIcon, Title } from "@mantine/core";
 import classes from './About.module.css';
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
@@ -6,37 +6,56 @@ import { useTranslations } from "next-intl";
 
 export default function About() {
     const t = useTranslations('HomePage.About');
+
     return (
-        <>
-            <Grid>
-                <GridCol span={{ base: 12, lg: 7 }}>
-                    <Stack style={{ position: 'relative', overflow: 'hidden' }}>
-                        <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>{t('title')}<Text c="brandBordeux" span inherit> {t('titleSpan')}</Text></Title>
-                        <Text fz={{ base: "0.9em", lg: "1.2em" }} fw={500}>{t('description')}</Text>
-                    </Stack>
+        <Stack gap="xl">
+            <div>
+                <Title fz={{ base: "1.4em", lg: "1.8em" }} fw={400}>
+                    {t('title')}
+                    <Text c="brandBordeux" span inherit> {t('titleSpan')}</Text>
+                </Title>
+            </div>
+            <Grid p={{ sm: 0, lg: "xs" }}>
+                <GridCol span={{ base: 12, md: 8 }} p={0}>
+                    <SimpleGrid cols={{ sm: 0, lg: 2 }} spacing={0} >
+                        <div style={{ height: 350 }}>
+                            <Image
+                                src="./voctor-preview.jpg"
+                                w="100%"
+                                fit="cover"
+                                h="100%"
+                            />
+                        </div>
+                        <div style={{ height: 350 }}>
+                            <Image
+                                src="./voctor-preview2.png"
+                                w="100%"
+                                fit="cover"
+                                h="100%"
+                            />
+                        </div>
+                    </SimpleGrid>
                 </GridCol>
-                <GridCol span={{ base: 12, lg: 5 }}>
-                    <Center>
-                        <Stack>
-                            <div className={classes.border}>
-                                <div style={{border: "md"}}>
-                                <Image src="./voctor-preview.jpg" w={{ base: "100%", lg: "100%" }} radius="md"/>
-                                </div>
-                            </div>
-                            <Text fz={{ base: "sm", lg: "lg" }} fw={500} ta="center">{t('jobTitle')}</Text>
-                        </Stack>
-                    </Center>
-                </GridCol>
-                <GridCol span={{ base: 12, lg: 4 }}>
-                    <Group gap="xs">
-                        <Anchor fz={{ base: "md", lg: "lg" }} fw={700} component={Link}
-                            href="/about">{t('cta')}</Anchor>
-                        <ThemeIcon variant="transparent">
-                            <FaArrowRight />
-                        </ThemeIcon>
-                    </Group>
+                <GridCol span={{ base: 12, md: 4 }} bg={"brandBordeux"}>
+                    <Flex h="100%" w="100%" c="white" direction="column" justify="center" gap="sm" p={{ base: 0, lg: "xs" }} py="sm" ta={{ base: "center", md: "left" }}>
+                        <Text fw={600}>{t('question')}</Text>
+                        <Text fs="italic">{t('answer')}</Text>
+                    </Flex>
                 </GridCol>
             </Grid>
-        </>
+            <Group gap="xs" justify="flex-start" mt="10px">
+                <Anchor
+                    fz={{ base: "md", lg: "lg" }}
+                    fw={700}
+                    component={Link}
+                    href="/about"
+                >
+                    {t('cta')}
+                </Anchor>
+                <ThemeIcon variant="transparent" c="brandBordeux">
+                    <FaArrowRight />
+                </ThemeIcon>
+            </Group>
+        </Stack>
     );
 }

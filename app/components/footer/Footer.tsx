@@ -39,7 +39,7 @@ export function Footer() {
                             titleProps={{ order: 3 }}
                             logoProps={{ w: '70px' }}
                         />
-                            <Text size="xs" c="dimmed" className={classes.description}>
+                            <Text size="xs" c="dimmed" className={classes.description} >
                                 {tFooter('subtitle')}
                             </Text>
                     </div>

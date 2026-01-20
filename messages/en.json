@@ -1,6 +1,6 @@
 {
   "Footer": {
-    "subtitle": "An atypical world",
+    "subtitle": "Independent Winemaker · Northern Rhône · Since 2022",
     "siteMap": "Site Map",
     "credits": "Website created by",
     "rights": "all rights reserved.",
@@ -9,7 +9,7 @@
   "HomePage": {
     "Hero": {
       "title": "Vins Voctor",
-      "subtitle": "AN ATYPICAL WORLD",
+      "subtitle": "Independent Winemaker · Northern Rhône · Since 2022",
       "buttons": {
         "discover": "DISCOVER THE CUVÉES",
         "history": "MY STORY"
@@ -18,8 +18,8 @@
     "About": {
       "title": "The Man Behind",
       "titleSpan": "Vins Voctor",
-      "description": "Josimar (or Voctor) is a young artisan winemaker located in the Northern Rhône Valley, France. He started in this trade by completing a BTSA in Viticulture-Oenology in Jura and Ardèche. Following his studies, he took on a position of responsibility with his apprenticeship master, a great winemaker in Cornas.",
-      "jobTitle": "Artisan winemaker and merchant in the Northern Rhône Valley.",
+      "question": "Voctor, what is your objective as an independent winemaker?",
+      "answer": "To reveal the voice and preserve the character of grapes sourced from partner vineyards.",
       "cta": "MEET VOCTOR"
     },
     "WineCards": {
@@ -33,8 +33,8 @@
       "title": "The Region",
       "subtitle": "The identity of Vins Voctor is cultivated across three exceptional terroirs.",
       "points": {
-        "chateaubourg": "In Châteaubourg, Syrah finds its full expression to give birth to Saint-Joseph.",
-        "roussas": "Further south, the lands of Roussas offer an ideal setting for Grenache Noir.",
+        "chateaubourg": "In Châteaubourg, Syrah finds its full expression to give birth to the Saint-Joseph appellation.",
+        "roussas": "Further south, the area of Roussas offers an ideal setting for Grenache Noir.",
         "allan": "Allan welcomes our white varietals, Grenache Blanc and Bourboulenc, for wines of great finesse."
       },
       "mapLabel": "Cornas, Northern Rhône Valley."
@@ -43,16 +43,16 @@
   "AboutPage": {
     "title": "Meet",
     "titleSpan": "Voctor",
-    "mention": "In the words of writer Iréne Languin in Glou Guide 8",
+    "mention": "In the words of writer Iréne Languin in the Glou Guide 8:",
     "story": [
       {
-        "content": "At 38, Josimar Yacuta Verduzco has already lived a thousand lives. Born in Mexico, he grew up in California, taught Spanish at university before embracing a military career in the Foreign Legion. Five years spent in the infantry, during which he fell in love with the French countryside."
+        "content": "At 38, Josimar Yacuta Verduzco has already lived several lives. Born in Mexico and raised in California, he first taught Spanish at university before embarking on a military career in the French Foreign Legion. Five years in the infantry followed, during which he developed a deep attachment to the French countryside."
       },
       {
-        "content": "In 2019, he traded the green beret for red and white juices. He found himself a top-notch apprenticeship master in a prestigious appellation of the Rhône Valley – Matthieu Barret in Cornas – and embarked on a BTS in viticulture-oenology with a focus on organic farming in the Jura."
+        "content": "In 2019, he traded the green beret for red and white juice. He trained alongside an outstanding mentor in one of the Northern Rhône’s most respected appellations — Matthieu Barret in Cornas — before completing a BTS degree in viticulture and oenology with a focus on organic farming in the Jura. At the same time, personal savings and harvest work on a friend’s vineyards allowed him to begin building his own négociant activity."
       },
       {
-        "content": "In parallel, his savings and harvests on a few plots of a winemaker friend allowed him to start a merchant activity. For three years now, the one also known as Voctor has held his Bacchic garrison in a small garage converted into a cellar."
+        "content": "For the past three years, the man also known as Voctor has been working out of a small garage converted into a cellar, crafting a focused range of artisanal wines that stand firm on their legs, are full of character, and dressed with a fine energy."
       }
     ]
   },
@@ -65,7 +65,8 @@
     "bio": "Yes",
     "pairings": "Food Pairings",
     "title": "The Cuvées at <brand>Vins Voctor</brand>",
-    "description": "Inspired by the personality and identity emanating from artisanal products, Josimar set out to produce wines that combine terroir and personality. The main characteristics he looks for in his wines are energy, drinkability, finesse, complexity, and length on the palate. In the cellar, he works with various traditional and simple winemaking methods, using small containers, little SO2, and no other oenological inputs.",
+    "description1": "In the cellar, Josimar’s priority is to produce clean, precise and reliable wines, with a clear sense of responsibility toward those who open and share them. A wine must be alive and expressive, but also readable, stable and consistent from bottle to bottle. Energy, drinkability, finesse, complexity and length on the palate guide the development of each cuvée.",
+    "description2": "Vinifications are carried out in a simple and precise manner, without fining or filtration, without oenological additives, and with very limited additions of SO₂ — generally around 30 mg/L total, depending on the vintage. Strict attention is paid to the hygiene of all equipment and vessels, an essential condition for the stability and reliability of the wines. A significant proportion of the wines are aged in 54-liter glass demijohns or in stainless steel tanks, in order to preserve fruit purity, natural balance and the faithful expression of the wine.",
     "btn": "LEARN MORE"
   },
   "Wines": {
@@ -266,6 +267,7 @@
     "socialTitle": "My Social Links",
     "findMeTitle": "Find Me",
     "contactMeTitle": "Contact Me",
+    "message": "I would be glad to welcome you to a tasting at my place in Cornas. Please call to make an appointment.",
     "address": "149 Av. du Colonel Rousset, 07130 Cornas, France"
   },
   "ContactForm": {

@@ -20,7 +20,7 @@ export default function Hero() {
         >
           <Title className={classes.title} c='white' fz={{ base: "4rem", lg: "7rem" }} ta="center"> Vins Voctor </Title>
           <Text className={classes.description} c={'white'}
-            fz={{ base: "md", lg: "xl" }}
+            fz={{ base: "xs", lg: "xl" }}
             ta="center"
           >
             {t('subtitle')}

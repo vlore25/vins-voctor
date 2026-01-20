@@ -1,5 +1,5 @@
 "use client"
-import { cifFr, cifUs } from "@coreui/icons";
+import { cifFr, cifGb } from "@coreui/icons";
 import CIcon from "@coreui/icons-react";
 import { Button, Menu } from "@mantine/core"; 
 import { useLocale } from "next-intl"; // 1. Importer le hook
@@ -19,7 +19,7 @@ export default function LanguageButton() {
             <Menu.Target>
                 <Button 
                     variant="subtle" 
-                    leftSection={<CIcon icon={locale === 'en' ? cifUs : cifFr} width={20} />}
+                    leftSection={<CIcon icon={locale === 'en' ? cifGb : cifFr} width={20} />}
                 >
                 </Button>
             </Menu.Target>
@@ -32,7 +32,7 @@ export default function LanguageButton() {
                     Français
                 </Menu.Item>
                 <Menu.Item 
-                    leftSection={<CIcon icon={cifUs} width={18} />}
+                    leftSection={<CIcon icon={cifGb} width={18} />}
                     onClick={() => changeLanguage('en')}
                 >
                     English

@@ -12,13 +12,12 @@ import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link } from '../../../../i18n/routing';
 
-
 export default function WinesCards() {
-    const t = useTranslations('HomePage.WineCards'); 
+    const t = useTranslations('HomePage.WineCards');
     const tWines = useTranslations('Wines');
-    
+
     const autoplay = useRef(Autoplay({ delay: 2000 }));
-    
+
     const slides = wines.map((wine) => {
         return (
             <CarouselSlide key={wine.id}>
@@ -36,20 +35,22 @@ export default function WinesCards() {
                         <Card.Section className={classes.section} mt="md">
                             <Stack gap="xs">
                                 {/* TRADUCTION DU NOM */}
-                                <Title c="brandBordeux" order={4} textWrap="nowrap" fw={300}> 
+                                <Title c="brandBordeux" order={4} textWrap="nowrap" fw={300}>
                                     {tWines(`${wine.id}.name`)}
                                 </Title>
-                                
+
                                 {/* TRADUCTION DE LA MENTION */}
                                 <Text>
                                     {tWines(`${wine.id}.mention`)}
                                 </Text>
-                                
+
                                 {/* TRADUCTION DU TYPE */}
-                                <Badge color={wine.badgeColor} radius="sm" autoContrast size='lg' >
-                                    {tWines(`${wine.id}.type`)}
-                                </Badge>
-                                
+                                <div>
+                                    <Badge color={wine.badgeColor} radius="sm" autoContrast size='lg' >
+                                        {tWines(`${wine.id}.type`)}
+                                    </Badge>
+                                    {wine.bio && <Image src="/EU_Organic_Logo_Colour_54x36mm.svg" alt="Eurofeuille"></Image>}
+                                </div>
                                 {/* TRADUCTION DU CEPAGE (VARIETY) */}
                                 <Badge variant='transparent' leftSection={<LuGrape />} radius="sm" size='lg' p="0">
                                     {tWines(`${wine.id}.variety`)}
@@ -90,15 +91,15 @@ export default function WinesCards() {
                     {slides}
                 </Carousel>
                 <Group mt="10px" gap="xs">
-                    <Anchor 
-                        component={Link} 
-                        href="/vins" 
-                        fz={{ base: "md", lg: "lg" }} 
+                    <Anchor
+                        component={Link}
+                        href="/vins"
+                        fz={{ base: "md", lg: "lg" }}
                         fw={700}
                     >
                         {t('footerLink')}
                     </Anchor>
-                    
+
                     <ThemeIcon variant="transparent">
                         <FaArrowRight />
                     </ThemeIcon>

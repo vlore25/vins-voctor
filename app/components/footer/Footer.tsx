@@ -34,14 +34,13 @@ export function Footer() {
                 <SimpleGrid cols={{ base: 1, sm: 3 }} spacing="xl">
 
                     <div className={classes.wrapper}>
-
                         <Logo
                             titleProps={{ order: 3 }}
                             logoProps={{ w: '70px' }}
                         />
-                            <Text size="xs" c="dimmed" className={classes.description} >
-                                {tFooter('subtitle')}
-                            </Text>
+                        <Text size="xs" c="dimmed" className={classes.description} ta={{base: "center", sm: "left"}}>
+                            {tFooter('subtitle')}
+                        </Text>
                     </div>
 
                     {/* COLONNE 2 : PLAN DU SITE */}
@@ -64,7 +63,6 @@ export function Footer() {
             </Container>
 
             <Container className={classes.afterFooter}>
-                {/* BLOC 1 : Liens juridiques */}
                 <Group gap="xs" className={classes.legalGroup}>
                     <Link href="/mentions-legales" className={classes.link}>
                         {tNav('legal')}

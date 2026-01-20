@@ -109,7 +109,7 @@
     "doucement-cowboy": {
       "name": "Doucement cowboy",
       "description": "Une Syrah ardéchoise tout en finesse, privilégiant le fruit et la fluidité.",
-      "mention": "Vin de France (VDF)",
+      "mention": "Ardèche (VDF)",
       "variety": "100% Syrah",
       "location": "Ardèche",
       "type": "Rouge",
@@ -145,7 +145,7 @@
     "blanca": {
       "name": "Blanca",
       "description": "Un blanc tout en dentelle, porté par des notes florales et une grande fraîcheur.",
-      "mention": "Vin de France (VDF)",
+      "mention": "Drôme (VDF)",
       "variety": "100% Grenache blanc",
       "location": "Allan",
       "type": "Blanc",

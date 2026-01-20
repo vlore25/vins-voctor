@@ -1,11 +1,9 @@
 "use client";
 
-import { Badge, Button, Card, SimpleGrid, Group, Image, Stack, Title, Text } from "@mantine/core";
+import { Badge, Button, Card, SimpleGrid, Group, Image, Stack, Title, Text, Flex } from "@mantine/core";
 import { MdLocationOn } from "react-icons/md";
 import { LuGrape } from "react-icons/lu";
-// 1. IMPORT DU LINK PERSONNALISÉ
 import classes from "./page.module.css"
-// 2. IMPORT DU HOOK DE TRADUCTION
 import { useTranslations } from "next-intl";
 import winesData from "../../../const/wines";
 import { Link } from "../../../../i18n/routing";
@@ -30,20 +28,28 @@ export default function WinesPage() {
                     <Card.Section mt="md">
                         <Stack gap="xs">
                             {/* NOM TRADUIT */}
-                            <Title c="brandBordeux" order={4} textWrap="nowrap" fw={300}> 
+                            <Title c="brandBordeux" order={4} textWrap="nowrap" fw={300}>
                                 {tWines(`${wine.id}.name`)}
                             </Title>
-                            
+
                             {/* TYPE TRADUIT */}
-                            <Badge color={wine.badgeColor} radius="sm" autoContrast size='lg' >
-                                {tWines(`${wine.id}.type`)}
-                            </Badge>
-                            
+                            <Flex align="center" gap="sm">
+                                <Badge color={wine.badgeColor} radius="sm" autoContrast size='lg' >
+                                    {tWines(`${wine.id}.type`)}
+                                </Badge>
+                                {wine.bio &&
+                                    <Image
+                                        height={25}
+                                        w="auto"
+                                        fit="contain"
+                                        src="/logo/EU_Organic_Logo_Colour_54x36mm.svg" alt="Eurofeuille"></Image>}
+                            </Flex>
+
                             {/* LOCATION TRADUIT */}
                             <Badge variant='transparent' leftSection={<MdLocationOn />} radius="sm" size='lg' p="0">
                                 {tWines(`${wine.id}.location`)}
                             </Badge>
-                            
+
                             {/* VARIETY (Cépage) TRADUIT */}
                             <Badge variant='transparent' leftSection={<LuGrape />} radius="sm" size='lg' p="0">
                                 {tWines(`${wine.id}.variety`)}

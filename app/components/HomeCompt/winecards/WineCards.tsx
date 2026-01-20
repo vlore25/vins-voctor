@@ -1,7 +1,7 @@
 "use client";
 
 import '@mantine/carousel/styles.css';
-import { Anchor, Badge, Button, Card, Group, Image, Stack, Text, ThemeIcon, Title } from "@mantine/core";
+import { Anchor, Badge, Button, Card, Flex, Group, Image, Stack, Text, ThemeIcon, Title } from "@mantine/core";
 import { Carousel, CarouselSlide } from "@mantine/carousel";
 import classes from './WinesCards.module.css';
 import wines from '../../../const/wines';
@@ -45,12 +45,17 @@ export default function WinesCards() {
                                 </Text>
 
                                 {/* TRADUCTION DU TYPE */}
-                                <div>
+                                <Flex align="center" gap="sm">
                                     <Badge color={wine.badgeColor} radius="sm" autoContrast size='lg' >
                                         {tWines(`${wine.id}.type`)}
                                     </Badge>
-                                    {wine.bio && <Image src="/EU_Organic_Logo_Colour_54x36mm.svg" alt="Eurofeuille"></Image>}
-                                </div>
+                                    {wine.bio && 
+                                    <Image 
+                                    height={25}
+                                    w="auto"
+                                    fit="contain"
+                                    src="/logo/EU_Organic_Logo_Colour_54x36mm.svg" alt="Eurofeuille"></Image>}
+                                </Flex>
                                 {/* TRADUCTION DU CEPAGE (VARIETY) */}
                                 <Badge variant='transparent' leftSection={<LuGrape />} radius="sm" size='lg' p="0">
                                     {tWines(`${wine.id}.variety`)}

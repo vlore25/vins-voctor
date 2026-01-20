@@ -10,11 +10,11 @@ import winesData from "../../../../const/wines";
 
 export default function WinePage() {
     const params = useParams<{ id: string }>()
-    const tWines = useTranslations('Wines');     
-    const tPage = useTranslations('WinesPage');   
+    const tWines = useTranslations('Wines');
+    const tPage = useTranslations('WinesPage');
 
     const wine = winesData.find((w) => w.id === params.id);
-    
+
     if (!wine) {
         return <Text>{tPage('notFound')}</Text>;
     }
@@ -40,15 +40,22 @@ export default function WinePage() {
                         priority
                     />
                 </Suspense>
-                
+
                 <Stack gap="xs">
-                    <Title fz={{base: "h3", lg:"h2"}} c="brandBordeux">{tWines(`${wine.id}.name`)}</Title>
+                    <Title fz={{ base: "h3", lg: "h2" }} c="brandBordeux">{tWines(`${wine.id}.name`)}</Title>
                     <Text fz="h5">{tWines(`${wine.id}.mention`)}</Text>
-                    
-                    <Badge radius={0} color={wine.badgeColor} size="lg" autoContrast>
-                        {tWines(`${wine.id}.type`)}
-                    </Badge>
-                    
+
+                    <Flex align="center" gap="5px">
+                        <Badge color={wine.badgeColor} radius="sm" autoContrast size='lg' >
+                            {tWines(`${wine.id}.type`)}
+                        </Badge>
+                        {wine.bio &&
+                            <Image
+                                width={60}
+                                height={26}
+                                src="/logo/EU_Organic_Logo_Colour_54x36mm.svg" alt="Eurofeuille"></Image>}
+                    </Flex>
+
                     <Text mt={{ base: "0", lg: "lg" }}>
                         {tWines(`${wine.id}.description`)}
                     </Text>
@@ -67,7 +74,7 @@ export default function WinePage() {
                 </Group>
             </Stack>
 
-            <Accordion  defaultValue="Informations du vin">
+            <Accordion defaultValue="Informations du vin">
                 {/* Section Informations */}
                 <Accordion.Item value="Informations du vin" px="inherit">
                     <Accordion.Control px="inherit">
@@ -84,11 +91,15 @@ export default function WinePage() {
                                     <Table.Td><Text fw={600}>{tPage('variety')}</Text></Table.Td>
                                     <Table.Td><Text>{tWines(`${wine.id}.variety`)}</Text></Table.Td>
                                 </Table.Tr>
+                                <Table.Tr>
+                                    <Table.Td><Text fw={600}>Bio:</Text></Table.Td>
+                                    <Table.Td><Text>{tPage('bio')}</Text></Table.Td>
+                                </Table.Tr>
                             </Table.Tbody>
                         </Table>
                     </Accordion.Panel>
                 </Accordion.Item>
-    
+
                 {/* Section Accords */}
                 <Accordion.Item value="Accords-met-vin">
                     <Accordion.Control px="inherit">

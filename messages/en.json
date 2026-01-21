@@ -56,6 +56,21 @@
       }
     ]
   },
+  "VineyardPage": {
+    "title": "In the Vineyard",
+    "subtitle": "In the words of writer Irène Languin in Glou Guide 8:",
+    "story": [
+      {
+        "content": "I do not own vineyards, yet I work with them, year after year. As a winemaker-merchant, I collaborate with winegrowers—whether they make their own wine or not—prioritizing lasting relationships, closely monitored plots, and fair compensation. Terroir is not limited to ownership: it lives in the soil, in how the vines are tended, and in the continuity of work all the way to the cellar."
+      },
+      {
+        "content": "My partners are committed to at least organic farming, whether certified or not. Pragmatically, I believe this is currently the best balance between grape quality, economic viability, and respect for the soil and biodiversity; vineyard inputs are limited to the strict minimum. Every season, I return to the same vines, observing their evolution, their fatigue, and their energy. This loyalty nourishes my understanding of the living world and guides my choices."
+      },
+      {
+        "content": "I seek wines that are clean, alive, carrying tension, freshness, and depth—in a word, energy. Being a merchant is not a distance from the land, but another way to be connected to it. My wish is to one day settle as a grower when possible; in the meantime, I pursue this path with patience, commitment, and loyalty to the vines that trust me."
+      }
+    ]
+  },
   "WinesPage": {
     "notFound": "Wine not found",
     "profile": "Wine Profile",
@@ -184,6 +199,7 @@
     "home": "Home",
     "wines": "Our Wines",
     "about": "About Voctor",
+    "vineyard": "Vineyard",
     "contact": "Contact",
     "privacy": "Privacy Policy",
     "legal": "Legal Notice",

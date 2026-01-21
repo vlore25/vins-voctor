@@ -7,6 +7,7 @@ const headerLinks: HeaderLink[] = [
   { link: '/', label: 'home' },
   { link: '/vins', label: 'wines' },
   { link: '/about', label: 'about' },
+  { link: '/vineyard', label: 'vineyard' },
   { link: '/contact', label: 'contact' },
 ];
 

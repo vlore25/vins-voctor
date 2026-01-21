@@ -40,6 +40,21 @@
       "mapLabel": "Cornas, Vallée du Rhône nord."
     }
   },
+  "VineyardPage": {
+    "title": "Dans la vigne",
+    "subtitle": " Dans les mots de l’écrivaine Irène Languin dans le Glou Guide 8 :",
+    "story": [
+      {
+        "content": "Je ne possède pas de vignes, mais je travaille avec elles, année après année. Négociant vinificateur, je collabore avec des viticulteurs — qu’ils vinifient ou non — en privilégiant des relations durables, des parcelles suivies et une rémunération juste. Le terroir ne se limite pas à la propriété : il vit dans le sol, dans la conduite de la vigne et dans la continuité du travail jusqu’à la cave."
+      },
+      {
+        "content": "Mes partenaires sont engagés au minimum en agriculture biologique, certifiée ou non. Par pragmatisme, c’est aujourd’hui, selon moi, le meilleur équilibre entre la qualité des raisins, la viabilité économique et le respect des sols et de la biodiversité ; les intrants à la vigne y sont limités au strict nécessaire. Chaque saison, je reviens aux mêmes vignes, j’observe leur évolution, leur fatigue, leur énergie, et cette fidélité nourrit ma compréhension du vivant et guide mes choix."
+      },
+      {
+        "content": "Je cherche des vins nets, vivants, porteurs de tension, de fraîcheur et de profondeur — en un mot, de l’énergie. Être négociant n’est pas une distance à la terre, mais une autre manière d’y être relié. Mon souhait est, un jour, de m’installer comme récoltant lorsque cela sera possible ; en attendant, je poursuis ce chemin avec patience, engagement et fidélité aux vignes qui me font confiance."
+      }
+    ]
+  },
   "AboutPage": {
     "title": "Connaître",
     "titleSpan": "Voctor",
@@ -184,6 +199,7 @@
     "home": "Accueil",
     "wines": "Les Cuvées",
     "about": "Connaître Voctor",
+    "vineyard": "La vigne",
     "contact": "Contact",
     "privacy": "Politique de confidentialité",
     "legal": "Mentions Légales",

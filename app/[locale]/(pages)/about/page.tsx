@@ -21,7 +21,7 @@ export default function Aboutpage() {
 
   return (
     <>
-      <Container size="lg" py={{ base: 0, lg: "xl" }}>
+     
         <Stack mb={{ base: "xs", lg: "xl" }} gap="xs">
           <Title fz={{ base: "2em", lg: "2.5em" }} fw={400}>
             {t('title')} <Text c="brandBordeux" span inherit>{t('titleSpan')}</Text>
@@ -30,7 +30,6 @@ export default function Aboutpage() {
             {t('mention')}
           </Text>
         </Stack>
-      </Container>
 
       {STORY_DATA.map((item, index) => {
         const isEven = index % 2 === 0;
@@ -48,7 +47,7 @@ export default function Aboutpage() {
             }}
             bg="#f8f8f8"
           >
-            <Container size="lg" h="100%">
+            
               <Grid h="100%" gutter={{ base: "md", sm: "xs" }} align="center">
                 <GridCol
                   span={{ base: 12, md: 6 }}
@@ -76,7 +75,6 @@ export default function Aboutpage() {
                 </GridCol>
 
               </Grid>
-            </Container>
           </Box>
         );
       })}

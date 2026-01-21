@@ -14,13 +14,9 @@ export default function Provider({ children }: { children: React.ReactNode }) {
         header={{ height: 80 }}
         navbar={{ width: 300, breakpoint: 'sm', collapsed: { desktop: true, mobile: !opened } }}
         footer={{ height: 200, collapsed: true, offset: true }}
-        
       >
-        <AppShellHeader bg="none">
-          
-          <Header />
-        </AppShellHeader>
-        <AppShell.Main bg="#F8F8F8">
+        <Header />
+        <AppShell.Main bg="#F8F8F8" pt={0}>
           {children}
           <Footer />
         </AppShell.Main>

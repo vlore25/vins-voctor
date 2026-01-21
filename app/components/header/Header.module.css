@@ -12,11 +12,10 @@
   transition: 'color 0.3s ease';
   font-weight: 600;
 
-  @mixin hover {
-    background-color: light-dark(var(--mantine-color-gray-0), var(--mantine-color-dark-6));
-  }
 }
 
 .link:hover {
-  color: var(--mantine-color-brandBordeux-9, )
+  color: var(--mantine-color-brandBordeux-9) !important;
+  background-color: transparent; /* Sécurité */
+  font-weight: 600;
 }

@@ -45,14 +45,14 @@ export default function About() {
             </Grid>
             <Group gap="xs" justify="flex-start" mt="10px">
                 <Text
-                    component={Link}
-                    href="/about"
-                    fz={{ base: "md", lg: "lg" }}
-                    fw={700}
-                    c={"brandBordeux"}
-                >
-                    {t('cta')}
-                </Text>
+                                        component={Link}
+                                        href="/about"
+                                        fz={{ base: "md", lg: "lg" }}
+                                        fw={700}
+                                        c={"brandBordeux"}
+                                    >
+                                        {t('cta')}
+                                    </Text>
                 <ThemeIcon variant="transparent" c="brandBordeux">
                     <FaArrowRight />
                 </ThemeIcon>

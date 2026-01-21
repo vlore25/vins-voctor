@@ -1,16 +1,14 @@
-import { AppShellHeader, Button, Container, Flex,  Text } from '@mantine/core';
+import { AppShellHeader, Button, Container, Flex, Text } from '@mantine/core';
 import Logo from '../Logo/Logo';
 import classes from './Header.module.css'
 import BurgerMenu from './components/BurgerMenu';
-import headerlinks from '../../const/headerLinks'; 
+import headerlinks from '../../const/headerLinks';
 import LanguageButton from '../LanguageButton/LanguageButton';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname } from '../../../i18n/routing';
 import { useWindowScroll } from '@mantine/hooks';
-import { useEffect, useState } from 'react';
 
 export default function Header() {
-
   const urlPath = usePathname()
   const t = useTranslations('Navigation');
   const [scroll] = useWindowScroll();
@@ -37,7 +35,7 @@ export default function Header() {
     return (
 
       <Text
-        component={Link} 
+        component={Link}
         href={link.link}
         key={link.label}
         className={classes.link}
@@ -60,7 +58,7 @@ export default function Header() {
           : 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 90%)',
       }}
     >
-       <Container size={'xl'} w="100%">
+      <Container size={'xl'} w="100%">
         <Flex align='center' justify="space-between" className={classes.container}>
           <Logo titleProps={{ order: 3 }} logoProps={{ w: '70px' }} />
           <div>

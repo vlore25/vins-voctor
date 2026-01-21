@@ -186,7 +186,10 @@
     "about": "About Voctor",
     "contact": "Contact",
     "privacy": "Privacy Policy",
-    "legal": "Legal Notice"
+    "legal": "Legal Notice",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close menu",
+    "mobileMenuLabel": "Main mobile navigation"
   },
   "PrivacyPolicy": {
     "title": "Privacy Policy",

@@ -186,7 +186,10 @@
     "about": "Connaître Voctor",
     "contact": "Contact",
     "privacy": "Politique de confidentialité",
-    "legal": "Mentions Légales"
+    "legal": "Mentions Légales",
+    "openMenu": "Ouvrir le menu de navigation",
+    "closeMenu": "Fermer le menu",
+    "mobileMenuLabel": "Navigation principale mobile"
   },
   "PrivacyPolicy": {
     "title": "Politique de confidentialité",

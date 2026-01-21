@@ -49,12 +49,12 @@ export default function WinesCards() {
                                     <Badge color={wine.badgeColor} radius="sm" autoContrast size='lg' >
                                         {tWines(`${wine.id}.type`)}
                                     </Badge>
-                                    {wine.bio && 
-                                    <Image 
-                                    height={25}
-                                    w="auto"
-                                    fit="contain"
-                                    src="/logo/EU_Organic_Logo_Colour_54x36mm.svg" alt="Eurofeuille"></Image>}
+                                    {wine.bio &&
+                                        <Image
+                                            height={25}
+                                            w="auto"
+                                            fit="contain"
+                                            src="/logo/EU_Organic_Logo_Colour_54x36mm.svg" alt="Eurofeuille"></Image>}
                                 </Flex>
                                 {/* TRADUCTION DU CEPAGE (VARIETY) */}
                                 <Badge variant='transparent' leftSection={<LuGrape />} radius="sm" size='lg' p="0">
@@ -95,15 +95,16 @@ export default function WinesCards() {
                     }}>
                     {slides}
                 </Carousel>
-                <Group mt="10px" gap="xs">
-                    <Anchor
+                <Group mt="xl" gap="xs">
+                    <Text
                         component={Link}
                         href="/vins"
                         fz={{ base: "md", lg: "lg" }}
                         fw={700}
+                        c={"brandBordeux"}
                     >
                         {t('footerLink')}
-                    </Anchor>
+                    </Text>
 
                     <ThemeIcon variant="transparent">
                         <FaArrowRight />

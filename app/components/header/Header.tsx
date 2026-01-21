@@ -5,13 +5,18 @@ import BurgerMenu from './components/BurgerMenu';
 import headerlinks from '../../const/headerLinks'; 
 import LanguageButton from '../LanguageButton/LanguageButton';
 import { useTranslations } from 'next-intl';
-import { Link } from '../../../i18n/routing';
+import { Link, usePathname } from '../../../i18n/routing';
 import { useWindowScroll } from '@mantine/hooks';
+import { useEffect, useState } from 'react';
 
 export default function Header() {
+
+  const urlPath = usePathname()
   const t = useTranslations('Navigation');
   const [scroll] = useWindowScroll();
+  const isHome = urlPath === '/' || /^\/[a-zA-Z]{2}$/.test(urlPath);
   const scrolled = scroll.y > 50;
+  const showSolidHeader = !isHome || scrolled;
 
   const items = headerlinks.map((link) => {
     if (link.label === 'contact') {
@@ -21,15 +26,14 @@ export default function Header() {
           component={Link}
           href={link.link}
           className={classes.link}
-          variant={scrolled ? "filled" : "light"}
-          color={scrolled ? "brandBordeux" : "white"}
+          variant={showSolidHeader ? "filled" : "light"}
+          color={showSolidHeader ? "brandBordeux" : "white"}
           size="md"
         >
           {t(link.label)}
         </Button>
       );
     }
-
     return (
 
       <Text
@@ -37,7 +41,7 @@ export default function Header() {
         href={link.link}
         key={link.label}
         className={classes.link}
-        c={scrolled ? "brandBordeux.9" : "white"}
+        c={showSolidHeader ? "brandBordeux.9" : "white"}
       >
         {t(link.label)}
       </Text>
@@ -46,17 +50,17 @@ export default function Header() {
 
   return (
     <AppShellHeader
-      withBorder={scrolled}
+      withBorder={false}
       className={classes.appshell}
       style={{
         transition: 'all 0.3s ease',
-        backgroundColor: scrolled ? 'white' : 'transparent',
-        background: scrolled
+        backgroundColor: showSolidHeader ? 'white' : 'transparent',
+        background: showSolidHeader
           ? 'white'
-          : 'linear-gradient(to bottom, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0) 100%)',
+          : 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 90%)',
       }}
     >
-       <Container size={'xl'} w="100%"  >
+       <Container size={'xl'} w="100%">
         <Flex align='center' justify="space-between" className={classes.container}>
           <Logo titleProps={{ order: 3 }} logoProps={{ w: '70px' }} />
           <div>
@@ -64,7 +68,7 @@ export default function Header() {
               {items}
               <LanguageButton />
             </Flex>
-            <BurgerMenu links={headerlinks} scrolled={scrolled} />
+            <BurgerMenu links={headerlinks} scrolled={showSolidHeader} />
           </div>
         </Flex>
       </Container>

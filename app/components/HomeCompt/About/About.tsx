@@ -44,14 +44,15 @@ export default function About() {
                 </GridCol>
             </Grid>
             <Group gap="xs" justify="flex-start" mt="10px">
-                <Anchor
-                    fz={{ base: "md", lg: "lg" }}
-                    fw={700}
+                <Text
                     component={Link}
                     href="/about"
+                    fz={{ base: "md", lg: "lg" }}
+                    fw={700}
+                    c={"brandBordeux"}
                 >
                     {t('cta')}
-                </Anchor>
+                </Text>
                 <ThemeIcon variant="transparent" c="brandBordeux">
                     <FaArrowRight />
                 </ThemeIcon>

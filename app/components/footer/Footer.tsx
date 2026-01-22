@@ -1,5 +1,5 @@
 "use client"
-import { ActionIcon, Container, Group, Stack, Text, Title, SimpleGrid, Center } from '@mantine/core';
+import { ActionIcon, Container, Group, Stack, Text, Title, SimpleGrid, Center, Flex } from '@mantine/core';
 import classes from './Footer.module.css';
 import Logo from '../Logo/Logo';
 import links from '../../const/headerLinks';
@@ -63,15 +63,14 @@ export function Footer() {
             </Container>
 
             <Container className={classes.afterFooter}>
-                <Group gap="xs" className={classes.legalGroup}>
+                <Flex gap={5} className={classes.legalGroup} direction={{base: "column", lg:"row"}} ta={{base: "center", lg:"left"}}>
                     <Link href="/mentions-legales" className={classes.link}>
                         {tNav('legal')}
                     </Link>
-                    <Text c="dimmed" size="sm">•</Text>
                     <Link href="/politique-de-confidentialite" className={classes.link}>
                         {tNav('privacy')}
                     </Link>
-                </Group>
+                </Flex>
 
                 {/* BLOC 2 : Copyright */}
                 <Text c="dimmed" size="sm" ta="center">

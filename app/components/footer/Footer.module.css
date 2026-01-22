@@ -48,19 +48,22 @@
 
 /* --- MEDIA QUERIES --- */
 
-@media (max-width: 48em) { /* 48em = Tablette/Mobile (~768px) */
-  
+@media (max-width: 48em) {
+  /* 48em = Tablette/Mobile (~768px) */
+
   /* On aligne tout au centre sur mobile */
   .wrapper {
     align-items: center;
   }
-  
+
   .stackLinks {
-    align-items: center !important; /* Force le centrage des liens */
+    align-items: center !important;
+    /* Force le centrage des liens */
   }
 
   .title {
-    margin-top: var(--mantine-spacing-md); /* Un peu d'espace entre les blocs empilés */
+    margin-top: var(--mantine-spacing-md);
+    /* Un peu d'espace entre les blocs empilés */
   }
 
   /* La barre du bas devient une colonne */
@@ -68,8 +71,12 @@
     flex-direction: column;
     gap: var(--mantine-spacing-md);
   }
-  
+
   .legalGroup {
-    order: 1; /* Mentions légales en premier ? ou change l'ordre si tu veux */
+    order: 1;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    /* Empêche le texte de passer à la ligne */
+    display: inline-block;
   }
 }

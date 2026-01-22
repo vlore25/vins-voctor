@@ -1,5 +1,4 @@
-import { Anchor, Center, Container, Flex, Grid, GridCol, Group, Image, SimpleGrid, Stack, Text, ThemeIcon, Title } from "@mantine/core";
-import classes from './About.module.css';
+import { Flex, Grid, GridCol, Group, Image, SimpleGrid, Stack, Text, ThemeIcon, Title } from "@mantine/core";
 import { FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
@@ -45,14 +44,14 @@ export default function About() {
             </Grid>
             <Group gap="xs" justify="flex-start" mt="10px">
                 <Text
-                                        component={Link}
-                                        href="/about"
-                                        fz={{ base: "md", lg: "lg" }}
-                                        fw={700}
-                                        c={"brandBordeux"}
-                                    >
-                                        {t('cta')}
-                                    </Text>
+                    component={Link}
+                    href="/about"
+                    fz={{ base: "md", lg: "lg" }}
+                    fw={700}
+                    c={"brandBordeux"}
+                >
+                    {t('cta')}
+                </Text>
                 <ThemeIcon variant="transparent" c="brandBordeux">
                     <FaArrowRight />
                 </ThemeIcon>

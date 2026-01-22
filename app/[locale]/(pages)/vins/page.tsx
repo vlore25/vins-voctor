@@ -67,7 +67,7 @@ export default function WinesPage() {
 
     return (
         <>
-            <Stack style={{ position: 'relative', overflow: 'hidden' }}>
+            <Stack>
                 <Title fz={{ base: "2em", lg: "2.5em" }} fw={400}>
                     {t.rich('title', {
                         brand: (chunks) => <Text c="brandBordeux" span inherit>{chunks}</Text>

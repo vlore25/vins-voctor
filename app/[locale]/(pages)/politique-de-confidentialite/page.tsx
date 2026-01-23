@@ -34,7 +34,6 @@ export default function TermsPage() {
             </Stack>
 
             <Accordion variant="separated" radius="md" defaultValue="collecte">
-                {/* Article 1 : Collecte */}
                 <AccordionItem value="collecte">
                     <AccordionControl icon={<IconEye size={20} />}>
                         {t('articles.1.title')}
@@ -50,7 +49,6 @@ export default function TermsPage() {
                     </AccordionPanel>
                 </AccordionItem>
 
-                {/* Article 2 : Utilisation */}
                 <AccordionItem value="utilisation">
                     <AccordionControl icon={<IconFileText size={20} />}>
                         {t('articles.2.title')}
@@ -67,7 +65,6 @@ export default function TermsPage() {
                     </AccordionPanel>
                 </AccordionItem>
 
-                {/* Article 3 : Sécurité */}
                 <AccordionItem value="protection">
                     <AccordionControl icon={<IconLock size={20} />}>
                         {t('articles.3.title')}
@@ -79,7 +76,6 @@ export default function TermsPage() {
                     </AccordionPanel>
                 </AccordionItem>
 
-                {/* Article 4 : Droits */}
                 <AccordionItem value="droits">
                     <AccordionControl icon={<IconUserShield size={20} />}>
                         {t('articles.4.title')}
@@ -89,7 +85,6 @@ export default function TermsPage() {
                             {t('articles.4.intro')}
                         </Text>
                         <ul style={{ paddingLeft: '20px', fontSize: '14px', lineHeight: '1.6' }}>
-                            {/* Utilisation de t.rich pour interpréter les balises <strong> */}
                             <li>
                                 {t.rich('articles.4.list.access', {
                                     strong: (chunks) => <strong>{chunks}</strong>
@@ -114,7 +109,6 @@ export default function TermsPage() {
                     </AccordionPanel>
                 </AccordionItem>
 
-                {/* Article 5 : Contact */}
                 <AccordionItem value="contact">
                     <AccordionControl icon={<IconShieldCheck size={20} />}>
                         {t('articles.5.title')}

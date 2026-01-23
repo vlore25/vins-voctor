@@ -1,6 +1,6 @@
 import { Card, Container, Grid, GridCol, Image, Stack, Title, Text } from "@mantine/core";
 import { useTranslations } from "next-intl";
-import classes from "./page.module.css"; // Assure-toi d'importer le même CSS
+import classes from "./page.module.css"; 
 
 export default function CellarPage() {
     const t = useTranslations('CellarPage');
@@ -25,9 +25,8 @@ export default function CellarPage() {
             </Stack>
 
             {CONTENT.map((item, index) => {
+                
                 const isEven = index % 2 === 0;
-
-                // Application de la logique Sticky / Animé
                 const cardClasses = index === 0
                     ? classes.cardBase
                     : `${classes.cardBase} ${classes.cardAnimated}`;

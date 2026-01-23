@@ -5,7 +5,6 @@ import L from 'leaflet';
 import { useEffect } from 'react';
 import Link from 'next/link';
 
-// Correction pour les icônes Leaflet qui disparaissent souvent avec Webpack/Next.js
 const icon = L.icon({
   iconUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png",
   shadowUrl: "https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png",

@@ -9,9 +9,8 @@ import winesData from "../../../const/wines";
 import { Link } from "../../../../i18n/routing";
 
 export default function WinesPage() {
-    // 3. INITIALISATION DES TRADUCTIONS
-    const t = useTranslations('WinesPage'); // Pour le texte global de la page
-    const tWines = useTranslations('Wines'); // Pour les données de chaque vin
+    const t = useTranslations('WinesPage'); 
+    const tWines = useTranslations('Wines'); 
 
     const cards = winesData.map((wine) => {
         return (

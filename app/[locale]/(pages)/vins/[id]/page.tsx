@@ -1,25 +1,43 @@
-"use client"
-
-import { Title, Flex, Stack, Text, Badge, Group, Accordion, Skeleton, Table } from "@mantine/core";
-import { useParams } from 'next/navigation'
-// Assurez-vous que l'import correspond à votre fichier wines.tsx simplifié
+import { Title, Flex, Stack, Text, Badge, Group, Accordion, Skeleton, Table, AccordionItem, AccordionControl, AccordionPanel, TableTbody, TableTd, TableTr } from "@mantine/core";
 import Image from "next/image";
 import { Suspense } from "react";
-import { useTranslations } from "next-intl";
+// 1. On retire useTranslations car on ne peut pas l'utiliser dans un composant async
+// import { useTranslations } from "next-intl"; 
 import winesData from "../../../../const/wines";
+import { getTranslations } from "next-intl/server"; // On garde cet import
 
-export default function WinePage() {
-    const params = useParams<{ id: string }>()
-    const tWines = useTranslations('Wines');
-    const tPage = useTranslations('WinesPage');
+type Props = {
+  params: Promise<{ id: string; locale: string }>;
+};
 
-    const wine = winesData.find((w) => w.id === params.id);
+export async function generateMetadata({ params }: Props) {
+  const { id, locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'Wines' });
+  const wine = winesData.find((w) => w.id === id);
+
+  if (!wine) return { title: 'Vin introuvable' };
+
+  return {
+    title: `${t(`${wine.id}.name`)} | Vins Voctor`,
+    description: t(`${wine.id}.description`),
+  };
+}
+
+export default async function WinePage({ params }: Props) {
+    const { id, locale } = await params;
+
+    // 2. On remplace les hooks par les appels async server-side
+    // Au lieu de useTranslations, on await getTranslations
+    const tWines = await getTranslations({ locale, namespace: 'Wines' });
+    const tPage = await getTranslations({ locale, namespace: 'WinesPage' });
+
+    const wine = winesData.find((w) => w.id === id);
 
     if (!wine) {
         return <Text>{tPage('notFound')}</Text>;
     }
 
-    // Récupération des tableaux via .raw() avec typage forcé
+    // Le reste fonctionne de la même manière car tWines et tPage renvoient les mêmes fonctions
     const tags = tWines.raw(`${wine.id}.tags`) as string[];
     const accords = tWines.raw(`${wine.id}.accords`) as string[];
 
@@ -33,7 +51,7 @@ export default function WinePage() {
                 <Suspense fallback={<Skeleton height={400} width={180} />}>
                     <Image
                         src={wine.img}
-                        alt={tWines(`${wine.id}.name`)} // Traduction du nom
+                        alt={tWines(`${wine.id}.name`)} 
                         style={{ objectFit: 'contain' }}
                         width={180}
                         height={400}
@@ -61,11 +79,11 @@ export default function WinePage() {
                     </Text>
                 </Stack>
             </Flex>
-
-            <Stack my={{ base: "md", lg: "md" }}>
+            
+            {/* ... Le reste du code reste identique ... */}
+             <Stack my={{ base: "md", lg: "md" }}>
                 <Title fz={{ base: "1.4em", lg: "1.8em" }}>{tPage('profile')}</Title>
                 <Group my={{ base: "0", lg: "0" }} wrap="nowrap">
-                    {/* On utilise notre constante tags récupérée plus haut */}
                     {tags.map((tag) => (
                         <Badge radius={0} size="lg" key={tag} mr="0" variant="outline">
                             {tag}
@@ -75,43 +93,40 @@ export default function WinePage() {
             </Stack>
 
             <Accordion defaultValue="Informations du vin">
-                {/* Section Informations */}
-                <Accordion.Item value="Informations du vin" px="inherit">
-                    <Accordion.Control px="inherit">
+                <AccordionItem value="Informations du vin" px="inherit">
+                    <AccordionControl px="inherit">
                         <Title fz={{ base: "1.4em", lg: "1.8em" }}>{tPage('infos')}</Title>
-                    </Accordion.Control>
-                    <Accordion.Panel px="inherit" >
+                    </AccordionControl>
+                    <AccordionPanel px="inherit" >
                         <Table verticalSpacing="xs" withColumnBorders={false} withRowBorders={false} >
-                            <Table.Tbody >
-                                <Table.Tr>
-                                    <Table.Td><Text fw={600}>{tPage('location')}</Text></Table.Td>
-                                    <Table.Td><Text>{tWines(`${wine.id}.location`)}</Text></Table.Td>
-                                </Table.Tr>
-                                <Table.Tr>
-                                    <Table.Td><Text fw={600}>{tPage('variety')}</Text></Table.Td>
-                                    <Table.Td><Text>{tWines(`${wine.id}.variety`)}</Text></Table.Td>
-                                </Table.Tr>
-                                <Table.Tr>
-                                    <Table.Td><Text fw={600}>Bio:</Text></Table.Td>
-                                    <Table.Td><Text>{tPage('bio')}</Text></Table.Td>
-                                </Table.Tr>
-                            </Table.Tbody>
+                            <TableTbody >
+                                <TableTr>
+                                    <TableTd><Text fw={600}>{tPage('location')}</Text></TableTd>
+                                    <TableTd><Text>{tWines(`${wine.id}.location`)}</Text></TableTd>
+                                </TableTr>
+                                <TableTr>
+                                    <TableTd><Text fw={600}>{tPage('variety')}</Text></TableTd>
+                                    <TableTd><Text>{tWines(`${wine.id}.variety`)}</Text></TableTd>
+                                </TableTr>
+                                <TableTr>
+                                    <TableTd><Text fw={600}>Bio:</Text></TableTd>
+                                    <TableTd><Text>{tPage('bio')}</Text></TableTd>
+                                </TableTr>
+                            </TableTbody>
                         </Table>
-                    </Accordion.Panel>
-                </Accordion.Item>
+                    </AccordionPanel>
+                </AccordionItem>
 
-                {/* Section Accords */}
-                <Accordion.Item value="Accords-met-vin">
-                    <Accordion.Control px="inherit">
+                <AccordionItem value="Accords-met-vin">
+                    <AccordionControl px="inherit">
                         <Title fz={{ base: "1.4em", lg: "1.8em" }}>{tPage('pairings')}</Title>
-                    </Accordion.Control>
-                    <Accordion.Panel>
-                        {/* On utilise notre constante accords récupérée plus haut */}
+                    </AccordionControl>
+                    <AccordionPanel>
                         {accords.map((accord) => (
                             <Text key={accord} mb="sm">-{accord}</Text>
                         ))}
-                    </Accordion.Panel>
-                </Accordion.Item>
+                    </AccordionPanel>
+                </AccordionItem>
             </Accordion>
         </>
     );

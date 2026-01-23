@@ -90,7 +90,7 @@
         "p": "In the cellar, Josimar’s priority is to produce clean, precise and reliable wines, with a clear sense of responsibility toward those who open and share them. A wine must be alive and expressive, but also readable, stable and consistent from bottle to bottle. Energy, drinkability, finesse, complexity and length on the palate guide the development of each cuvée."
       },
       {
-        "p" : "In the cellar, Josimar’s priority is to produce clean, precise and reliable wines, with a clear sense of responsibility toward those who open and share them. A wine must be alive and expressive, but also readable, stable and consistent from bottle to bottle. Energy, drinkability, finesse, complexity and length on the palate guide the development of each cuvée."
+        "p": "Vinifications are carried out in a simple and precise manner, only wild yeast, without fining orfiltration, without oenological additives, and with very limited additions of SO₂ — generally around30 mg/L total, depending on the vintage. Strict attention is paid to the hygiene of all equipmentand vessels, an essential condition for the stability and reliability of the wines. A significantproportion of the wines are aged in 54-liter glass demijohns or in stainless steel tanks, in order topreserve fruit purity, natural balance and the faithful expression of the wine."
       }
     ]
   },
@@ -334,5 +334,10 @@
     "warning1": "This website is intended for people of legal drinking age.",
     "warning2": "Alcohol abuse is dangerous for your health. Please drink responsibly.",
     "btn": "Understood"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "Sorry, the page you are looking for does not exist or has been moved.",
+    "button": "Back to home"
   }
 }

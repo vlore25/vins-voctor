@@ -3,7 +3,7 @@
     "subtitle": "Négociant vinificateur en Vallée du Rhône Nord depuis 2022",
     "siteMap": "Plan du site",
     "credits": "Réalisation du site par",
-    "rights": "tous droits réservés.",
+    "rights": "Tous droits réservés.",
     "socialTitle": "Nos réseaux"
   },
   "HomePage": {
@@ -24,9 +24,9 @@
     },
     "WineCards": {
       "title": "L'Artisanat au Cœur de la Bouteille.",
-      "description1": "Les Vins Voctor sont de vins d'identité qui vont toujours vous raconter une histoire. Avec ces vins on a une démonstration de forme et de contenu. L'une ne peut pas exister sans l'autre et les deux doivent être qualitatifs.",
+      "description1": "Les Vins Voctor sont des vins d'identité qui vont toujours vous raconter une histoire. Avec ces vins on a une démonstration de forme et de contenu. L'une ne peut pas exister sans l'autre et les deux doivent être qualitatifs.",
       "description2": "Le liquide vous raconte le terroir et l'étiquette vous raconte l'histoire du vinificateur. Ensemble, les deux forment une identité.",
-      "cardBtn": "SAVOIR PLUS",
+      "cardBtn": "EN SAVOIR PLUS",
       "footerLink": "CONNAÎTRE LES CUVÉES"
     },
     "Vigne": {
@@ -67,7 +67,7 @@
         "content": "En 2019, il lâche le béret vert pour les jus rouges et blancs. Il se dégotte un maître d’apprentissage de compète sur une appellation prestigieuse de la vallée du Rhône – Matthieu Barret à Cornas – et embraye sur un BTS viti-œno mention bio dans le Jura."
       },
       {
-        "content": "En parallèle, ses économies et des vendanges sur quelques parcelles d’un copain viticulteur lui permettent d’amorcer une activité de négoce. Depuis trois ans, celui qu’on appelle aussi Voctor tient garnison bachique dans un petit garage converti en cave où il entraîne une menue troupe de pinards artisanaux, droits dans leur bottes et troussés d’une jolie énergie."
+        "content": "En parallèle, ses économies et des vendanges sur quelques parcelles d’un copain viticulteur lui permettent d’amorcer une activité de négoce. Depuis trois ans, celui qu’on appelle aussi Voctor tient garnison bachique dans un petit garage converti en cave où il entraîne une menue troupe de pinards artisanaux, droits dans leurs bottes et troussés d’une jolie énergie."
       }
     ]
   },
@@ -90,7 +90,7 @@
         "p": "En cave, Josimar cherche avant tout à produire des vins propres, nets et fiables, avec une responsabilité assumée envers celui qui les ouvre et les partage. Un vin doit être vivant et expressif, mais aussi lisible, stable et cohérent d’une bouteille à l’autre. L’énergie, la buvabilité, la finesse, la complexité et la longueur en bouche guident l’élaboration des cuvées."
       },
       {
-        "p" : "Les vinifications sont menées de manière simple et précise, levures indigènes, sans collage ni filtration, sans intrants œnologiques, et avec des doses très limitées de SO₂ — généralement autour de 30 mg/L au total, selon les millésimes. Une attention rigoureuse est portée à l’hygiène du matériel et des contenants, condition indispensable à la stabilité et à la fiabilité des vins. Une partie importante des volumes est élevée en dame-jeannes en verre de 54 litres ou en cuves inox, afin de préserver la pureté du fruit, l’équilibre naturel et l’expression fidèle du vin."
+        "p" : "Les vinifications sont menées de manière simple et précise, levures indigènes, sans collage ni filtration, sans intrants œnologiques, et avec des doses très limitées de SO₂ — généralement autour de 30 mg/L au total, selon les millésimes. Une attention rigoureuse est portée à l’hygiène du matériel et des contenants, condition indispensable à la stabilité et à la fiabilité des vins. Une partie importante des volumes est élevée en dames-jeannes en verre de 54 litres ou en cuves inox, afin de préserver la pureté du fruit, l’équilibre naturel et l’expression fidèle du vin."
       }
     ]
   },
@@ -334,5 +334,10 @@
     "warning1": "Interdiction de vente de boissons alcooliques aux mineurs de moins de 18 ans.",
     "warning2": "L'abus d'alcool est dangereux pour la santé. À consommer avec modération",
     "btn": "Entendu"
+  },
+  "NotFound": {
+    "title": "Page introuvable",
+    "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+    "button": "Retour à l'accueil"
   }
 }

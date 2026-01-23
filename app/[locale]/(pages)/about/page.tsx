@@ -55,7 +55,7 @@ export default function Aboutpage() {
               <GridCol 
                 span={{ base: 12, md: 6 }} 
                 order={{ base: 1, md: isEven ? 2 : 1 }} 
-                h={{ base: "40vh", md: "100%" }} 
+                h={{ base: "60vh", md: "100%" }} 
               >
                 <Image
                   src={item.image}

@@ -1,6 +1,6 @@
-import { Anchor, Center, Grid, GridCol, Group, Image, Stack, Text, ThemeIcon, Title } from "@mantine/core";
+import {  Center, Grid, GridCol, Group, Image, Stack, Text, ThemeIcon, Title } from "@mantine/core";
 import { useTranslations } from "next-intl";
-import { FaArrowRight, FaMapMarkerAlt } from "react-icons/fa";
+import { FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Vigne() {
     const t = useTranslations('HomePage.Vigne');

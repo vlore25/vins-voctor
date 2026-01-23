@@ -2,7 +2,7 @@
 import { cifFr, cifGb } from "@coreui/icons";
 import CIcon from "@coreui/icons-react";
 import { Button, Menu } from "@mantine/core"; 
-import { useLocale } from "next-intl"; // 1. Importer le hook
+import { useLocale } from "next-intl"; 
 import { usePathname, useRouter } from "../../../i18n/routing";
 
 export default function LanguageButton() {

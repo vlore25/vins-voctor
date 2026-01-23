@@ -13,7 +13,7 @@ const MyAwesomeMap = dynamic(() => import("../../../components/Map/Map"), { ssr:
 )
 
 export default function Contactpage() {
-    const t = useTranslations('ContactPage'); // Hook de traduction
+    const t = useTranslations('ContactPage');
 
     const socialLinks = [
         { link: 'https://www.instagram.com/vins_voctor/?hl=en', label: 'Instagram', icon: <IconBrandInstagram /> },

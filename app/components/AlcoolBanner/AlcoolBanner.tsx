@@ -6,7 +6,6 @@ import Logo from '../Logo/Logo';
 import { useTranslations } from 'next-intl';
 
 export default function AlcoolBanner() {
-    // Le modal s'ouvre par défaut (true)
     const [opened, { close }] = useDisclosure(true);
     const t = useTranslations('AlcoolBanner');
 
@@ -32,7 +31,7 @@ export default function AlcoolBanner() {
                     {t('warning1')}
                 </Text>
                 
-                <Text fs="italic" ta="center">
+                <Text fs="italic" ta="center" fz={{base:"xs", sm:"md"}}>
                     {t('warning2')}
                 </Text>
                 

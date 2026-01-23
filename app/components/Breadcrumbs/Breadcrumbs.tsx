@@ -24,18 +24,14 @@ export default function DynamicBreadcrumbs() {
     segments.forEach((segment, index) => {
         currentPath += `/${segment}`;
 
-        // Recherche si le chemin correspond à une page standard (ex: /vins, /contact)
         const linkInfo = links.find(l => l.link === currentPath);
         
         let label = segment;
 
         if (linkInfo) {
-            // Si trouvé dans links.ts, on traduit le label (ex: 'wines' -> 'Les Cuvées')
             label = tNav(linkInfo.label);
         } 
-        // Sinon, on regarde si c'est un vin (ex: segment = 'ma-carriere')
         else if (winesData.some(w => w.id === segment)) {
-            // On récupère le nom du vin via la traduction
             label = tWines(`${segment}.name`);
         }
 

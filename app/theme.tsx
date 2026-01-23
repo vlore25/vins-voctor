@@ -28,9 +28,9 @@ export const theme = createTheme({
 
   fontSizes: {
     xs: '0.75rem',
-    s: '0.875rem',   // 14px - Pour les textes secondaires, les légendes
-    md: '1rem',       // 16px - LA TAILLE DE BASE pour tout le corps de texte (paragraphes)
-    l: '1.125rem',   // 18px - Pour les paragraphes d'introduction ou un texte mis en avant
+    s: '0.875rem',  
+    md: '1rem',      
+    l: '1.125rem',
     xl: '1.25rem'
   },
 

@@ -10,12 +10,11 @@ import AlcoolBanner from '../components/AlcoolBanner/AlcoolBanner';
 
 export const metadata = {
   title: 'Vins Voctor',
-  description: 'Vigneron de la vallée de la rhône',
+  description: 'Vigneron et négociant vinificateur en Vallée du Rhône Nord (Cornas)',
 };
 
-// Configuration des polices
 const remanFont = localFont({
-  src: '../fonts/Reman.ttf', // Attention au chemin ici aussi
+  src: '../fonts/Reman.ttf',
   weight: '300',
   style: 'normal',
   display: 'swap',
@@ -33,7 +32,6 @@ type Props = {
   params: Promise<{ locale: string }>;
 };
 
-// 2. Le layout est async
 export default async function RootLayout({ children, params }: Props) {
   
   const { locale } = await params;

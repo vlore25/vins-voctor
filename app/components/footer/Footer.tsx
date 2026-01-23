@@ -43,7 +43,6 @@ export function Footer() {
                         </Text>
                     </div>
 
-                    {/* COLONNE 2 : PLAN DU SITE */}
                     <div className={classes.wrapper}>
                         <Title order={4} mb="sm" className={classes.title}>{tFooter('siteMap')}</Title>
                         <Stack gap={4} align="flex-start" className={classes.stackLinks}>
@@ -51,9 +50,7 @@ export function Footer() {
                         </Stack>
                     </div>
 
-                    {/* COLONNE 3 : RÉSEAUX SOCIAUX */}
                     <div className={classes.wrapper}>
-                        {/* Note : Pense à ajouter "socialTitle" dans ton en.json/fr.json */}
                         <Title order={4} mb="sm" className={classes.title}>{tFooter('socialTitle')}</Title>
                         <Group gap="xs" className={classes.social}>
                             {social}
@@ -72,12 +69,10 @@ export function Footer() {
                     </Link>
                 </Flex>
 
-                {/* BLOC 2 : Copyright */}
                 <Text c="dimmed" size="sm" ta="center">
                     © {YearNow} vinsvoctor.com {tFooter('rights')}
                 </Text>
 
-                {/* BLOC 3 : Crédits */}
                 <Group gap="xs" justify="center">
                     <Link href="https://www.victorlore.fr/" className={classes.link} target="_blank" style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
                         {tFooter('credits')} <span>Victor Loré. <FaExternalLinkAlt size={10} /></span>

@@ -26,7 +26,6 @@ export default function WinesCards() {
                         <Image
                             src={wine.img}
                             height={250}
-                            // On récupère le nom traduit pour le ALT
                             alt={tWines(`${wine.id}.name`)}
                             fit='contain'
                         />
@@ -34,17 +33,14 @@ export default function WinesCards() {
                     <Stack px="md" pb="md">
                         <Card.Section className={classes.section} mt="md">
                             <Stack gap="xs">
-                                {/* TRADUCTION DU NOM */}
                                 <Title c="brandBordeux" order={4} textWrap="nowrap" fw={300}>
                                     {tWines(`${wine.id}.name`)}
                                 </Title>
 
-                                {/* TRADUCTION DE LA MENTION */}
                                 <Text>
                                     {tWines(`${wine.id}.mention`)}
                                 </Text>
 
-                                {/* TRADUCTION DU TYPE */}
                                 <Flex align="center" gap="sm">
                                     <Badge color={wine.badgeColor} radius="sm" autoContrast size='lg' >
                                         {tWines(`${wine.id}.type`)}
@@ -56,7 +52,6 @@ export default function WinesCards() {
                                             fit="contain"
                                             src="/logo/EU_Organic_Logo_Colour_54x36mm.svg" alt="Eurofeuille"></Image>}
                                 </Flex>
-                                {/* TRADUCTION DU CEPAGE (VARIETY) */}
                                 <Badge variant='transparent' leftSection={<LuGrape />} radius="sm" size='lg' p="0">
                                     {tWines(`${wine.id}.variety`)}
                                 </Badge>

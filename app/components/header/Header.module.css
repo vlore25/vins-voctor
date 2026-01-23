@@ -14,7 +14,7 @@
 }
 
 .link:hover {
-  color: var(--mantine-color-brandBordeux-9) !important;
-  background-color: transparent; /* Sécurité */
-  font-weight: 600;
+  color: var(--mantine-color-brandBordeux-4) !important;
+  background-color: transparent; 
+  font-weight: 800;
 }

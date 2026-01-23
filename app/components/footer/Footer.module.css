@@ -11,7 +11,6 @@
 }
 
 .wrapper {
-  /* Sur mobile, on centre tout pour faire plus propre */
   display: flex;
   flex-direction: column;
 }
@@ -35,8 +34,6 @@
   max-width: 300px;
 }
 
-/* --- PARTIE DU BAS RESPONSIVE --- */
-
 .afterFooter {
   display: flex;
   justify-content: space-between;
@@ -46,27 +43,20 @@
   border-top: 1px solid light-dark(var(--mantine-color-gray-2), var(--mantine-color-dark-4));
 }
 
-/* --- MEDIA QUERIES --- */
 
 @media (max-width: 48em) {
-  /* 48em = Tablette/Mobile (~768px) */
-
-  /* On aligne tout au centre sur mobile */
   .wrapper {
     align-items: center;
   }
 
   .stackLinks {
     align-items: center !important;
-    /* Force le centrage des liens */
   }
 
   .title {
     margin-top: var(--mantine-spacing-md);
-    /* Un peu d'espace entre les blocs empilés */
   }
 
-  /* La barre du bas devient une colonne */
   .afterFooter {
     flex-direction: column;
     gap: var(--mantine-spacing-md);
@@ -76,7 +66,6 @@
     order: 1;
     flex-wrap: nowrap;
     white-space: nowrap;
-    /* Empêche le texte de passer à la ligne */
     display: inline-block;
   }
 }

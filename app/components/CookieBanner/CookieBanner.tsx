@@ -6,7 +6,6 @@ export function CookieBanner() {
   const [opened, setOpened] = useState(false);
 
   useEffect(() => {
-    // On vérifie si l'utilisateur a déjà fait un choix
     const consent = localStorage.getItem('cookie-consent');
     if (!consent) {
       setOpened(true);
@@ -16,7 +15,6 @@ export function CookieBanner() {
   const handleConsent = (status: 'accepted' | 'declined') => {
     localStorage.setItem('cookie-consent', status);
     setOpened(false);
-    // Ici, vous pouvez activer/désactiver Google Analytics
   };
 
   return (

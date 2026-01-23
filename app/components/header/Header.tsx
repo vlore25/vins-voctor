@@ -39,7 +39,8 @@ export default function Header() {
         href={link.link}
         key={link.label}
         className={classes.link}
-        size="md"
+        fz={{lg: "xl"}}
+        fw={450}
         c={showSolidHeader ? "brandBordeux.9" : "white"}
       >
         {t(link.label)}

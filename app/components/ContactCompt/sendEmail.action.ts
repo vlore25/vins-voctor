@@ -12,7 +12,8 @@ const dateConsentement = new Date().toLocaleString('fr-FR', {
 
 export async function sendEmail(data: ContactInputs) {
     const transporter = nodemailer.createTransport({
-        service: 'gmail',
+        host: 'smtp.titan.email', 
+        port: 465,               
         auth: {
             user: process.env.EMAIL,
             pass: process.env.APPPASS,
@@ -48,10 +49,10 @@ export async function sendEmail(data: ContactInputs) {
     `,
             replyTo: data.email,
         });
-        console.log(process.env.EMAIL)
+        
         return { success: true };
     } catch (error) {
-        console.log(process.env.APPPASS)
+        console.log(error)
         return { success: false, error: "Erreur d'envoi" };
 
     }

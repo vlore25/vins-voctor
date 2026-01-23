@@ -40,7 +40,6 @@ export default function MobileMenu({ links, scrolled }: BurgerMenuProps) {
         closeButtonProps={{ 'aria-label': t('closeMenu') }}
       >
         <nav role="navigation" aria-label={t('mobileMenuLabel')}>
-          {/* On transforme le Stack en <ul> pour la sémantique de liste */}
           <Stack 
             gap="md" 
             align="center" 

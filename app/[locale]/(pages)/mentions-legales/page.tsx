@@ -11,13 +11,11 @@ export default function MentionsLegales() {
         {t('title')}
       </h1>
 
-      {/* 1. Éditeur */}
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-4">{t('editor.title')}</h2>
         <p>{t('editor.text')}</p>
         <p>{t('editor.address')}</p>
         
-        {/* Ajout des nouveaux champs ici */}
         <p>{t('editor.siret')}</p>
         <p>{t('editor.rcs')}</p>
         <p>{t('editor.tva')}</p>
@@ -25,20 +23,17 @@ export default function MentionsLegales() {
         <p>{t('editor.contact')}</p>
       </section>
 
-      {/* 2. Hébergement */}
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-4">{t('hosting.title')}</h2>
         <p>{t('hosting.text')}</p>
         <p>{t('hosting.address')}</p>
       </section>
 
-      {/* 3. Propriété Intellectuelle */}
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-4">{t('ip.title')}</h2>
         <p>{t('ip.text')}</p>
       </section>
 
-      {/* 4. Alcool */}
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-4">{t('alcohol.title')}</h2>
         <p className="font-medium text-red-800">
@@ -46,7 +41,6 @@ export default function MentionsLegales() {
         </p>
       </section>
 
-      {/* 5. Données Personnelles */}
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-4">{t('privacy.title')}</h2>
         <p>
@@ -60,7 +54,6 @@ export default function MentionsLegales() {
         </p>
       </section>
 
-      {/* 6. Responsabilité */}
       <section className="mb-8">
         <h2 className="text-xl font-semibold mb-4">{t('liability.title')}</h2>
         <p>{t('liability.text')}</p>

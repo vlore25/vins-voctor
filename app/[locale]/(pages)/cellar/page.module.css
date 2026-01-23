@@ -1,12 +1,12 @@
-/* Style de base (Mobile First) - Pas de sticky, hauteur automatique */
+
 .cardBase {
   position: relative;
   width: 100%;
-  min-height: 100vh; /* Au moins la taille de l'écran, mais peut grandir */
-  height: auto;      /* Laisse le texte pousser la hauteur */
+  min-height: 100vh;
+  height: auto;
   background-color: #f8f8f8;
-  overflow: visible; /* On laisse le contenu déborder si besoin */
-  padding-bottom: 2rem; /* Un peu d'espace en bas sur mobile */
+  overflow: visible;
+  padding-bottom: 2rem; 
 }
 
 @media (min-width: 62em) {

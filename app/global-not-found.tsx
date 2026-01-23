@@ -18,7 +18,7 @@ export default function GlobalNotFound() {
           <h1 style={{ fontSize: '3rem', marginBottom: '1rem', color: '#c44f43' }}>404</h1>
           <h2 style={{ marginBottom: '1.5rem' }}>Page introuvable</h2>
           <p style={{ marginBottom: '2rem', maxWidth: '500px', textAlign: 'center' }}>
-            La page que vous recherchez n'existe pas. Il est possible que l'adresse soit incorrecte.
+            La page que vous recherchez n&apos;existe pas. Il est possible que l&apos;adresse soit incorrecte.
           </p>
           
           <Link 
@@ -32,7 +32,7 @@ export default function GlobalNotFound() {
               fontWeight: 'bold'
             }}
           >
-            Retour à l'accueil
+            Retour à l&apos;accueil
           </Link>
         </div>
       </body>

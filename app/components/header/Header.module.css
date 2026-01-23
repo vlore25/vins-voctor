@@ -10,7 +10,6 @@
   color: var(--mantine-color-brandBordeux-5, );
   font-size: var(--mantine-font-size-lg);
   transition: 'color 0.3s ease';
-  font-weight: 600;
 
 }
 

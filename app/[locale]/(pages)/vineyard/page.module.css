@@ -1,21 +1,38 @@
+/* --- Mobile First (Défaut) --- */
+.cardBase {
+  position: relative;
+  width: 100%;
+  height: auto;       /* IMPORTANT: Hauteur auto sur mobile */
+  overflow: visible;  /* IMPORTANT: Pour scroller et voir l'image entière */
+  background-color: #f8f8f8;
+  margin-bottom: 3rem; 
+}
+
+/* --- Desktop (Uniquement écrans > 992px) --- */
+@media (min-width: 62em) {
+  .cardBase {
+    position: sticky;
+    top: 0;
+    height: 60vh;     /* On force la hauteur seulement sur Desktop */
+    overflow: hidden;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+  }
+
+  .cardAnimated {
+    height: 80vh; 
+    animation-name: stickyReveal;
+    animation-duration: 1ms; 
+    animation-timeline: view();
+    animation-range: entry 10% cover 40%;
+    animation-fill-mode: both;
+    box-shadow: 0px 0px 40px 20px #f8f8f8;
+  }
+}
+
 @keyframes stickyReveal {
   from { opacity: 0; transform: scale(1); }
   to { opacity: 1; transform: scale(1); }
-}
-
-.cardBase {
-  position: sticky;
-  height: 60vh;
-  overflow: hidden;
-  background-color: #f8f8f8;
-}
-
-.cardAnimated {
-  height: 80vh;
-  animation-name: stickyReveal;
-  animation-duration: 1ms; 
-  animation-timeline: view();
-  animation-range: entry 10% cover 40%;
-  animation-fill-mode: both;
-  box-shadow: 0px 0px 40px 20px #f8f8f8;
 }

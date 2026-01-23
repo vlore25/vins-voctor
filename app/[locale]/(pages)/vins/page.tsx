@@ -74,10 +74,7 @@ export default function WinesPage() {
                     })}
                 </Title>
                 <Text>
-                    {t('description1')}
-                </Text>
-                <Text>
-                    {t('description2')}
+                    {t('subtitle')}
                 </Text>
             </Stack>
             <SimpleGrid

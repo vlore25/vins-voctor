@@ -39,6 +39,7 @@ export default function Header() {
         href={link.link}
         key={link.label}
         className={classes.link}
+        size="md"
         c={showSolidHeader ? "brandBordeux.9" : "white"}
       >
         {t(link.label)}
@@ -62,7 +63,7 @@ export default function Header() {
         <Flex align='center' justify="space-between" className={classes.container}>
           <Logo titleProps={{ order: 3 }} logoProps={{ w: '70px' }} />
           <div>
-            <Flex gap={'lg'} visibleFrom="sm" align='center'>
+            <Flex gap={'lg'} visibleFrom="md" align='center'>
               {items}
               <LanguageButton />
             </Flex>

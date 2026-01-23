@@ -9,7 +9,7 @@
   "HomePage": {
     "Hero": {
       "title": "Vins Voctor",
-      "subtitle": "Independent Winemaker · Northern Rhône · Since 2022",
+      "subtitle": "Independent Craft Winemaker · Northern Rhône · Since 2022",
       "buttons": {
         "discover": "DISCOVER THE CUVÉES",
         "history": "MY STORY"
@@ -80,9 +80,19 @@
     "bio": "Yes",
     "pairings": "Food Pairings",
     "title": "The Cuvées at <brand>Vins Voctor</brand>",
-    "description1": "In the cellar, Josimar’s priority is to produce clean, precise and reliable wines, with a clear sense of responsibility toward those who open and share them. A wine must be alive and expressive, but also readable, stable and consistent from bottle to bottle. Energy, drinkability, finesse, complexity and length on the palate guide the development of each cuvée.",
-    "description2": "Vinifications are carried out in a simple and precise manner, without fining or filtration, without oenological additives, and with very limited additions of SO₂ — generally around 30 mg/L total, depending on the vintage. Strict attention is paid to the hygiene of all equipment and vessels, an essential condition for the stability and reliability of the wines. A significant proportion of the wines are aged in 54-liter glass demijohns or in stainless steel tanks, in order to preserve fruit purity, natural balance and the faithful expression of the wine.",
+    "subtitle": "Straightforward wines, grounded and driven by a beautiful energy.",
     "btn": "LEARN MORE"
+  },
+  "CellarPage": {
+    "title": "In the cellar",
+    "content" : [
+      {
+        "p": "In the cellar, Josimar’s priority is to produce clean, precise and reliable wines, with a clear sense of responsibility toward those who open and share them. A wine must be alive and expressive, but also readable, stable and consistent from bottle to bottle. Energy, drinkability, finesse, complexity and length on the palate guide the development of each cuvée."
+      },
+      {
+        "p" : "In the cellar, Josimar’s priority is to produce clean, precise and reliable wines, with a clear sense of responsibility toward those who open and share them. A wine must be alive and expressive, but also readable, stable and consistent from bottle to bottle. Energy, drinkability, finesse, complexity and length on the palate guide the development of each cuvée."
+      }
+    ]
   },
   "Wines": {
     "ma-carriere": {
@@ -200,6 +210,7 @@
     "wines": "Our Wines",
     "about": "About Voctor",
     "vineyard": "Vineyard",
+    "cellar": "The cellar",
     "contact": "Contact",
     "privacy": "Privacy Policy",
     "legal": "Legal Notice",

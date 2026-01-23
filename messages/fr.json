@@ -80,9 +80,19 @@
     "bio": "Oui",
     "pairings": "Accords mets-vins",
     "title": "Les cuvées chez <brand>Vins Voctor</brand>",
-    "description1": "En cave, Josimar cherche avant tout à produire des vins propres, nets et fiables, avec une responsabilité assumée envers celui qui les ouvre et les partage. Un vin doit être vivant et expressif, mais aussi lisible, stable et cohérent d’une bouteille à l’autre. L’énergie, la buvabilité, la finesse, la complexité et la longueur en bouche guident l’élaboration des cuvées.",
-    "description2": "Les vinifications sont menées de manière simple et précise, sans collage ni filtration, sans intrants œnologiques, et avec des doses très limitées de SO₂ — généralement autour de 30 mg/L au total, selon les millésimes. Une attention rigoureuse est portée à l’hygiène du matériel et des contenants, condition indispensable à la stabilité et à la fiabilité des vins. Une partie importante des volumes est élevée en dame-jeannes en verre de 54 litres ou en cuves inox, afin de préserver la pureté du fruit, l’équilibre naturel et l’expression fidèle du vin.",
+    "subtitle": "Des vins droits dans leurs bottes, portés par une jolie énergie.",
     "btn": "SAVOIR PLUS"
+  },
+  "CellarPage": {
+    "title": "Dans le chai",
+    "content" : [
+      {
+        "p": "En cave, Josimar cherche avant tout à produire des vins propres, nets et fiables, avec une responsabilité assumée envers celui qui les ouvre et les partage. Un vin doit être vivant et expressif, mais aussi lisible, stable et cohérent d’une bouteille à l’autre. L’énergie, la buvabilité, la finesse, la complexité et la longueur en bouche guident l’élaboration des cuvées."
+      },
+      {
+        "p" : "Les vinifications sont menées de manière simple et précise, levures indigènes, sans collage ni filtration, sans intrants œnologiques, et avec des doses très limitées de SO₂ — généralement autour de 30 mg/L au total, selon les millésimes. Une attention rigoureuse est portée à l’hygiène du matériel et des contenants, condition indispensable à la stabilité et à la fiabilité des vins. Une partie importante des volumes est élevée en dame-jeannes en verre de 54 litres ou en cuves inox, afin de préserver la pureté du fruit, l’équilibre naturel et l’expression fidèle du vin."
+      }
+    ]
   },
   "Wines": {
     "ma-carriere": {
@@ -200,6 +210,7 @@
     "wines": "Les Cuvées",
     "about": "Connaître Voctor",
     "vineyard": "La vigne",
+    "cellar": "Le chai",
     "contact": "Contact",
     "privacy": "Politique de confidentialité",
     "legal": "Mentions Légales",

@@ -21,7 +21,7 @@ export default function MobileMenu({ links, scrolled }: BurgerMenuProps) {
   return (
     <>
       <Burger
-        hiddenFrom="sm"
+        hiddenFrom="md"
         opened={opened}
         onClick={() => setOpened(o => !o)}
         color={scrolled ? 'black' : 'white'}

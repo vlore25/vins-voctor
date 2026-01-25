@@ -58,6 +58,7 @@ export default function Header() {
         background: showSolidHeader
           ? 'white'
           : 'linear-gradient(to bottom, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0) 90%)',
+          zIndex: 9999
       }}
     >
       <Container size={'xl'} w="100%">

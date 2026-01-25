@@ -9,7 +9,7 @@ import { useTranslations } from "next-intl";
 import EmailForm from "../../../components/ContactCompt/EmailForm";
 import { Link } from "../../../../i18n/routing";
 
-const MyAwesomeMap = dynamic(() => import("../../../components/Map/Map"), { ssr: false, loading: () => <div style={{ height: '400px', background: '#e0e0e0' }} /> }
+const Map = dynamic(() => import("../../../components/Map/Map"), { ssr: false, loading: () => <div style={{ height: '400px', background: '#e0e0e0',  zIndex: -1}} /> }
 )
 
 export default function Contactpage() {
@@ -60,7 +60,7 @@ export default function Contactpage() {
                                 overflow: 'hidden',
                                 border: '1px solid #eee'
                             }}>
-                                <MyAwesomeMap />
+                                <Map />
                             </div>
                         </div>
                     </Stack>
